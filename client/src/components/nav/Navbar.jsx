@@ -29,7 +29,7 @@ function Navbar() {
         {/* small screen menu */}
         <div className='flex flex-row sm:hidden justify-end'>
           <div onClick={openNavbar}>
-            <span className='dark:text-slate-100'>=</span>
+            <span className='text-slate-100 dark:text-slate-100'>=</span>
           </div>
         </div>
         {/* Large screen menu */}
