@@ -36,8 +36,8 @@ function Header() {
               <CTA />
             </div>
           </div>
-          {/* Phones */}
-          <div className='flex h-full items-center justify-center lg:w-1/2'>
+          {/* Phone images */}
+          <section className='flex h-full items-center justify-center lg:w-1/2'>
             <div className='w-2/5'>
               <img
                 className='object-cover'
@@ -52,7 +52,7 @@ function Header() {
                 alt=''
               />
             </div>
-          </div>
+          </section>
         </div>
       </section>
     </>
