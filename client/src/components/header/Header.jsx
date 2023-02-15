@@ -13,7 +13,7 @@ function Header() {
             <article className='max-w-xl mb-6'>
               <div>
                 <h4 className='inline-block font-semibold tracking-wider uppercase text-eco-green rounded-full'>
-                  Brand new web project
+                  Brand new web projectx
                 </h4>
               </div>
               <h1 className='text-eco-green  font-extrabold text-6xl pb-6 md:py-4 text-center md:text-left'>
