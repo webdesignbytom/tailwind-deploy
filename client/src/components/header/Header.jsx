@@ -16,17 +16,17 @@ function Header() {
                   Brand new web project
                 </h4>
               </div>
-              <h1 className='text-eco-green font-extrabold text-6xl pb-6 md:py-4 text-center md:text-left'>
+              <h1 className='text-eco-green  font-extrabold text-6xl pb-6 md:py-4 text-center md:text-left'>
                 myecoapp
               </h1>
-              <h2 className='font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w-lg mb-6'>
+              <h2 className='font-sans text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 sm:text-4xl sm:leading-none max-w-lg mb-6'>
                 Help The Planet <br className='hidden md:block' />
                 by existing{' '}
                 <span className='inline-block text-deep-purple-accent-400'>
                   and clicking
                 </span>
               </h2>
-              <p className='text-gray-700 text-base md:text-lg'>
+              <p className='text-gray-700 dark:text-slate-100 text-base md:text-lg'>
                 Help the environment from anywhere for free! At home or at any
                 event. Use our apps to earn while you relax. We have done what
                 we can to provide entertainment for you. Check it out below.
