@@ -12,7 +12,7 @@ function Home() {
       {toggleNavigation ? (
         <Navbar />
       ) : (
-        <div className='dark:bg-black'>
+        <div className='bg-white dark:bg-black'>
           <Navbar />
           <Header />
         </div>
