@@ -9,6 +9,8 @@ const links = [
   { url: '/myecohome', title: 'MyEcoHome' },
   { url: '/games', title: 'Games' },
   { url: '/account', title: 'Account' },
+  { url: '/login', title: 'Login' },
+  { url: '/register', title: 'Register' },
 ];
 
 function Navbar() {
