@@ -13,7 +13,7 @@ function Home() {
         <Navbar />
       ) : (
         <div className='bg-white dark:bg-black'>
-          <div className='h-screen'>
+          <div className='h-screen grid lg:pt-4'>
             <Navbar />
             <Header />
           </div>

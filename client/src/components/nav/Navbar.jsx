@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     <>
-      <div className='flex flex-row justify-between max-w-full px-8 bg-eco-green sm:flex hover:text-slate-50 items-center lg:mx-8 lg:mb-4'>
+      <div className='flex flex-row h-min justify-between max-w-full px-8 bg-eco-green sm:flex hover:text-slate-50 items-center lg:mx-8 lg:mb-4'>
         {/* Left hand side of nav perminent */}
         <Link to='/'>
           <img src={Logo} alt='logo' className='w-12 h-12 mr-3' />
