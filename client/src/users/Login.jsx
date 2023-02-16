@@ -51,7 +51,7 @@ function Login() {
                       }}
                     />
                     <label
-                      className='form-check-label inline-block text-gray-800'
+                      className='form-check-label inline-block text-gray-800 dark:text-white'
                       htmlFor='rememberMeChecked'
                     >
                       Remember me
@@ -76,7 +76,7 @@ function Login() {
                 </button>
 
                 <div className='flex items-center my-4 before:flex-1 before:border-t before:border-eco-green before:mt-0.5 after:flex-1 after:border-t after:border-eco-green after:mt-0.5'>
-                  <p className='text-center font-semibold mx-4 mb-0'>OR</p>
+                  <p className='text-center font-semibold mx-4 mb-0 dark:text-white'>OR</p>
                 </div>
 
                 <Link
