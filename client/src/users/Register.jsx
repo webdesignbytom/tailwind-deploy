@@ -6,15 +6,24 @@ function Register() {
     <>
       <section className='h-screen dark:bg-black'>
         <div className='container px-6 py-12 h-full'>
+
           <div className='flex justify-center items-center flex-wrap h-full g-6 text-gray-800'>
-            <div className='flex lg:pl-12 md:w-8/12 lg:w-6/12 mb-12 md:mb-0'>
-              <img
-                src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg'
-                className='w-full lg:w-eighty'
-                alt='Phone'
-              />
+            <div className='grid lg:pl-12 md:w-8/12 lg:w-6/12 mb-12 md:mb-0'>
+              <div className='flex text-center lg:hidden'>
+                <h1 className=' text-eco-green'>Register</h1>
+              </div>
+              <div className='flex'>
+                <img
+                  src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg'
+                  className='w-full lg:w-eighty'
+                  alt='Phone'
+                />
+              </div>
             </div>
             <section className='md:w-8/12 lg:w-5/12 lg:ml-20'>
+              <div className='hidden lg:block lg:text-center'>
+                <h1 className=' text-eco-green'>Register</h1>
+              </div>
               <form>
                 {/* <!-- Email input --> */}
                 <div className='mb-6'>
