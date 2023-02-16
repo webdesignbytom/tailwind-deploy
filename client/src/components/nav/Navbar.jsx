@@ -85,12 +85,13 @@ function PhoneNav() {
   const closeNavbar = () => {
     setToggleNavigation(false);
   };
+
   return (
     <>
       <section className='grid h-screen bg-red-300'>
-        <ul className='grid h-full bg-yellow-300'>
+        <ul className='grid h-full bg-yellow-300 text-3xl'>
           <li className='bg-eco-green flex items-center justify-end pr-8'>
-            <button className='text-white' onClick={closeNavbar}>
+            <button className='text-white text-xl' onClick={closeNavbar}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -109,13 +110,26 @@ function PhoneNav() {
           </li>
           {links.map((link, index) => {
             return (
-              <li key={index} className='bg-eco-green text-center'>
-                <NavLink link={link} />
+              <li key={index} className='bg-eco-green text-center '>
+                <PhoneNavLink link={link} />
               </li>
             );
           })}
         </ul>
       </section>
+    </>
+  );
+}
+
+function PhoneNavLink({ link }) {
+  return (
+    <>
+      <Link
+        to={link.url}
+        className='block px-4 py-2 text-white dark:text-black text-xl hover:text-eco-green-dark font-medium'
+      >
+        {link.title}
+      </Link>
     </>
   );
 }
