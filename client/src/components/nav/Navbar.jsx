@@ -80,7 +80,7 @@ function NavLink({ link }) {
 }
 
 function PhoneNav({ link }) {
-  const { toggleNavigation, setToggleNavigation } = useContext(ToggleContext);
+  const { setToggleNavigation } = useContext(ToggleContext);
 
   const closeNavbar = () => {
     setToggleNavigation(false)
