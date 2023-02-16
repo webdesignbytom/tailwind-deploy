@@ -13,7 +13,7 @@ function Header() {
             <article className='max-w-xl mb-6'>
               <div>
                 <h4 className='inline-block font-semibold tracking-wider uppercase text-eco-green rounded-full'>
-                  Brand new web projectx
+                  Brand new web project
                 </h4>
               </div>
               <h1 className='text-eco-green  font-extrabold text-6xl pb-6 md:py-4 text-center md:text-left'>
@@ -26,7 +26,7 @@ function Header() {
                   and clicking
                 </span>
               </h2>
-              <p className='text-gray-700 dark:text-slate-100 text-base md:text-lg'>
+              <p className='text-text-grey dark:text-slate-100 text-base md:text-lg'>
                 Help the environment from anywhere for free! At home or at any
                 event. Use our apps to earn while you relax. We have done what
                 we can to provide entertainment for you. Check it out below.

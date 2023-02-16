@@ -13,6 +13,8 @@ module.exports = {
         'eco-green-dark': '#1A7408',
         'transparent-black': 'rgba(0, 0, 0, 0.65)',
         'transparent-white': 'rgba(255, 255, 255, 0.65)',
+        'hover-grey': '#6b7280',
+        'text-grey': '#3e4857'
       },
       width: {
         'eighty': '80%'
