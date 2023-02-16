@@ -79,28 +79,45 @@ function NavLink({ link }) {
   );
 }
 
-function PhoneNav({ link }) {
+function PhoneNav() {
   const { setToggleNavigation } = useContext(ToggleContext);
 
   const closeNavbar = () => {
-    setToggleNavigation(false)
-  }
+    setToggleNavigation(false);
+  };
   return (
     <>
-      <div className='grid'>
-        <button onClick={closeNavbar}>Close</button>
-        <ul className='grid'>
+      <section className='grid h-screen bg-red-300'>
+        <ul className='grid h-full bg-yellow-300'>
+          <li className='bg-eco-green flex items-center justify-end pr-8'>
+            <button className='text-white' onClick={closeNavbar}>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke-width='1.5'
+                stroke='currentColor'
+                class='w-6 h-6'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M6 18L18 6M6 6l12 12'
+                />
+              </svg>
+            </button>
+          </li>
           {links.map((link, index) => {
             return (
-              <li key={index} className='bg-eco-green'>
+              <li key={index} className='bg-eco-green text-center'>
                 <NavLink link={link} />
               </li>
             );
           })}
         </ul>
-      </div>
+      </section>
     </>
   );
 }
 
-export {Navbar, PhoneNav};
+export { Navbar, PhoneNav };
