@@ -13,8 +13,10 @@ function Home() {
         <Navbar />
       ) : (
         <div className='bg-white dark:bg-black'>
-          <Navbar />
-          <Header />
+          <div className='h-screen'>
+            <Navbar />
+            <Header />
+          </div>
         </div>
       )}
     </>
