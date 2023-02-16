@@ -66,8 +66,6 @@ function Navbar() {
   );
 }
 
-export default Navbar;
-
 function NavLink({ link }) {
   return (
     <>
@@ -80,3 +78,29 @@ function NavLink({ link }) {
     </>
   );
 }
+
+function PhoneNav({ link }) {
+  const { toggleNavigation, setToggleNavigation } = useContext(ToggleContext);
+
+  const closeNavbar = () => {
+    setToggleNavigation(false)
+  }
+  return (
+    <>
+      <div className='grid'>
+        <button onClick={closeNavbar}>Close</button>
+        <ul className='grid'>
+          {links.map((link, index) => {
+            return (
+              <li key={index} className='bg-eco-green'>
+                <NavLink link={link} />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </>
+  );
+}
+
+export {Navbar, PhoneNav};
