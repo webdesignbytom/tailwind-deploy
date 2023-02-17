@@ -4,7 +4,7 @@
     @apply bg-white dark:bg-black px-4 py-8 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:mx-auto
 }
 .section__container {
-    @apply flex flex-col h-screen gap-4 bg-white dark:bg-black px-4 py-8 md:max-w-full lg:max-w-screen-xl lg:gap-6 md:px-24 lg:px-8 lg:mx-auto
+    @apply flex flex-col gap-4 bg-white dark:bg-black px-4 py-8 md:max-w-full lg:max-w-screen-xl lg:gap-6 md:px-24 lg:px-8 lg:mx-auto
 }
 
 /* BUTTONS */
@@ -18,7 +18,7 @@
 }
 
 .control__button {
-    @apply capitalize border-2 rounded-md text-center px-4 py-2 text-eco-green bg-white border-eco-green hover:bg-eco-green-med hover:border-eco-green-dark hover:text-white focus:bg-eco-green focus:border-eco-green-dark focus:text-white dark:bg-black dark:text-eco-green font-poppins
+    @apply capitalize border-2 rounded-md text-center px-4 py-2 text-eco-green bg-white border-eco-green hover:bg-eco-green-med hover:border-eco-green-dark hover:text-white focus:bg-eco-green focus:border-eco-green-dark focus:text-white focus:hover:text-slate-200 dark:bg-black dark:text-eco-green font-poppins
 }
 
 /* TYPOGRAPHY */
@@ -28,6 +28,10 @@
 
 .small__title {
     @apply text-sm font-semibold tracking-wider uppercase text-eco-green rounded-full
+}
+
+.secondary__title {
+    @apply text-2xl font-extrabold tracking-wider text-eco-green rounded-full
 }
 
 .text__container {
