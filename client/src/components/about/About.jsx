@@ -14,7 +14,7 @@ function About() {
             <h4 className='small__title'>What's It All About?</h4>
             <h2 className='section__title'>About Us</h2>
           </article>
-          <section className='lg:grid lg:grid-cols-test lg:gap-4'>
+          <section className='lg:grid lg:grid-cols-2-1 lg:gap-4'>
             <article className='mb-2'>
               <p className='text__container'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
