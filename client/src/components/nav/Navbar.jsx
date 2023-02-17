@@ -29,7 +29,7 @@ function Navbar() {
         </Link>
 
         {/* small screen menu */}
-        <div className='flex flex-row sm:hidden justify-end'>
+        <div className='flex flex-row md:hidden justify-end'>
           <div onClick={openNavbar}>
             <span className='cursor-pointer text-white hover:text-hover-grey'>
               <svg
@@ -50,7 +50,7 @@ function Navbar() {
           </div>
         </div>
         {/* Large screen menu */}
-        <nav className='hidden flex-row w-full justify-end items-center sm:flex'>
+        <nav className='hidden flex-row w-full justify-end items-center md:flex'>
           <ul className='flex flex-row items-center'>
             {links.map((link, index) => {
               return (
@@ -88,10 +88,10 @@ function PhoneNav() {
 
   return (
     <>
-      <section className='grid h-screen bg-red-300'>
-        <ul className='grid h-full bg-yellow-300 text-3xl'>
+      <section className='grid h-screen'>
+        <ul className='grid h-full text-3xl'>
           <li className='bg-eco-green flex items-center justify-end pr-8'>
-            <button className='text-white text-xl' onClick={closeNavbar}>
+            <button className='dark:text-black text-xl' onClick={closeNavbar}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'

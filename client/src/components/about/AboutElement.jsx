@@ -3,7 +3,7 @@ import React from 'react';
 function AboutElement({ elementSelected }) {
   return (
     <>
-      <div>AboutElement
+      <div>
         <h3>{elementSelected.content}</h3>
       </div>
     </>

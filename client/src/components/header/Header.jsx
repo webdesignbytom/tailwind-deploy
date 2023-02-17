@@ -6,7 +6,7 @@ function Header() {
     <>
       <header
         id='hero'
-        className='px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'
+        className='hero__container'
       >
         <div className='flex flex-col items-center justify-between w-full mb-10 lg:flex-row'>
           <section className='mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 lg:pl-5'>
@@ -16,7 +16,7 @@ function Header() {
                   Brand new web project
                 </h4>
               </div>
-              <h1 className='text-eco-green  font-extrabold text-6xl pb-6 md:py-4 text-center md:text-left'>
+              <h1 className='text-eco-green font-extrabold text-6xl pb-6 md:py-4 text-center md:text-left'>
                 myecoapp
               </h1>
               <h2 className='font-sans text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 sm:text-4xl sm:leading-none max-w-lg mb-6'>

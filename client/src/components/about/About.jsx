@@ -3,19 +3,25 @@ import { AboutSections } from '../../utils/AboutSections';
 import AboutElement from './AboutElement';
 
 function About() {
-  console.log('about', AboutSections);
   const [elementSelected, setElementSelected] = useState(AboutSections[0]);
-  console.log('elementSelected', elementSelected);
 
   return (
     <>
-      <section
-        id='about'
-        className='dark:bg-black px-4 py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'
-      >
-        <div>
-          <h2 className='text-eco-green'>About</h2>
-        </div>
+      <section id='about' className='section__container'>
+        <section className='flex flex-col justify-between w-full'>
+          <article>
+            <h4 className='small__title'>What's It All About?</h4>
+            <h2 className='section__title'>About Us</h2>
+          </article>
+          <article>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+            asperiores, in aliquam cum repudiandae sequi, nobis atque ipsum
+            explicabo tempora, aut quo consequatur perspiciatis est ullam
+            accusantium! Provident vero obcaecati debitis nesciunt mollitia,
+            modi ad reprehenderit magni unde excepturi aperiam velit molestias
+            aliquam, corporis fugit ducimus repellendus, vitae harum accusamus!
+          </article>
+        </section>
 
         {/* Phone container for folder options */}
         <section className='grid'>
