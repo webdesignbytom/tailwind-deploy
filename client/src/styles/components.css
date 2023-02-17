@@ -31,5 +31,5 @@
 }
 
 .text__container {
-    @apply text-sm font-poppins p-2
+    @apply text-sm font-poppins p-2 dark:text-white
 }
