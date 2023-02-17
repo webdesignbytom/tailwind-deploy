@@ -19,9 +19,9 @@ module.exports = {
       width: {
         'eighty': '80%'
       },
-      gridTemplateRows: {
-        'nav-grid': 'grid-template-rows: 50px 1fr'
-      }
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      },
     },
   },
   plugins: [],

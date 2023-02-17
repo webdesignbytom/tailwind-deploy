@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AboutSections } from '../../utils/AboutSections';
 import AboutElement from './AboutElement';
+import Banner from '../../assets/img/bannerImg.jpeg'
 
 function About() {
   const [elementSelected, setElementSelected] = useState(AboutSections[0]);
@@ -13,21 +14,28 @@ function About() {
             <h4 className='small__title'>What's It All About?</h4>
             <h2 className='section__title'>About Us</h2>
           </article>
-          <article>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-            asperiores, in aliquam cum repudiandae sequi, nobis atque ipsum
-            explicabo tempora, aut quo consequatur perspiciatis est ullam
-            accusantium! Provident vero obcaecati debitis nesciunt mollitia,
-            modi ad reprehenderit magni unde excepturi aperiam velit molestias
-            aliquam, corporis fugit ducimus repellendus, vitae harum accusamus!
+          <article className=''>
+            <p className='text__container'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+              asperiores, in aliquam cum repudiandae sequi, nobis atque ipsum
+              explicabo tempora, aut quo consequatur perspiciatis est ullam
+              accusantium! Provident vero obcaecati debitis nesciunt mollitia,
+              modi ad reprehenderit magni unde excepturi aperiam velit molestias
+              aliquam, corporis fugit ducimus repellendus, vitae harum
+              accusamus!
+            </p>
           </article>
         </section>
 
+        <section>
+          <img src={Banner} alt="Banner" />
+        </section>
+
         {/* Phone container for folder options */}
-        <section className='grid'>
-          <div className='grid grid-cols-3 p-1 gap-1 border-2 border-eco-green rounded-md'>
+        <section className='grid border-2 border-eco-green rounded-md'>
+          <div className='grid grid-cols-3 p-1 gap-1 '>
             <button
-              className='control__button active:'
+              className='control__button'
               onClick={() => {
                 setElementSelected(AboutSections[0]);
               }}
@@ -50,12 +58,12 @@ function About() {
             >
               Projects
             </button>
-
-            {/* Articles  */}
-            <article>
-              <AboutElement elementSelected={elementSelected} />
-            </article>
           </div>
+
+          {/* Articles  */}
+          <article>
+            <AboutElement elementSelected={elementSelected} />
+          </article>
         </section>
       </section>
     </>

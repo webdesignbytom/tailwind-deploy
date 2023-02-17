@@ -26,7 +26,7 @@ function Header() {
                   and clicking
                 </span>
               </h2>
-              <p className='text-text-grey dark:text-slate-100 text-base md:text-lg'>
+              <p className='text-text-grey dark:text-slate-100 text-base md:text-lg font-poppins'>
                 Help the environment from anywhere for free! At home or at any
                 event. Use our apps to earn while you relax. We have done what
                 we can to provide entertainment for you. Check it out below.
