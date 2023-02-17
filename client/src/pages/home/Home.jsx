@@ -2,7 +2,7 @@ import React from 'react';
 import { ToggleContext } from '../../context/ToggleContext';
 import { useContext } from 'react';
 import Header from '../../components/header/Header';
-import {Navbar, PhoneNav } from '../../components/nav/Navbar';
+import { Navbar, PhoneNav } from '../../components/nav/Navbar';
 import About from '../../components/about/About';
 
 function Home() {

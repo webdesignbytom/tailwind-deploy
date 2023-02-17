@@ -5,7 +5,7 @@ import Register from './users/Register';
 
 function App() {
   return (
-    <div className='dark:bg-black'>
+    <>
       <Routes>
         <Route path='/' element={<Home />} index />
 
@@ -14,7 +14,7 @@ function App() {
         <Route path='/register' element={<Register />} />
 
       </Routes>
-    </div>
+    </>
   );
 }
 

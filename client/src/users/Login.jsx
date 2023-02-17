@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom'
-// Images
-// import Trees from '../assets/img/trees.jpeg';
-// import Logo from '../assets/img/myea-logo.svg';
+import { ToggleContext } from '../context/ToggleContext';
+import { Navbar, PhoneNav } from '../components/nav/Navbar';
 
 function Login() {
   const [rememberMeChecked, setRememberMeChecked] = useState(true);
+  const { toggleNavigation } = useContext(ToggleContext);
 
   return (
+
     <>
+          {toggleNavigation ? (
+            <PhoneNav />
+          ) : (
+            <div className='bg-white dark:bg-black'>
+              <div className='h-screen grid lg:pt-4'>
+                <Navbar />
+                
       <section className='h-screen dark:bg-black'>
         <div className='container px-6 py-12 h-full'>
           <div className='flex justify-center items-center flex-wrap h-full g-6 text-gray-800'>
@@ -124,6 +132,11 @@ function Login() {
           </div>
         </div>
       </section>
+              </div>
+            </div>
+          )}
+        
+  
     </>
   );
 }
