@@ -81,11 +81,15 @@ function About() {
             <h3 className='secondary__title'>Our Ideas</h3>
           </div>
 
-          <section className='grid border-2 border-eco-green rounded-md'>
+          <section className='grid border-2 border-eco-green bg-eco-green-dark rounded-md'>
             <article className='grid grid-cols-3 p-1 gap-1 '>
               {/* Articles  */}
               {AboutSections.map((selected, index) => {
-                return <AboutElement key={index} elementSelected={selected} />;
+                return (
+                  <div className='border-2 border-eco-green bg-white dark:bg-black rounded-md'>
+                    <AboutElement key={index} elementSelected={selected} />
+                  </div>
+                );
               })}
             </article>
           </section>
