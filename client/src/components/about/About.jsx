@@ -20,7 +20,7 @@ function About() {
         {/* Phone container for folder options */}
         <section className='border-2 border-eco-green rounded'>
           <div className='grid grid-cols-3 py-2 border-b-2 border-eco-green text-center'>
-            <div>
+            <div className='bg-eco-green active:bg-violet-700'>
               <button onClick={() => {setElementSelected(AboutSections[0])}}>People</button>
             </div>
             <div>
