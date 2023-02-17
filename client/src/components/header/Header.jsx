@@ -4,12 +4,12 @@ import CTA from './CTA';
 function Header() {
   return (
     <>
-      <section
+      <header
         id='hero'
         className='px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'
       >
         <div className='flex flex-col items-center justify-between w-full mb-10 lg:flex-row'>
-          <div className='mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 lg:pl-5'>
+          <section className='mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 lg:pl-5'>
             <article className='max-w-xl mb-6'>
               <div>
                 <h4 className='inline-block font-semibold tracking-wider uppercase text-eco-green rounded-full'>
@@ -35,7 +35,7 @@ function Header() {
             <div className='flex items-center space-x-3'>
               <CTA />
             </div>
-          </div>
+          </section>
           {/* Phone images */}
           <section className='flex h-full items-center justify-center lg:w-1/2'>
             <div className='w-2/5'>
@@ -54,7 +54,7 @@ function Header() {
             </div>
           </section>
         </div>
-      </section>
+      </header>
     </>
   );
 }
