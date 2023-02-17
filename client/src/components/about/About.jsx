@@ -27,12 +27,16 @@ function About() {
               </p>
             </article>
 
-            <img className='w-full border-8 border-eco-green-dark rounded shadow-md' src={Banner} alt='Banner' />
+            <img
+              className='w-full border-8 border-eco-green-dark rounded shadow-md'
+              src={Banner}
+              alt='Banner'
+            />
           </section>
         </section>
 
         {/* Phone container for folder options */}
-        <section>
+        <section className='lg:hidden'>
           <div className='text-center mt-2 mb-6'>
             <h3 className='secondary__title'>Our Ideas</h3>
           </div>
@@ -67,6 +71,22 @@ function About() {
             {/* Articles  */}
             <article>
               <AboutElement elementSelected={elementSelected} />
+            </article>
+          </section>
+        </section>
+
+        {/* Monitor version */}
+        <section className='hidden lg:grid'>
+          <div className='text-center mt-2 mb-6'>
+            <h3 className='secondary__title'>Our Ideas</h3>
+          </div>
+
+          <section className='grid border-2 border-eco-green rounded-md'>
+            <article className='grid grid-cols-3 p-1 gap-1 '>
+              {/* Articles  */}
+              {AboutSections.map((selected, index) => {
+                return <AboutElement key={index} elementSelected={selected} />;
+              })}
             </article>
           </section>
         </section>
