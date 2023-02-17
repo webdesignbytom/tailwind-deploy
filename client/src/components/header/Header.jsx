@@ -37,7 +37,7 @@ function Header() {
             </div>
           </section>
           {/* Phone images */}
-          <section className='flex h-full items-center justify-center lg:w-1/2'>
+          <section className='flex h-full items-center justify-center lg:w-1/2 lg:mt-6'>
             <div className='w-2/5'>
               <img
                 className='object-cover'
