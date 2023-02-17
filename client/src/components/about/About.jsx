@@ -23,7 +23,7 @@ function About() {
                 accusantium! Provident vero obcaecati debitis nesciunt mollitia,
                 modi ad reprehenderit magni unde excepturi aperiam velit
                 molestias aliquam, corporis fugit ducimus repellendus, vitae
-                harum accusamus!
+                harum accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequuntur perspiciatis veniam sequi excepturi eius iure ad laborum mollitia perferendis deleniti voluptates eum modi, dolorem omnis sunt quas fugit dicta cupiditate similique dolor facilis vero? Cum, explicabo natus dolorum similique est eos labore quidem veritatis, accusantium, vitae ullam iure saepe.
               </p>
             </article>
 
