@@ -4,8 +4,8 @@ import AboutElement from './AboutElement';
 
 function About() {
   console.log('about', AboutSections);
-  const [elementSelected, setElementSelected] = useState(AboutSections[0])
-  console.log('elementSelected', elementSelected)
+  const [elementSelected, setElementSelected] = useState(AboutSections[0]);
+  console.log('elementSelected', elementSelected);
 
   return (
     <>
@@ -18,21 +18,38 @@ function About() {
         </div>
 
         {/* Phone container for folder options */}
-        <section className='border-2 border-eco-green rounded'>
-          <div className='grid grid-cols-3 py-2 border-b-2 border-eco-green text-center'>
-            <div className='bg-eco-green active:bg-violet-700'>
-              <button onClick={() => {setElementSelected(AboutSections[0])}}>People</button>
-            </div>
-            <div>
-              <button onClick={() => {setElementSelected(AboutSections[1])}}>Earnings</button>
-            </div>
-            <div>
-              <button onClick={() => {setElementSelected(AboutSections[2])}}>Projects</button>
-            </div>
+        <section className='grid'>
+          <div className='grid grid-cols-3 p-1 gap-1 border-2 border-eco-green rounded-md'>
+            <button
+              className='control__button active:'
+              onClick={() => {
+                setElementSelected(AboutSections[0]);
+              }}
+            >
+              People
+            </button>
+            <button
+              className='control__button'
+              onClick={() => {
+                setElementSelected(AboutSections[1]);
+              }}
+            >
+              Earnings
+            </button>
+            <button
+              className='control__button'
+              onClick={() => {
+                setElementSelected(AboutSections[2]);
+              }}
+            >
+              Projects
+            </button>
+
+            {/* Articles  */}
+            <article>
+              <AboutElement elementSelected={elementSelected} />
+            </article>
           </div>
-          <article>
-            <AboutElement elementSelected={elementSelected} />
-          </article>
         </section>
       </section>
     </>
