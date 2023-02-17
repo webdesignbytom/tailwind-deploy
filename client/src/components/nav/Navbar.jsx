@@ -122,10 +122,12 @@ function PhoneNav() {
 }
 
 function PhoneNavLink({ link }) {
+  const { setToggleNavigation } = useContext(ToggleContext)
   return (
     <>
       <Link
         to={link.url}
+        onClick={() => {setToggleNavigation(false)}}
         className='block px-4 py-2 text-white dark:text-black text-xl hover:text-eco-green-dark font-medium'
       >
         {link.title}
