@@ -11,6 +11,14 @@ export const PrivacyData = [
         title: 'User Policy',
         url: 'https://www.myecoapp.org/user-policy'
     },
+    {
+        title: 'Cookies Policy',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Cookies Policy',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
 ]
 
 export const AccountData = [
@@ -23,12 +31,20 @@ export const AccountData = [
         url: 'https://www.myecoapp.org/user-policy'
     },
     {
-        title: 'Delete Profile',
-        url: 'https://www.myecoapp.org/user-policy'
-    },
-    {
         title: 'Badges',
         url: 'https://www.myecoapp.org/users/badges'
+    },
+    {
+        title: 'Posts',
+        url: 'https://www.myecoapp.org/users/badges'
+    },
+    {
+        title: 'History',
+        url: 'https://www.myecoapp.org/users/badges'
+    },
+    {
+        title: 'Delete Profile',
+        url: 'https://www.myecoapp.org/user-policy'
     },
 ]
 
@@ -42,7 +58,46 @@ export const GameData = [
         url: 'https://www.myecoapp.org/games'
     },
     {
-        title: '',
+        title: 'Lottery',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Statistics',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Reset Player Account Data',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+]
+
+export const UsefulLinks = [
+    {
+        title: 'Help Center',
+        url: 'https://www.myecoapp.org/games'
+    },
+    {
+        title: 'Contact Us',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Find us on Facebook',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Find us on Twitter',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Find us on YouTube',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Find us on Instagram',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Find us on Tic-tok',
         url: 'https://www.myecoapp.org/user-policy'
     },
 ]

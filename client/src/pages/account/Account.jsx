@@ -13,7 +13,7 @@ function Account() {
       {toggleNavigation ? (
         <PhoneNav />
       ) : (
-        <div className='grid grid-rows-a-1fr bg-white dark:bg-black h-screen lg:h-full'>
+        <div className='grid grid-rows-a-1fr bg-white dark:bg-black h-screen'>
           <div className='lg:pt-4 '>
             <Navbar />
           </div>
