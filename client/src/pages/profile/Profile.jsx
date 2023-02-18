@@ -5,7 +5,7 @@ import { Navbar, PhoneNav } from '../../components/nav/Navbar';
 
 
 
-function Myecohome() {
+function Profile() {
     const { toggleNavigation } = useContext(ToggleContext);
 
   return (
@@ -16,12 +16,11 @@ function Myecohome() {
         <div className='bg-white dark:bg-black'>
           <div className='h-screen grid lg:pt-4'>
             <Navbar />
-            <h2>myecohome</h2>
+            <h2>profile</h2>
           </div>
         </div>
       )}
     </>
   )
 }
-
-export default Myecohome
+export default Profile

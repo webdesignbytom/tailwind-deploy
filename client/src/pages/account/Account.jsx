@@ -3,9 +3,7 @@ import { ToggleContext } from '../../context/ToggleContext';
 import { useContext } from 'react';
 import { Navbar, PhoneNav } from '../../components/nav/Navbar';
 
-
-
-function Myecohome() {
+function Account() {
     const { toggleNavigation } = useContext(ToggleContext);
 
   return (
@@ -16,7 +14,7 @@ function Myecohome() {
         <div className='bg-white dark:bg-black'>
           <div className='h-screen grid lg:pt-4'>
             <Navbar />
-            <h2>myecohome</h2>
+            <h2>account</h2>
           </div>
         </div>
       )}
@@ -24,4 +22,4 @@ function Myecohome() {
   )
 }
 
-export default Myecohome
+export default Account
