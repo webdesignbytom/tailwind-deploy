@@ -15,8 +15,10 @@ function Goals() {
           </article>
           <section className=''>
             <article className='mb-2'>
-              <p className='text__container'>
+              <p className='text__container mx-12'>
                 We have three main goals we hope to achieve. Again everything we
+                are doing, is to try and help the environment and people in need
+                of help with rising fuel costs. We have three main goals we hope to achieve. Again everything we
                 are doing, is to try and help the environment and people in need
                 of help with rising fuel costs.
               </p>
@@ -31,7 +33,7 @@ function Goals() {
             <section className='grid lg:grid-cols-3 gap-4'>
               {GoalsList.map((goal, index) => {
                 return (
-                  <article className='group grid grid-rows-row-s-1 border-2 border-eco-green rounded-lg overflow-hidden hover:bg-eco-green active:bg-eco-green hover:border-eco-green-dark hover:border-2'>
+                  <article className='group grid grid-rows-row-s-1 border-2 border-eco-green-dark rounded-lg overflow-hidden bg-eco-green hover:bg-white hover:border-eco-green-dark hover:border-2'>
                     <Goal goal={goal} key={index} />
                   </article>
                 );
