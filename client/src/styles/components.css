@@ -21,6 +21,10 @@
     @apply capitalize border-2 rounded-md text-center px-4 py-2 text-eco-green bg-white border-eco-green hover:bg-eco-green-med hover:border-eco-green-dark hover:text-white focus:bg-eco-green focus:border-eco-green-dark focus:text-white focus:hover:text-slate-200 dark:bg-black dark:text-eco-green font-poppins
 }
 
+.submit__button {
+    @apply border-2 rounded-md text-center px-4 py-2 text-eco-green bg-white border-eco-green hover:bg-eco-green-med hover:border-eco-green-dark hover:text-white focus:bg-eco-green focus:border-eco-green-dark focus:text-white focus:hover:text-slate-200 dark:bg-black dark:text-eco-green font-poppins cursor-pointer w-full
+}
+
 /* TYPOGRAPHY */
 .section__title {
     @apply text-eco-green font-extrabold text-4xl text-center py-4 md:pb-6
