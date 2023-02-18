@@ -18,13 +18,13 @@ function Profile() {
         <div className='bg-white dark:bg-black'>
           <Navbar />
           <section className='grid w-full'>
-            <div className='flex justify-center mt-4'>
-              <h2 className='text-eco-green font-bold'>Profile</h2>
+            <div className='flex justify-center my-4'>
+              <h2 className='text-eco-green font-bold text-2xl'>Profile</h2>
             </div>
-            <section className='grid justify-center mt-2'>
+            <section className='grid justify-center'>
               <div className='flex justify-center mb-4'>
                 <img
-                  className='rounded-full w-36 h-36 border-4 border-eco-green'
+                  className='rounded-full w-44 h-44 border-4 border-eco-green'
                   src={Default}
                   alt='Default'
                 />
