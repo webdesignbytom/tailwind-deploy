@@ -16,7 +16,7 @@ function Register() {
             <article className='hidden lg:block text-eco-green text-center text-6xl font-extrabold'>
               <h1>myecoapp</h1>
             </article>
-            <section className='dark:bg-black'>
+            <section className='dark:bg-black grid justify-center'>
               <div className='container px-6 py-6 h-full'>
                 <div className='flex justify-center items-center flex-wrap h-full g-6 text-gray-800 lg:mb-6'>
                   <div className='flex flex-col lg:pl-12 md:w-8/12 lg:w-6/12 mb-12 md:mb-0'>
