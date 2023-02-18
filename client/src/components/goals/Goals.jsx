@@ -24,7 +24,7 @@ function Goals() {
           <section className='grid lg:grid-cols-3 gap-4'>
             {GoalsList.map((goal, index) => {
               return (
-                <article className='border-2 border-eco-green rounded-lg'>
+                <article className='border-2 border-eco-green rounded-lg overflow-hidden'>
                   <Goal goal={goal} key={index} />
                 </article>
               );
