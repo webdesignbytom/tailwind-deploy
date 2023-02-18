@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import Header from '../../components/header/Header';
 import { Navbar, PhoneNav } from '../../components/nav/Navbar';
 import About from '../../components/about/About';
+import Goals from '../../components/goals/Goals';
 
 function Home() {
   const { toggleNavigation } = useContext(ToggleContext);
@@ -18,6 +19,7 @@ function Home() {
             <Navbar />
             <Header />
             <About />
+            <Goals />
           </div>
         </div>
       )}
