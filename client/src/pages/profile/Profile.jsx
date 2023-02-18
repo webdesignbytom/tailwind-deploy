@@ -15,7 +15,7 @@ function Profile() {
       {toggleNavigation ? (
         <PhoneNav />
       ) : (
-        <div className='bg-white dark:bg-black'>
+        <div className='bg-white dark:bg-black h-screen'>
           <Navbar />
           <section className='grid w-full'>
             <div className='flex justify-center my-4'>
