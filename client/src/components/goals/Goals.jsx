@@ -33,7 +33,7 @@ function Goals() {
             <section className='grid lg:grid-cols-3 gap-4'>
               {GoalsList.map((goal, index) => {
                 return (
-                  <article className='group grid grid-rows-row-s-1 border-2 border-eco-green-dark rounded-lg overflow-hidden bg-eco-green hover:bg-white hover:border-eco-green-dark hover:border-2'>
+                  <article className='group grid grid-rows-row-s-1 border-2 border-eco-green-dark rounded-lg overflow-hidden bg-eco-green hover:bg-white hover:border-eco-green-dark hover:border-2 dark:hover:bg-black'>
                     <Goal goal={goal} key={index} />
                   </article>
                 );
