@@ -27,7 +27,7 @@
 }
 
 .small__title {
-    @apply text-sm font-semibold tracking-wider uppercase text-eco-green rounded-full
+    @apply text-sm font-semibold tracking-wider uppercase text-eco-green rounded-full pl-2 pt-2
 }
 
 .secondary__title {

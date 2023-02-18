@@ -1,5 +1,6 @@
 import React from 'react';
 import { GoalsList } from '../../utils/GoalsList';
+import Goal from './Goal';
 
 function Goals() {
   return (
@@ -13,18 +14,20 @@ function Goals() {
           <section className=''>
             <article className='mb-2'>
               <p className='text__container'>
-                We have three main goals we hope to achieve. Again everything we are doing, is to try and help the environment and people in need of help with rising fuel costs. 
+                We have three main goals we hope to achieve. Again everything we
+                are doing, is to try and help the environment and people in need
+                of help with rising fuel costs.
               </p>
             </article>
           </section>
 
           <section className='grid lg:grid-cols-3 gap-4'>
             {GoalsList.map((goal, index) => {
-                return (
-                    <article className='border-2 border-eco-green rounded-lg p-4'>
-                        {goal.title}
-                    </article>
-                )
+              return (
+                <article className='border-2 border-eco-green rounded-lg'>
+                  <Goal goal={goal} key={index} />
+                </article>
+              );
             })}
           </section>
         </section>
