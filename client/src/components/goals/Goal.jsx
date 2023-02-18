@@ -5,7 +5,7 @@ function Goal({ goal }) {
     <>
       <div>
         <div className='flex justify-center mt-4 mb-2'>
-          <h3 className='small__title__hover bg-eco-green-pale w-max group-hover:text-eco-green group-active:text-eco-green'>
+          <h3 className='small__title__hover'>
             {goal.title}
           </h3>
         </div>

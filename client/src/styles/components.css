@@ -34,8 +34,9 @@
     @apply text-sm font-semibold tracking-wider uppercase text-eco-green rounded-full pl-2 pt-2
 }
 
+/* Goals */
 .small__title__hover {
-    @apply text-sm font-semibold tracking-wider uppercase text-white rounded-full p-2
+    @apply text-sm font-semibold tracking-wider uppercase text-white rounded-full p-2 bg-eco-green-pale w-max group-hover:text-eco-green group-active:text-eco-green
 }
 
 .secondary__title {
