@@ -5,7 +5,7 @@ function AboutElement({ elementSelected }) {
     <>
       <div>
         <h3 className='small__title'>{elementSelected.title}</h3>
-        <p className='text__container'>{elementSelected.content}</p>
+        <p className='secondary__container'>{elementSelected.content}</p>
       </div>
     </>
   );

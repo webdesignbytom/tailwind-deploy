@@ -34,10 +34,18 @@
     @apply text-sm font-semibold tracking-wider uppercase text-eco-green rounded-full pl-2 pt-2
 }
 
+.small__title__hover {
+    @apply text-sm font-semibold tracking-wider uppercase text-eco-green rounded-full pl-2 pt-2
+}
+
 .secondary__title {
     @apply text-2xl font-extrabold tracking-wider text-eco-green rounded-full
 }
 
 .text__container {
     @apply text-sm font-poppins p-2 dark:text-white
+}
+
+.secondary__container {
+    @apply text-xs font-poppins p-2 dark:text-white
 }

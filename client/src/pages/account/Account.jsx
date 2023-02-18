@@ -27,7 +27,7 @@ function Account() {
                 <h3>Personal Data</h3>
                 <ul>
                   <li>
-                    <Link to='/profile'>Profile Information</Link>
+                    <Link className='dark:text-white' to='/profile'>Profile Information</Link>
                   </li>
                 </ul>
               </section>

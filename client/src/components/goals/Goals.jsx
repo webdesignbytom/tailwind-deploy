@@ -21,14 +21,20 @@ function Goals() {
             </article>
           </section>
 
-          <section className='grid lg:grid-cols-3 gap-4'>
-            {GoalsList.map((goal, index) => {
-              return (
-                <article className='border-2 border-eco-green rounded-lg overflow-hidden'>
-                  <Goal goal={goal} key={index} />
-                </article>
-              );
-            })}
+          {/* Secondary info */}
+          <section className='grid'>
+            <div className='text-center mt-2 mb-6'>
+              <h3 className='secondary__title'>Our Ideas</h3>
+            </div>
+            <section className='grid lg:grid-cols-3 gap-4'>
+              {GoalsList.map((goal, index) => {
+                return (
+                  <article className='group grid grid-rows-row-s-1 border-2 border-eco-green rounded-lg overflow-hidden hover:bg-eco-green active:bg-eco-green hover:border-eco-green-dark hover:border-2'>
+                    <Goal goal={goal} key={index} />
+                  </article>
+                );
+              })}
+            </section>
           </section>
         </section>
       </section>
