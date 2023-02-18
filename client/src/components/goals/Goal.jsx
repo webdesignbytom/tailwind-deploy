@@ -10,7 +10,7 @@ function Goal({ goal }) {
         <p className='secondary__container'>{goal.content}</p>
       </div>
       <div className='border-2 border-eco-green group-hover:border-2 group-hover:border-eco-green-dark rounded overflow-hidden m-2 box-content'>
-        <img className='h-[300px]' src={goal.image} alt={goal.title} />
+        <img className='h-[280px]' src={goal.image} alt={goal.title} />
       </div>
     </>
   );

@@ -1,5 +1,7 @@
 import React from 'react';
+// Data
 import { GoalsList } from '../../utils/GoalsList';
+// Components
 import Goal from './Goal';
 
 function Goals() {
