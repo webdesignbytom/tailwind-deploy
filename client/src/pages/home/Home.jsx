@@ -5,6 +5,7 @@ import Header from '../../components/header/Header';
 import { Navbar, PhoneNav } from '../../components/nav/Navbar';
 import About from '../../components/about/About';
 import Goals from '../../components/goals/Goals';
+import Funding from '../../components/funding/Funding';
 
 function Home() {
   const { toggleNavigation } = useContext(ToggleContext);
@@ -20,6 +21,7 @@ function Home() {
             <Header />
             <About />
             <Goals />
+            <Funding />
           </div>
         </div>
       )}
