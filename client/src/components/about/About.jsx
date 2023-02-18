@@ -17,13 +17,7 @@ function About() {
           <section className='lg:grid lg:grid-cols-2-1 lg:gap-4'>
             <article className='mb-2'>
               <p className='text__container'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-                asperiores, in aliquam cum repudiandae sequi, nobis atque ipsum
-                explicabo tempora, aut quo consequatur perspiciatis est ullam
-                accusantium! Provident vero obcaecati debitis nesciunt mollitia,
-                modi ad reprehenderit magni unde excepturi aperiam velit
-                molestias aliquam, corporis fugit ducimus repellendus, vitae
-                harum accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequuntur perspiciatis veniam sequi excepturi eius iure ad laborum mollitia perferendis deleniti voluptates eum modi, dolorem omnis sunt quas fugit dicta cupiditate similique dolor facilis vero? Cum, explicabo natus dolorum similique est eos labore quidem veritatis, accusantium, vitae ullam iure saepe.
+                We have a simple philosphy and a simple goal. We want to help the environment and the people living in it. In England fuel costs are outrageous and most people couldnt afford to upgrade to solar or renewable energies even if they wanted to. Many people also feel like they are under attack from environmental groups and it causes anger at the environment. To help the people and the environment at the same time. We aim to use online earnings from free events our users and followers can take part in. It's a new age, and we dont need to solicate donation. We can use computers to create value. Mainly from advertsing companies. Which we pass on to causes to help the planet.
               </p>
             </article>
 
