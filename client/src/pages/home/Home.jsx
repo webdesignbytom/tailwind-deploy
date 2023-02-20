@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+// Context
 import { ToggleContext } from '../../context/ToggleContext';
-import { useContext } from 'react';
+// Components
+import { Navbar, PhoneNav } from '../../components/nav/Navbar';
 import Header from '../../components/header/Header';
-import Navbar from '../../components/nav/Navbar';
+import About from '../../components/about/About';
+import Goals from '../../components/goals/Goals';
+import Funding from '../../components/funding/Funding';
 
 function Home() {
   const { toggleNavigation } = useContext(ToggleContext);
@@ -10,12 +14,15 @@ function Home() {
   return (
     <>
       {toggleNavigation ? (
-        <Navbar />
+        <PhoneNav />
       ) : (
         <div className='bg-white dark:bg-black'>
           <div className='h-screen grid lg:pt-4'>
             <Navbar />
             <Header />
+            <About />
+            <Goals />
+            <Funding />
           </div>
         </div>
       )}

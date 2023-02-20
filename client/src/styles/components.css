@@ -1,0 +1,60 @@
+/* SECTIONS */
+/* Main */
+.hero__container {
+    @apply bg-white dark:bg-black px-4 py-8 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:mx-auto
+}
+.section__container {
+    @apply flex flex-col gap-4 bg-white dark:bg-black px-4 py-8 md:max-w-full lg:max-w-screen-xl lg:gap-6 md:px-24 lg:px-8 lg:mx-auto lg:mb-12
+}
+
+/* BUTTONS */
+/* Green Button */
+.main__button {
+    @apply bg-eco-green dark:bg-eco-green border-2 rounded-md px-4 py-2 text-center text-white dark:text-white dark:border-eco-green-dark active:text-slate-100 hover:bg-eco-green hover:border-eco-green-dark dark:hover:text-black font-poppins
+}
+/* White Button */
+.accent__button {
+    @apply border-2 rounded-md text-center text-eco-green-dark border-eco-green hover:bg-eco-green px-4 py-2 hover:text-white dark:text-eco-green hover:border-eco-green-dark font-poppins
+}
+
+.control__button {
+    @apply capitalize border-2 rounded-md text-center px-4 py-2 text-eco-green bg-white border-eco-green hover:bg-eco-green-med hover:border-eco-green-dark hover:text-white focus:bg-eco-green focus:border-eco-green-dark focus:text-white focus:hover:text-slate-200 dark:bg-black dark:text-eco-green font-poppins
+}
+
+.submit__button {
+    @apply border-2 rounded-md text-center px-4 py-2 text-eco-green bg-white border-eco-green hover:bg-eco-green-med hover:border-eco-green-dark hover:text-white focus:bg-eco-green focus:border-eco-green-dark focus:text-white focus:hover:text-slate-200 dark:bg-black dark:text-eco-green font-poppins cursor-pointer w-full
+}
+
+/* TYPOGRAPHY */
+.section__title {
+    @apply text-eco-green font-extrabold text-4xl text-center py-4 md:pb-6
+}
+
+.small__title {
+    @apply text-sm font-semibold tracking-wider uppercase text-eco-green rounded-full pl-2 pt-2
+}
+
+/* Goals */
+.small__title__hover {
+    @apply text-sm font-semibold tracking-wider uppercase text-white rounded-full p-2 bg-eco-green-pale w-max group-hover:text-eco-green group-active:text-eco-green
+}
+
+.secondary__title {
+    @apply text-2xl font-extrabold tracking-wider text-eco-green rounded-full
+}
+
+.text__container {
+    @apply text-sm font-poppins p-2 dark:text-white
+}
+
+.secondary__container {
+    @apply lg:text-xs font-poppins p-2 dark:text-white text-sm
+}
+/* Account page */
+.account__header {
+    @apply text-white text-2xl lg:text-xl
+}
+
+.account__link {
+    @apply dark:text-white text-xl hover:text-slate-300 lg:text-lg
+}

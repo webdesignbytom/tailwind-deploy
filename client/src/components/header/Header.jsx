@@ -4,19 +4,19 @@ import CTA from './CTA';
 function Header() {
   return (
     <>
-      <section
+      <header
         id='hero'
-        className='px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'
+        className='hero__container'
       >
         <div className='flex flex-col items-center justify-between w-full mb-10 lg:flex-row'>
-          <div className='mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 lg:pl-5'>
+          <section className='mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 lg:pl-5'>
             <article className='max-w-xl mb-6'>
               <div>
                 <h4 className='inline-block font-semibold tracking-wider uppercase text-eco-green rounded-full'>
-                  Brand new web projectx
+                  Brand new web project
                 </h4>
               </div>
-              <h1 className='text-eco-green  font-extrabold text-6xl pb-6 md:py-4 text-center md:text-left'>
+              <h1 className='text-eco-green font-extrabold text-6xl pb-6 md:py-4 text-center md:text-left'>
                 myecoapp
               </h1>
               <h2 className='font-sans text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 sm:text-4xl sm:leading-none max-w-lg mb-6'>
@@ -26,7 +26,7 @@ function Header() {
                   and clicking
                 </span>
               </h2>
-              <p className='text-gray-700 dark:text-slate-100 text-base md:text-lg'>
+              <p className='text-text-grey dark:text-slate-100 text-base md:text-lg font-poppins'>
                 Help the environment from anywhere for free! At home or at any
                 event. Use our apps to earn while you relax. We have done what
                 we can to provide entertainment for you. Check it out below.
@@ -35,9 +35,9 @@ function Header() {
             <div className='flex items-center space-x-3'>
               <CTA />
             </div>
-          </div>
+          </section>
           {/* Phone images */}
-          <section className='flex h-full items-center justify-center lg:w-1/2'>
+          <section className='flex h-full items-center justify-center lg:w-1/2 lg:mt-6 lg:ml-6'>
             <div className='w-2/5'>
               <img
                 className='object-cover'
@@ -54,7 +54,7 @@ function Header() {
             </div>
           </section>
         </div>
-      </section>
+      </header>
     </>
   );
 }
