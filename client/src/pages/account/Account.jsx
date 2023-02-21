@@ -13,12 +13,12 @@ function Account() {
       {toggleNavigation ? (
         <PhoneNav />
       ) : (
-        <div className='grid grid-rows-a-1fr bg-white dark:bg-black h-screen'>
+        <div className='grid bg-white dark:bg-black h-screen'>
           <div className='lg:pt-4 '>
             <Navbar />
           </div>
-          <section className='grid grid-rows-a-1fr bg-eco-green dark:bg-black mt-4 lg:mx-8 font-poppins mx-2 h-full'>
-            <div className='text-center py-4 lg:py-8 h-min'>
+          <section className='grid grid-rows-a-1fr bg-eco-green dark:bg-black mt-4 lg:mx-8 font-poppins mx-2 h-min'>
+            <div className='text-center py-4 lg:py-8'>
               <h2 className='text-3xl text-white'>Account</h2>
             </div>
             {/* Options */}
