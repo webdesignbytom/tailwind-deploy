@@ -3,7 +3,7 @@ import { ToggleContext } from '../../context/ToggleContext';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, PhoneNav } from '../../components/nav/Navbar';
-import { PrivacyData, AccountData, GameData } from '../../utils/AccountLinks';
+import { PrivacyData, AccountData, GameData, SettingsData } from '../../utils/AccountLinks';
 
 function Account() {
   const { toggleNavigation } = useContext(ToggleContext);
@@ -22,7 +22,7 @@ function Account() {
               <h2 className='text-3xl text-white'>Account</h2>
             </div>
             {/* Options */}
-            <div className='grid grid-rows-a-3fr lg:grid-cols-3 px-2 lg:px-6'>
+            <div className='grid grid-rows-a-3fr lg:grid-cols-4 px-2 lg:px-6'>
               {/* Personal Data */}
               <section>
                 <div className='account__header'>
@@ -30,6 +30,24 @@ function Account() {
                 </div>
                 <ul className='my-2'>
                   {AccountData.map((data, index) => {
+                    return (
+                      <li key={index}>
+                        <Link className='account__link' to='/profile'>
+                          {data.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+
+              {/* SettingsData Data */}
+              <section>
+                <div className='account__header'>
+                  <h3>Privacy Data</h3>
+                </div>
+                <ul className='my-2'>
+                  {SettingsData.map((data, index) => {
                     return (
                       <li key={index}>
                         <Link className='account__link' to='/profile'>
@@ -77,6 +95,8 @@ function Account() {
                   })}
                 </ul>
               </section>
+
+
             </div>
           </section>
         </div>
