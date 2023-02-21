@@ -1,4 +1,6 @@
 import React from 'react';
+// Data
+import { FundingOptions } from '../../utils/FundingOptions';
 
 function Funding() {
   return (
@@ -21,6 +23,17 @@ function Funding() {
               </p>
             </article>
           </section>
+        </section>
+        <section className='grid md:grid-cols-2 lg:grid-cols-3 gap-2'>
+          {FundingOptions.map((option, index) => {
+            return (
+              <article key={index} className='border-2 border-eco-green-dark rounded-md p-2'>
+                <h2>{option.title}</h2>
+                <img src={option.image} alt={option.title} />
+                <p className='secondary__container'>{option.content}</p>
+              </article>
+            );
+          })}
         </section>
       </section>
     </>
