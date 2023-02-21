@@ -1,7 +1,7 @@
 import React from 'react'
-import { ToggleContext } from '../../context/ToggleContext';
+import { ToggleContext } from '../../../context/ToggleContext';
 import { useContext } from 'react';
-import { Navbar, PhoneNav } from '../../components/nav/Navbar';
+import { Navbar, PhoneNav } from '../../../components/nav/Navbar';
 
 
 
