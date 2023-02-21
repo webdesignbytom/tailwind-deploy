@@ -14,7 +14,7 @@ function Account() {
         <PhoneNav />
       ) : (
         <div className='grid bg-white dark:bg-black h-screen'>
-          <div className='lg:pt-4 '>
+          <div className='lg:pt-4'>
             <Navbar />
           </div>
           <section className='grid grid-rows-a-1fr bg-eco-green dark:bg-black mt-4 lg:mx-8 font-poppins mx-2 h-min'>
