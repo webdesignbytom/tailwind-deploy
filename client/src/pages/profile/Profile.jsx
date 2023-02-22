@@ -16,7 +16,10 @@ function Profile() {
         <PhoneNav />
       ) : (
         <div className='bg-white dark:bg-black h-screen'>
+          <div className='lg:pt-4'>
+
           <Navbar />
+          </div>
           <section className='grid w-full'>
             <div className='flex justify-center my-4'>
               <h2 className='text-eco-green font-bold text-2xl'>Profile</h2>

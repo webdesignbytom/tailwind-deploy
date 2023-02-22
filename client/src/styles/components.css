@@ -36,7 +36,7 @@
 
 /* Goals */
 .small__title__hover {
-    @apply text-sm font-semibold tracking-wider uppercase text-white rounded-full p-2 bg-eco-green-pale w-max group-hover:text-eco-green group-active:text-eco-green
+    @apply text-sm font-semibold tracking-wider uppercase text-white rounded-full py-2 px-6 bg-eco-green-pale w-max group-hover:text-eco-green group-active:text-eco-green
 }
 
 .secondary__title {
@@ -50,6 +50,11 @@
 .secondary__container {
     @apply lg:text-xs font-poppins p-2 dark:text-white text-sm
 }
+
+.whiteText__container {
+    @apply lg:text-xs font-poppins p-2 lg:mx-2 text-white group-hover:text-black dark:text-white text-sm
+}
+
 /* Account page */
 .account__header {
     @apply text-white text-2xl lg:text-xl

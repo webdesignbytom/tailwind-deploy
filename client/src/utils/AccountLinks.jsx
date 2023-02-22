@@ -1,4 +1,31 @@
+// Images
+import ProfileSvg from '../assets/svg/profile.svg'
+
+
 export const PrivacyData = [
+    {
+        title: 'Privacy Policy',
+        url: 'https://www.myecoapp.org/privacy'
+    },
+    {
+        title: 'Data Collection',
+        url: 'https://www.myecoapp.org/data-collection'
+    },
+    {
+        title: 'User Policy',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Cookies Policy',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Cookies Policy',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+]
+
+export const SettingsData = [
     {
         title: 'Privacy Policy',
         url: 'https://www.myecoapp.org/privacy'
@@ -28,7 +55,8 @@ export const AccountData = [
     },
     {
         title: 'View Profile',
-        url: 'https://www.myecoapp.org/user-policy'
+        url: 'https://www.myecoapp.org/user-policy',
+        icon: ProfileSvg
     },
     {
         title: 'Badges',

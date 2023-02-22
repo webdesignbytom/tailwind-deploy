@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ToggleContext } from '../../context/ToggleContext';
-import Logo from '../../assets/img/myea-logo.svg';
+import Logo from '../../assets/svg/myea-logo.svg';
 
 const links = [
   { url: '/', title: 'Home' },
@@ -91,7 +91,7 @@ function PhoneNav() {
       <section className='grid h-screen'>
         <ul className='grid h-full text-3xl'>
           <li className='bg-eco-green flex items-center justify-end pr-8'>
-            <button className='dark:text-black text-xl' onClick={closeNavbar}>
+            <button className='text-white dark:text-black text-xl' onClick={closeNavbar}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'

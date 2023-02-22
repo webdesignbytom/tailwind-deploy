@@ -16,13 +16,14 @@ function Goals() {
           <section className=''>
             <article className='mb-2'>
               <p className='text__container mx-6'>
-                We have three main goals we hope to achieve. Again everything we
-                are doing, is to try and help the environment and people in need
-                of help with rising fuel costs. We have three main goals we hope to achieve. Again everything we
-                are doing, is to try and help the environment and people in need
-                of help with rising fuel costs.
+              <span className='font-extrabold'>The funds we raised need to have a goal that people can get
+                behind.</span> Our project relies on this site and our project reaching
+                as many people as possible. Growing exponentially to allow us to
+                help more people. We have three main goals we hope to achieve.
+                They are designed to make people appreciate what environmental conciousness can do for a community. Instead of blocking their roads we want to improve their lives by improving their environment.
               </p>
             </article>
+            
           </section>
 
           {/* Secondary info */}
