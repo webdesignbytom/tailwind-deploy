@@ -25,10 +25,10 @@ export const PrivacyData = [
     },
 ]
 
-export const SettingsData = [
+export const HelpData = [
     {
-        title: 'Privacy Policy',
-        url: 'https://www.myecoapp.org/privacy'
+        title: 'Contact us',
+        url: 'https://www.myecoapp.org/contact-us'
     },
     {
         title: 'Data Collection',
@@ -41,11 +41,7 @@ export const SettingsData = [
     {
         title: 'Cookies Policy',
         url: 'https://www.myecoapp.org/user-policy'
-    },
-    {
-        title: 'Cookies Policy',
-        url: 'https://www.myecoapp.org/user-policy'
-    },
+    }
 ]
 
 export const AccountData = [
@@ -71,19 +67,23 @@ export const AccountData = [
         url: 'https://www.myecoapp.org/users/badges'
     },
     {
-        title: 'Delete Profile',
+        title: 'Deactivate Account',
+        url: 'https://www.myecoapp.org/user-policy'
+    },
+    {
+        title: 'Delete Account',
         url: 'https://www.myecoapp.org/user-policy'
     },
 ]
 
 export const GameData = [
     {
-        title: 'Highscores',
-        url: 'https://www.myecoapp.org/games/highscores'
-    },
-    {
         title: 'Games',
         url: 'https://www.myecoapp.org/games'
+    },
+    {
+        title: 'Highscores',
+        url: 'https://www.myecoapp.org/games/highscores'
     },
     {
         title: 'Lottery',
@@ -94,19 +94,15 @@ export const GameData = [
         url: 'https://www.myecoapp.org/user-policy'
     },
     {
-        title: 'Reset Player Account Data',
+        title: 'Reset Account',
         url: 'https://www.myecoapp.org/user-policy'
     },
 ]
 
 export const UsefulLinks = [
     {
-        title: 'Help Center',
-        url: 'https://www.myecoapp.org/games'
-    },
-    {
-        title: 'Contact Us',
-        url: 'https://www.myecoapp.org/user-policy'
+        title: 'myecoshop',
+        url: 'https://www.myecoapp.shop'
     },
     {
         title: 'Find us on Facebook',
