@@ -4,8 +4,6 @@ import { useContext } from 'react';
 import { ToggleContext } from '../../context/ToggleContext';
 // Components
 import { Navbar, PhoneNav } from '../../components/nav/Navbar';
-import Image1 from '../../assets/img/bg1.png'
-import Image2 from '../../assets/img/bg2.png'
 import './myecohome.css'
 
 
