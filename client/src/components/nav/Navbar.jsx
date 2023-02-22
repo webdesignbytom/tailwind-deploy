@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ToggleContext } from '../../context/ToggleContext';
-import Logo from '../../assets/img/myea-logo.svg';
+import Logo from '../../assets/svg/myea-logo.svg';
 
 const links = [
   { url: '/', title: 'Home' },

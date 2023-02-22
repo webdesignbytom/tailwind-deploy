@@ -1,3 +1,7 @@
+// Images
+import ProfileSvg from '../assets/svg/profile.svg'
+
+
 export const PrivacyData = [
     {
         title: 'Privacy Policy',
@@ -51,7 +55,8 @@ export const AccountData = [
     },
     {
         title: 'View Profile',
-        url: 'https://www.myecoapp.org/user-policy'
+        url: 'https://www.myecoapp.org/user-policy',
+        icon: ProfileSvg
     },
     {
         title: 'Badges',

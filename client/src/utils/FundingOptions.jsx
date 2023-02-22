@@ -4,7 +4,7 @@ import FundRaising from '../assets/img/fundraising.png'
 import SocialMedia from '../assets/img/socialMedia.jpg'
 import Power from '../assets/img/power.jpg'
 import Lottery from '../assets/img/lottery.jpg'
-import MyeaLogo from '../assets/img/myea-logo.svg'
+import MyeaLogo from '../assets/svg/myea-logo.svg'
 
 export const FundingOptions = [
     {

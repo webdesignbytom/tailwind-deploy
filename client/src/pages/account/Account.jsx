@@ -1,9 +1,17 @@
 import React from 'react';
-import { ToggleContext } from '../../context/ToggleContext';
-import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+// Context
+import { useContext } from 'react';
+import { ToggleContext } from '../../context/ToggleContext';
+// Components
 import { Navbar, PhoneNav } from '../../components/nav/Navbar';
-import { PrivacyData, AccountData, GameData, SettingsData } from '../../utils/AccountLinks';
+// Data
+import {
+  PrivacyData,
+  AccountData,
+  GameData,
+  SettingsData,
+} from '../../utils/AccountLinks';
 
 function Account() {
   const { toggleNavigation } = useContext(ToggleContext);
@@ -58,6 +66,7 @@ function Account() {
                   })}
                 </ul>
               </section>
+
               {/* Game Data */}
               <div className='lg:hidden border-b-2 border-white my-2'></div>
               <section>
@@ -95,8 +104,6 @@ function Account() {
                   })}
                 </ul>
               </section>
-
-
             </div>
           </section>
         </div>
