@@ -50,6 +50,11 @@
 .secondary__container {
     @apply lg:text-xs font-poppins p-2 dark:text-white text-sm
 }
+
+.whiteText__container {
+    @apply lg:text-xs font-poppins p-2 lg:mx-2 text-white group-hover:text-black dark:text-white text-sm
+}
+
 /* Account page */
 .account__header {
     @apply text-white text-2xl lg:text-xl
