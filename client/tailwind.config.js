@@ -32,7 +32,7 @@ module.exports = {
       gridTemplateRows: {
         'row-s-1': '0.5fr 1fr',
         'a-1fr': 'auto 1fr',
-        'a-3fr': '1fr auto 1fr auto 1fr auto',
+        'a-5fr': '1fr auto 1fr auto 1fr auto 1fr auto 1fr auto',
         'a-a': 'auto auto'
       }
     },
