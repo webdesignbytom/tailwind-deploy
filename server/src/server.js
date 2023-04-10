@@ -31,7 +31,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Set the port and URl
 const PORT = process.env.PORT || 4000;
-const HTTP_URL = process.env.HTTP_URL || 'https://webdesignsbytom-app.vercel.app';
+const HTTP_URL = process.env.HTTP_URL || 'https://myecoapp-deploy.vercel.app/';
 
 // Create path to HTML
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));

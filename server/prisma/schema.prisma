@@ -16,8 +16,155 @@ enum Role {
 }
 
 model User {
-  id       String @id @default(uuid())
-  email    String @unique
-  password String
-  role     Role   @default(USER)
+  id             String            @id @default(uuid())
+  email          String            @unique
+  username       String            @unique
+  password       String
+  firstName      String            @default("")
+  lastName       String            @default("")
+  country        String            @default("")
+  role           Role              @default(USER)
+  profileImage   String?           @default("https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png")
+  createdEvents  Event[]           @relation("createdEvents")
+  receivedEvents Event[]           @relation("receivedEvents")
+  isVerified     Boolean           @default(false)
+  verifications  UserVerification?
+  passwordReset  PasswordReset?
+  notifications  Notification[]
+  messages       Message[]
+  puchaseHistory PuchaseHistory[]
+  review         Review?
+  complaints     Complaint?
+  agreedToTerms  Boolean           @default(false)
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime?         @updatedAt
+}
+
+model UserVerification {
+  id           String    @id @default(uuid())
+  uniqueString String    @unique
+  userId       String    @unique
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt    DateTime
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime? @updatedAt
+}
+
+model PuchaseHistory {
+  id        String   @id @default(uuid())
+  title     String   @default("")
+  order     String
+  amount    Int
+  userId    String   @unique
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model PasswordReset {
+  id           String    @id @default(uuid())
+  uniqueString String    @unique
+  userId       String    @unique
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt    DateTime
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime? @updatedAt
+}
+
+enum NotificationType {
+  PURCHASE
+  MESSAGE
+  OFFER
+  GAME
+  HIGHSCORE
+  NEWS
+  TEST
+}
+
+model Notification {
+  id        String           @id @default(uuid())
+  type      NotificationType
+  content   String
+  userId    String
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  viewed    Boolean          @default(false)
+  createdAt DateTime         @default(now())
+  updatedAt DateTime?        @updatedAt
+}
+
+model Message {
+  id           String    @id @default(uuid())
+  subject      String    @default("untitled")
+  content      String    @default("")
+  sentFromId   String
+  sentFromName String    @default("")
+  userId       String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  viewed       Boolean   @default(false)
+  starred      Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime? @updatedAt
+}
+
+// EVENTS
+enum EventType {
+  ERROR
+  USER
+  ADMIN
+  VISITOR
+  DEVELOPER
+  TEST
+}
+
+model Event {
+  id           String    @id @default(uuid())
+  type         EventType
+  topic        String?
+  code         Int?
+  content      String?
+  createdBy    User?     @relation("createdEvents", fields: [createdById], references: [id], onDelete: Cascade)
+  createdById  String?
+  receivedBy   User?     @relation("receivedEvents", fields: [receivedById], references: [id], onDelete: Cascade)
+  receivedById String?
+  viewed       Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime? @updatedAt
+}
+
+model Contact {
+  id        String    @id @default(uuid())
+  email     String    @unique
+  phone     String    @default("")
+  firstName String    @default("")
+  lastName  String    @default("")
+  country   String    @default("")
+  message   String    @default("")
+  viewed    Boolean   @default(false)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+}
+
+// User reviews
+model Review {
+  id        String    @id @default(uuid())
+  value     Int
+  email     String    @unique
+  userId    String?   @unique
+  user      User?     @relation(fields: [userId], references: [id])
+  viewed    Boolean   @default(false)
+  content   String
+  image     String?
+  url       String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+}
+
+model Complaint {
+  id        String    @id @default(uuid())
+  email     String    @unique
+  userId    String?   @unique
+  user      User?     @relation(fields: [userId], references: [id])
+  content   String
+  viewed    Boolean   @default(false)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
 }
