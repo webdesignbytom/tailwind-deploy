@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 // Data
-import { AboutSections } from '../../utils/AboutSections';
+import { AboutSections } from '../../utils/data/AboutSections';
 // Components
 import AboutElement from './AboutElement';
 // Images
 import Banner from '../../assets/img/bannerImg.jpeg';
-import MyeaBanner from '../../assets/img/myea-banner.png';
+import MyeaBanner from '../../assets/img/myea/myea-banner.png';
 
 function About() {
   const [elementSelected, setElementSelected] = useState(AboutSections[0]);

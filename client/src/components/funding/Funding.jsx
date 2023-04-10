@@ -1,6 +1,6 @@
 import React from 'react';
 // Data
-import { FundingOptions } from '../../utils/FundingOptions';
+import { FundingOptions } from '../../utils/data/FundingOptions';
 
 function Funding() {
   return (

@@ -1,5 +1,5 @@
 // Images
-import ProfileSvg from '../assets/svg/profile.svg'
+import ProfileSvg from '../../assets/svg/profile.svg'
 
 
 export const PrivacyData = [

@@ -1,6 +1,6 @@
-import SolarPanel from '../assets/img/solar.jpg'
-import SolarHeater from '../assets/img/solarheater.jpeg'
-import Park from '../assets/img/park.jpg'
+import SolarPanel from '../../assets/img/solar.jpg'
+import SolarHeater from '../../assets/img/solarheater.jpeg'
+import Park from '../../assets/img/park.jpg'
 
 export const GoalsList = [
     {

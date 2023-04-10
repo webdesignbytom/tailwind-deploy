@@ -1,6 +1,6 @@
 import React from 'react';
 // Data
-import { GoalsList } from '../../utils/GoalsList';
+import { GoalsList } from '../../utils/data/GoalsList';
 // Components
 import Goal from './Goal';
 
