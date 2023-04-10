@@ -1,6 +1,7 @@
 export const registerDataTemplate = {
   email: '',
   password: '',
+  username: '',
   confirmPassword: '',
   firstName: '',
   lastName: '',
@@ -8,23 +9,16 @@ export const registerDataTemplate = {
   agreedToTerms: false,
 };
 
-export const registerFormResponses = {
-  password: false,
-  passwordMatchError: false,
-  passwordLengthError: false,
-  agreedToTermsError: false,
-  passwordMessage: 'Password Accepted',
-  passwordError: 'Passwords do not match',
-};
-
 export const loginDataTemplate = {
   email: '',
+  username: '',
   password: '',
 };
 
 export const sampleUserData = {
   id: '',
   email: '',
+  username: '',
   firstName: '',
   lastName: '',
   country: '',
@@ -35,8 +29,3 @@ export const sampleUserData = {
   updatedAt: '',
 };
 
-export const statusResults = {
-  status: false,
-  result: 'failed',
-  message: '',
-};

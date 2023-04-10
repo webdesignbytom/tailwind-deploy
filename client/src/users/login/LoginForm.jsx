@@ -4,25 +4,20 @@ import { Link, useNavigate } from 'react-router-dom';
 import { SubmitButton } from '../../components/utils/Utils';
 // Utils
 import { showPassword } from '../../users/utils/PasswordReveal';
-import { loginDataTemplate, statusResults } from '../utils/utils';
+import { loginDataTemplate } from '../utils/utils';
 // Icons
 import OpenEye from '../../assets/svg/eye.svg';
 
 function LoginForm({ setUser }) {
-  const [loginResponseMessage, setLoginResponseMessage] =
-    useState(statusResults);
-  const [loadingAnimation, setLoadingAnimation] = useState(false);
-  const [mainButtonContent, setMainButtonContent] = useState(true);
   const [rememberMeChecked, setRememberMeChecked] = useState(true);
   const [loginForm, setLoginForm] = useState(loginDataTemplate);
-  const [successLoginUser, setSuccessLoginUser] = useState('');
   const [fieldType, setFieldType] = useState('password');
   const [eyeIcon, setEyeIcon] = useState(OpenEye);
 
   let navigate = useNavigate();
 
-  const homePage = () => {
-    navigate('/account', { replace: true });
+  const navigateHomePage = () => {
+    navigate('/', { replace: true });
   };
 
   const handleChange = (event) => {
@@ -36,9 +31,6 @@ function LoginForm({ setUser }) {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    setLoadingAnimation(!loadingAnimation);
-    //
-    // postLogin(loginForm, setSuccessLoginUser, setUser, homePage);
   };
 
   return (
@@ -47,7 +39,9 @@ function LoginForm({ setUser }) {
         onSubmit={handleLogin}
         className='pb-2 lg:mt-10 lg:w-full lg:my-auto lg:px-8'
       >
-        <h2 className='text-xl py-2 dark:text-white'>Login here</h2>
+        <article>
+          <h2 className='text-xl py-2 dark:text-white'>Login here</h2>
+        </article>
 
         {/* <!-- Email input --> */}
         <div className='mb-6'>
@@ -62,7 +56,7 @@ function LoginForm({ setUser }) {
         </div>
 
         {/* <!-- Password input --> */}
-        <div className='mb-6 relative flex z-0'>
+        <section className='mb-6 relative flex z-0'>
           <input
             type={fieldType}
             name='password'
@@ -82,9 +76,9 @@ function LoginForm({ setUser }) {
               alt='open eye'
             />
           </label>
-        </div>
+        </section>
 
-        <div className='flex justify-between items-center mb-6'>
+        <section className='flex justify-between items-center mb-6'>
           <div className='form-group form-check'>
             <input
               type='checkbox'
@@ -108,30 +102,21 @@ function LoginForm({ setUser }) {
           >
             Forgot password?
           </Link>
-        </div>
-
-        {successLoginUser && <p>Success</p>}
+        </section>
 
         {/* <!-- Submit button --> */}
-        <div className='mb-2'>
-          <SubmitButton
-            loadingAnimation={loadingAnimation}
-            mainButtonContent={mainButtonContent}
-            responseMessage={loginResponseMessage}
-            buttonMessage='Login'
-            spinnerHeight='h-5'
-            spinnerWidth='w-5'
-          />
-        </div>
+        <section className='mb-2'>
+          <SubmitButton />
+        </section>
 
-        <div className='mb-6 text-center'>
+        <article className='mb-6 text-center'>
           <Link to='/register'>
             <p className='dark:text-white'>
               Not a member? Click{' '}
               <span className='text-hyperlink-blue'>here</span> to register
             </p>
           </Link>
-        </div>
+        </article>
       </form>
     </>
   );

@@ -7,28 +7,19 @@ import {
   showConfirmPassword,
   showPassword,
 } from '../../users/utils/PasswordReveal';
-import {
-  registerDataTemplate,
-  registerFormResponses,
-  statusResults,
-} from '../utils/utils';
+import { registerDataTemplate } from '../utils/utils';
 import CountrySelect from '../utils/CountrySelect';
 // Validation
 import { validPassword } from '../../users/utils/Validation';
 import { SubmitButton } from '../../components/utils/Utils';
 
 function RegisterForm() {
-  const [registerResponseMessage, setRegisterResponseMessage] =
-    useState(statusResults);
-  const [loadingAnimation, setLoadingAnimation] = useState(false);
-  const [mainButtonContent, setMainButtonContent] = useState(true);
   const [fieldType, setFieldType] = useState('password');
   const [eyeIcon, setEyeIcon] = useState(OpenEye);
   const [fieldTypeConfirm, setFieldTypeConfirm] = useState('password');
   const [eyeIconConfirm, setEyeIconConfirm] = useState(OpenEye);
   const [registerForm, setRegisterForm] = useState(registerDataTemplate);
   const [agreedToTerms, setAgreedToTerms] = useState(false);
-  const [formResponses, setFormResponses] = useState(registerFormResponses);
   // Email and password
   const [hiddenPass, setHiddenPass] = useState('invisible h-4');
   const [hiddenEmail, setHiddenEmail] = useState('invisible h-4');
@@ -42,10 +33,6 @@ function RegisterForm() {
       if (registerForm.password > 0) {
         setHiddenPass('block');
         setInputStyle('standard__inputs');
-        setFormResponses((formResponses) => ({
-          ...formResponses,
-          password: true,
-        }));
       }
     }
     if (
@@ -54,14 +41,10 @@ function RegisterForm() {
     ) {
       setHiddenPass('block');
       setInputStyle('error__inputs');
-      setFormResponses((formResponses) => ({
-        ...formResponses,
-        password: false,
-      }));
     }
   }, [registerForm.password, registerForm.confirmPassword]);
 
-  const login = () => {
+  const navigateLogin = () => {
     navigate('../login', { replace: true });
   };
 
@@ -77,15 +60,7 @@ function RegisterForm() {
     const { name, value } = event.target;
 
     if (registerForm.password.length > 8) {
-      setFormResponses({
-        ...formResponses,
-        passwordLengthError: false,
-      });
     } else {
-      setFormResponses({
-        ...formResponses,
-        passwordLengthError: true,
-      });
     }
 
     setRegisterForm({
@@ -96,18 +71,10 @@ function RegisterForm() {
 
   const handleRegister = (event) => {
     event.preventDefault();
-    setMainButtonContent(false);
-    setLoadingAnimation(true);
 
     if (registerForm.password !== registerForm.confirmPassword) {
-      setFormResponses({
-        ...formResponses,
-        passwordMatchError: true,
-        password: false,
-      });
       setHiddenPass('block');
       setInputStyle('error__inputs');
-      setLoadingAnimation(false);
       return;
     }
 
@@ -115,45 +82,29 @@ function RegisterForm() {
 
     if (checkPassword === false) {
       alert('Passwords too short');
-      setFormResponses({
-        ...formResponses,
-        passwordLengthError: true,
-      });
-      setLoadingAnimation(false);
       return;
     }
 
     if (agreedToTerms !== true) {
       alert('Please check to agree to terms and conditons');
-      setFormResponses({
-        ...formResponses,
-        agreedToTermsError: true,
-      });
-      setLoadingAnimation(false);
       return;
     }
 
-    setFormResponses({
-      passwordMatchError: true,
-      passwordLengthError: true,
-      agreedToTermsError: true,
-    });
-
     const userData = registerForm;
-
-    // postRegister(userData, login);
   };
-  
+
   return (
     <>
       <form
         onSubmit={handleRegister}
         className='pb-4 lg:w-full dark:bg-black lg:my-auto lg:px-8'
       >
-        <h2 className='text-xl py-2 dark:text-white'>Register here</h2>
+        <section>
+          <h2 className='text-xl py-2 dark:text-white'>Register here</h2>
+        </section>
 
         {/* <!-- Email input --> */}
-        <div>
+        <section>
           <div>
             <input
               type='text'
@@ -163,12 +114,7 @@ function RegisterForm() {
               onChange={handleChange}
             />
           </div>
-          <p className={hiddenEmail}>
-            <span className='text-xs text-black dark:text-red-500 font-medium'>
-              Oh, snapp! Some error message.{' '}
-            </span>
-          </p>
-        </div>
+        </section>
 
         {/* <!-- Password input --> */}
         <div>
@@ -194,11 +140,10 @@ function RegisterForm() {
               />
             </label>
           </div>
-          <p className='h-4'></p>
         </div>
 
         {/* <!--Confirm Password input --> */}
-        <div>
+        <section>
           <div className='relative flex z-0'>
             <input
               type={fieldTypeConfirm}
@@ -225,19 +170,7 @@ function RegisterForm() {
               />
             </label>
           </div>
-          <p className={hiddenPass}>
-            {formResponses.password === true && (
-              <span className='text-xs text-green-500 dark:text-green-700 font-medium'>
-                {formResponses.passwordMessage}
-              </span>
-            )}
-            {formResponses.password === false && (
-              <span className='text-xs text-red-500 dark:text-red-700 font-medium'>
-                {formResponses.passwordError}
-              </span>
-            )}
-          </p>
-        </div>
+        </section>
 
         {/* <!-- FirstName input --> */}
         <div className=''>
@@ -297,14 +230,7 @@ function RegisterForm() {
 
         <div className='mt-2'>
           <div className='mb-2'>
-            <SubmitButton
-              loadingAnimation={loadingAnimation}
-              mainButtonContent={mainButtonContent}
-              responseMessage={registerResponseMessage}
-              buttonMessage='Sign Up'
-              spinnerHeight='h-5'
-              spinnerWidth='w-5'
-            />
+            <SubmitButton />
           </div>
         </div>
 
