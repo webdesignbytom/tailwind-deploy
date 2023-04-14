@@ -7,8 +7,12 @@ async function seed() {
   const testUser = await dbClient.user.create({
     data: {
       email: `xtombrock1989@gmail.com`,
-      username: `xtombrock`,
       password,
+      profile: {
+        create: {
+          username: `xtombrock`,
+        },
+      },
     },
   });
 
@@ -17,11 +21,13 @@ async function seed() {
       email: 'dev@dev.com',
       password,
       role: 'DEVELOPER',
-      username: `deve`,
-    }
+      profile: {
+        create: {
+          username: `deve`,
+        },
+      },
+    },
   });
-
- 
 
   // // EVENTS
   // const eventOne = await dbClient.event.create({
