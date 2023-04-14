@@ -14,6 +14,8 @@ import notificationRouter from './routes/notifications.js';
 import messageRouter from './routes/messages.js';
 import reviewRouter from './routes/reviews.js';
 import userRouter from './routes/users.js';
+// Env
+import { HTTP_URL, PORT } from './utils/config.js';
 
 const app = express();
 app.disable('x-powered-by');
@@ -28,10 +30,6 @@ app.use(
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// Set the port and URl
-const PORT = process.env.PORT || 4000;
-const HTTP_URL = process.env.HTTP_URL || 'https://myecoapp-deploy.vercel.app/';
 
 // Create path to HTML
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));

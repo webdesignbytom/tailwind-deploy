@@ -56,11 +56,12 @@ export const getAllUsers = async (req, res) => {
   console.log('getAllUsers');
   try {
     const foundUsers = await findAllUsers();
+    
     if (!foundUsers) {
       const notFound = new NotFoundEvent(
         req.user,
         EVENT_MESSAGES.notFound,
-        EVENT_MESSAGES.allUsersNotFound
+        EVENT_MESSAGES.userNotFound
       );
       myEmitterErrors.emit('error', notFound);
       return sendMessageResponse(res, notFound.code, notFound.message);
