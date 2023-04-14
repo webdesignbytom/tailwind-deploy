@@ -5,6 +5,28 @@ import SocialMedia from '../../assets/img/socialMedia.jpg'
 import Power from '../../assets/img/power.jpg'
 import Lottery from '../../assets/img/lottery.jpg'
 import MyeaLogo from '../../assets/svg/myea-logo.svg'
+import SolarPanel from '../../assets/img/solar.jpg'
+import SolarHeater from '../../assets/img/solarheater.jpeg'
+import Park from '../../assets/img/park.jpg'
+
+// HOME PAGE
+export const GoalsList = [
+    {
+        title: 'Increasae Solar Production',
+        content: "England is so desprate for energy we are reopening coal power plants. With have thousands of miles of roof space available for solar energy. Instead of covering fields we want to cover every house in solar panels. This will also reduce our personal reliance on energy companies that have nothing but profits in mind.",
+        image: SolarHeater
+    },
+    {
+        title: 'Save People Money',
+        content: "Since the government has no intention to prevent energy companies from charging extortionate amounts, we feel we can generate good will for the environment by helping people living in it. We intend to give the entire solar set ups away and save families thousands each year. Not only that each family we help will generate more good will for our business and increase our traffic and therefore earnings.",
+        image: SolarPanel
+    },
+    {
+        title: 'Build Wildlife Areas',
+        content: "To help the planet we can't just help people produce energy. We need to help every creature that lives here to keep the life cycle turning. England loses huge amounts of hedgerows, grasslands and wetlands every yeat to build ugly concrete structures. We plan to reclaim areas which are unlivable and turn them into parks specifically designed for animals to live and find fruits to feed from.",
+        image: Park
+    }
+]
 
 export const FundingOptions = [
     {
@@ -43,4 +65,19 @@ export const FundingOptions = [
         image: Lottery,
         content: "By hosting an online lottery we can hope to raise huge amounts of money. The lottery will guarantee that if no one wins, everyone who bought a ticket gets one chance to win the pot in a second draw. The prize will be a percentage of the total raised from selling tickets. We aim to sell 1 million tickets at 20p each a week. Raising £200,000 from sales. Meaning each week we can afford to build a small park or install 40 house worth of solar panels!"
     }
+]
+
+export const AboutSections = [
+    {
+        title: 'People',
+        content: "We think the times are right for our projects. People are more unified than ever with the increase of technology and eco heroes we can follow. We can take all the people and there combined existance has value to someone. We can bring you together and profit from your existance. We don't want to mislead anyone. So we have been as clear as possible about all of our income and outgoings. "
+    },
+    {
+        title: 'Earnings',
+        content: "To earn our money for the environmental causes we have chosen, we wanted to try a new tactic instead of asking for money. The internet and our phones and electrical devices have the potential to earn money by having each one of you simply interact with our sites and features. Using no tactics hundreds of companies already employee we can profit from your clicks, views and user data we collect. I dont want that to sound siniser, everyone does it and we have user agreements stating exactly what we collect."
+    },
+    {
+        title: 'Projects',
+        content: "With millions of people world wide able to help our causes by simplily visiting our sites or uing our free online products and resources. We can use the funds generated to achieve a few goals we feel Worthy. From giving away solar panel to families in need of a break from rising energy costs, to building parks and wildlife areas where ever we can." 
+    } 
 ]
