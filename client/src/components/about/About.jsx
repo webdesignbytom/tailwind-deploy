@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Data
-import { AboutSections } from '../../utils/data/AboutSections';
+import { AboutSections } from '../../utils/data/CompanyData';
 // Components
 import AboutElement from './AboutElement';
 // Images

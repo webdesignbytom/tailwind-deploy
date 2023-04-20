@@ -20,6 +20,7 @@ import {
   AuthenticateAdmin,
   AuthenticateDeveloper,
 } from './users/utils/AuthenticateUser';
+import TemporaryHome from './pages/home/TemporaryHome';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -29,6 +30,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />} index />
+        <Route path='/home' element={<TemporaryHome />} index />
         <Route path='/myecohome' element={<Myecohome />} />
         <Route
           path='/account'
