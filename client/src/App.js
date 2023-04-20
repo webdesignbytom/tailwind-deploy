@@ -1,4 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
+// Analytics
+import ReactGA from 'react-ga';
 // Pages
 import Account from './pages/account/Account';
 import AdminPage from './pages/admin/AdminPage';
@@ -18,18 +20,10 @@ import {
   AuthenticateAdmin,
   AuthenticateDeveloper,
 } from './users/utils/AuthenticateUser';
-// Analytics
-import ReactGA from 'react-ga';
 
 function App() {
-  ReactGA.initialize('G-2DWCKVD9WK');
+  ReactGA.initialize('G-5TSPX20DLD');
   ReactGA.pageview('/');
-  ReactGA.pageview('/contact');
-  ReactGA.pageview('/design');
-  ReactGA.pageview('/portfolio');
-  ReactGA.pageview('/login');
-  ReactGA.pageview('/store');
-  ReactGA.pageview('/new-project');
 
   return (
     <>
