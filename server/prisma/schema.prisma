@@ -57,7 +57,7 @@ model LoginData {
 model Profile {
   id            String            @id @default(uuid())
   userId        String            @unique
-  user          User              @relation(fields: [userId], references: [id])
+  user          User              @relation(fields: [userId], references: [id], onDelete: Cascade)
   username      String            @unique @db.VarChar(28)
   city          String?           @db.VarChar(100)
   country       String            @default("Earth")
@@ -80,7 +80,7 @@ model SocialMediaLink {
   id        String    @id @default(uuid())
   name      String
   url       String
-  profile   Profile?  @relation(fields: [profileId], references: [id])
+  profile   Profile?  @relation(fields: [profileId], references: [id], onDelete: Cascade)
   profileId String?
   createdAt DateTime  @default(now())
   updatedAt DateTime? @updatedAt
@@ -94,7 +94,7 @@ model Badge {
   image     String
   message   String    @db.VarChar(250)
   userId    String    @unique
-  user      User      @relation(fields: [userId], references: [id])
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   createdAt DateTime  @default(now())
   updatedAt DateTime? @updatedAt
 }
