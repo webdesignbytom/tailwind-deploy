@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { SubmitButton } from '../../components/utils/Utils';
 // Utils
 import { showPassword } from '../../users/utils/PasswordReveal';
-import { loginDataTemplate } from '../utils/utils';
+import { loginDataTemplate } from '../utils/Utils';
 // Icons
 import OpenEye from '../../assets/svg/eye.svg';
 

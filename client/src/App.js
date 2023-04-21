@@ -29,8 +29,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home />} index />
-        <Route path='/home' element={<TemporaryHome />} index />
+        <Route path='/home' element={<Home />} />
+        <Route path='/' element={<TemporaryHome />} index />
         <Route path='/myecohome' element={<Myecohome />} />
         <Route
           path='/account'

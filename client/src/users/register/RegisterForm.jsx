@@ -7,7 +7,7 @@ import {
   showConfirmPassword,
   showPassword,
 } from '../../users/utils/PasswordReveal';
-import { registerDataTemplate } from '../utils/utils';
+import { registerDataTemplate } from '../utils/Utils';
 import CountrySelect from '../utils/CountrySelect';
 // Validation
 import { validPassword } from '../../users/utils/Validation';
