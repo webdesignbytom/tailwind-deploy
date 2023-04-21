@@ -1,13 +1,11 @@
 import React from 'react';
+import Search from '../../components/search/SearchBar';
 
 function TemporaryHome() {
   return (
-    <div className='bg-main-colour grid h-screen items-center justify-center'>
+    <div className='bg-main-colour grid h-screen items-center justify-center w-full'>
       <main className='w-full'>
-        <div
-          class='gcse-searchbox-only'
-          data-resultsUrl='https://googlecustomsearch.appspot.com/elementv2/two-page_results_elements_v2.html?query=test'
-        ></div>
+        <Search />
       </main>
     </div>
   );
