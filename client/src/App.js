@@ -12,6 +12,8 @@ import Register from './users/register/Register';
 import TestPage from './pages/test/TestPage';
 import Error404 from './pages/error/Error404';
 import UserAgreement from './pages/auth/UserAgreement'
+import TemporaryHome from './pages/home/TemporaryHome';
+import AboutPage from './pages/about/AboutPage';
 // Prestyled components
 import './styles/components.css';
 // Utils
@@ -20,7 +22,6 @@ import {
   AuthenticateAdmin,
   AuthenticateDeveloper,
 } from './users/utils/AuthenticateUser';
-import TemporaryHome from './pages/home/TemporaryHome';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -32,6 +33,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/' element={<TemporaryHome />} index />
         <Route path='/myecohome' element={<Myecohome />} />
+        <Route path='/about' element={<AboutPage />} />
         <Route
           path='/account'
           element={

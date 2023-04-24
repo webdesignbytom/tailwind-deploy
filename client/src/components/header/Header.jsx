@@ -7,7 +7,7 @@ function Header() {
     <>
       <header
         id='hero'
-        className='hero__container'
+        className=''
       >
         <div className='flex flex-col items-center justify-between w-full mb-10 lg:flex-row'>
           <section className='mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 lg:pl-5'>
