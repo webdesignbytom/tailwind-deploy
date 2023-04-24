@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        'green-bg': "url('../assets/img/myea/green-bg1.png')",
+      },
       colors: {
         'main-colour': '#4AAD37',
         'nav-colour': '#4AAD37',
