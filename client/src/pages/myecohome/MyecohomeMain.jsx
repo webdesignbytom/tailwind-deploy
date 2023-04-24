@@ -6,7 +6,7 @@ import { ToggleContext } from '../../context/ToggleContext';
 // Components
 import Navbar from '../../components/navigation/Navbar';
 
-function Myecohome() {
+function MyecohomeMain() {
   const { toggleNavigation } = useContext(ToggleContext);
 
   return (
@@ -80,4 +80,4 @@ function Myecohome() {
   );
 }
 
-export default Myecohome;
+export default MyecohomeMain;

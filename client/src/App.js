@@ -7,7 +7,7 @@ import AdminPage from './pages/admin/AdminPage';
 import DeveloperPage from './pages/developer/DeveloperPage';
 import Home from './pages/home/Home';
 import Login from './users/login/Login';
-import Myecohome from './pages/myecohome/Myecohome';
+import MyecohomeMain from './pages/myecohome/MyecohomeMain';
 import Register from './users/register/Register';
 import TestPage from './pages/test/TestPage';
 import Error404 from './pages/error/Error404';
@@ -32,7 +32,7 @@ function App() {
       <Routes>
         <Route path='/home' element={<Home />} />
         <Route path='/' element={<TemporaryHome />} index />
-        <Route path='/myecohome' element={<Myecohome />} />
+        <Route path='/myecohome' element={<MyecohomeMain />} />
         <Route path='/about' element={<AboutPage />} />
         <Route
           path='/account'
