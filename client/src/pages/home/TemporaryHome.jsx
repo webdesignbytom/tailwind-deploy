@@ -30,11 +30,10 @@ function TemporaryHome() {
             </div>
           </article>
         </section>
-
         <section className='grid w-1/2 mx-auto z-20'>
           <GoogleSearch />
         </section>
-
+        //TODO: Add newletter sign up, gen sign up, see more sites
         <section className='grid z-20'>
           <section className='p-10 grid'>
             <div className='grid outline outline-4 bg-transparent-white outline-green-800 rounded px-4 items-center h-fit'>
