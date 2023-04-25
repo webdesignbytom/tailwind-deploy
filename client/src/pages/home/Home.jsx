@@ -14,12 +14,11 @@ function Home() {
   return (
     <>
       <div className='bg-white dark:bg-black'>
-        <div className='h-screen grid lg:pt-4'>
-          <Header />
-          <About />
-          <Goals />
-          <Funding />
-        </div>
+        <Navbar />
+        <Header />
+        <About />
+        <Goals />
+        <Funding />
       </div>
     </>
   );

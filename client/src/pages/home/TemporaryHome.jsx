@@ -7,7 +7,7 @@ import Navbar from '../../components/navigation/Navbar';
 
 function TemporaryHome() {
   return (
-    <div className='bg-main-colour z-0 grid grid-rows-reg h-screen w-full font-poppins'>
+    <div className='bg-white dark:bg-gray-800 z-0 grid grid-rows-reg h-screen w-full font-poppins'>
       <Navbar />
       <main className='relative grid grid-rows-1a1 w-full'>
         <div className='grid absolute w-full h-full bg-green-bg bg-right z-10'></div>
@@ -16,7 +16,7 @@ function TemporaryHome() {
           <article className='grid items-center h-full'>
             <div className='grid h-fit justify-center'>
               <div className='flex justify-center'>
-                <div className='flex items-center outline outline-4 bg-transparent-white outline-white rounded w-fit p-4'>
+                <div className='flex items-center outline outline-8 bg-transparent-white outline-main-colour rounded w-fit p-4'>
                   <h1 className='flex items-center text-5xl font-extrabold'>
                     Welcome to{' '}
                     <span className='text-green-900 pl-4'> MyEcoApp!</span>
@@ -49,20 +49,29 @@ function TemporaryHome() {
         </section>
 
         {/* CTA */}
-        <section className='grid z-20 bg-blue-300 items-center'>
-          <div className='mx-auto bg-green-200'>
-            <section className='p-10 grid grid-cols-3 bg-red-200 gap-4'>
-              <Link className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'>
+        <section className='grid z-20 items-center'>
+          <div className='mx-auto'>
+            <section className='p-10 grid grid-cols-3 gap-4'>
+              <Link
+                to='/newsletter'
+                className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'
+              >
                 <article>
                   <h5>Sign Up For Newsletter</h5>
                 </article>
               </Link>
-              <Link to='/register' className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'>
+              <Link
+                to='/register'
+                className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'
+              >
                 <article>
                   <h5>Join As A Member</h5>
                 </article>
               </Link>
-              <Link className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'>
+              <Link
+                to='/about'
+                className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'
+              >
                 <article>
                   <h5>Find Out More</h5>
                 </article>
