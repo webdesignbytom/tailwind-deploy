@@ -4,13 +4,15 @@ import { Link, useNavigate } from 'react-router-dom';
 import { SubmitButton } from '../../components/utils/Utils';
 // Utils
 import { showPassword } from '../../users/utils/PasswordReveal';
-import { loginDataTemplate } from '../utils/Utils';
 // Icons
 import OpenEye from '../../assets/svg/eye.svg';
 
 function LoginForm({ setUser }) {
   const [rememberMeChecked, setRememberMeChecked] = useState(true);
-  const [loginForm, setLoginForm] = useState(loginDataTemplate);
+  const [loginForm, setLoginForm] = useState({
+    email: '',
+    password: '',
+  });
   const [fieldType, setFieldType] = useState('password');
   const [eyeIcon, setEyeIcon] = useState(OpenEye);
 

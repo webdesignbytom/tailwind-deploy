@@ -7,18 +7,26 @@ import {
   showConfirmPassword,
   showPassword,
 } from '../../users/utils/PasswordReveal';
-import { registerDataTemplate } from '../utils/Utils';
 import CountrySelect from '../utils/CountrySelect';
 // Validation
 import { validPassword } from '../../users/utils/Validation';
-import { SubmitButton } from '../../components/utils/Utils';
 
 function RegisterForm() {
   const [fieldType, setFieldType] = useState('password');
   const [eyeIcon, setEyeIcon] = useState(OpenEye);
   const [fieldTypeConfirm, setFieldTypeConfirm] = useState('password');
   const [eyeIconConfirm, setEyeIconConfirm] = useState(OpenEye);
-  const [registerForm, setRegisterForm] = useState(registerDataTemplate);
+  const [registerForm, setRegisterForm] = useState({
+    email: '',
+    username: '',
+    password: '',
+    confirmPassword: '',
+    firstName: '',
+    lastName: '',
+    country: '',
+    agreedToTerms: ``,
+    agreedToNewsletter: ``,
+  });
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   // Email and password
   const [hiddenPass, setHiddenPass] = useState('invisible h-4');
@@ -230,7 +238,7 @@ function RegisterForm() {
 
         <div className='mt-2'>
           <div className='mb-2'>
-            <SubmitButton />
+            <input type="submit" value="Submit" />
           </div>
         </div>
 
