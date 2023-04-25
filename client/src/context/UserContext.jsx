@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 // Data
-import LoggedInUser from '../users/utils/LoggedInUser';
+import LoggedInUser from '../utils/LoggedInUser';
 // Fetch
 import client from '../utils/axios/client';
 // Context

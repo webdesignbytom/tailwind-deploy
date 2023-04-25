@@ -6,9 +6,7 @@ import Account from './pages/account/Account';
 import AdminPage from './pages/admin/AdminPage';
 import DeveloperPage from './pages/developer/DeveloperPage';
 import Home from './pages/home/Home';
-import Login from './users/login/Login';
 import MyecohomeMain from './pages/myecohome/MyecohomeMain';
-import Register from './users/register/Register';
 import TestPage from './pages/test/TestPage';
 import Error404 from './pages/error/Error404';
 import UserAgreement from './pages/auth/UserAgreement'
@@ -21,7 +19,7 @@ import {
   AuthenticateUser,
   AuthenticateAdmin,
   AuthenticateDeveloper,
-} from './users/utils/AuthenticateUser';
+} from './utils/AuthenticateUser';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -30,10 +28,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/home' element={<Home />} />
         <Route path='/' element={<TemporaryHome />} index />
         <Route path='/myecohome' element={<MyecohomeMain />} />
-        <Route path='/about' element={<AboutPage />} />
+        <Route path='/about' element={<Home />} />
         <Route
           path='/account'
           element={
@@ -43,8 +40,8 @@ function App() {
           }
         />
         {/* User routes */}
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
+        <Route path='/login' />
+        <Route path='/register' />
 
         {/* Secure routes */}
         <Route

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Components
 import GoogleSearch from '../../components/search/GoogleSearch';
 import Navbar from '../../components/navigation/Navbar';
@@ -30,26 +31,44 @@ function TemporaryHome() {
             </div>
           </article>
         </section>
-        <section className='grid w-1/2 mx-auto z-20'>
+        <section className='grid gap-4 w-1/2 mx-auto z-20'>
+          <div className='grid outline outline-4 bg-transparent-white outline-green-800 rounded px-4 items-center h-fit'>
+            <div className='grid'>
+              <article>
+                <p className='py-1 '>
+                  While we are in development, you can still help and donate to
+                  our causes - without using your own money! Just use the google
+                  search bar below to get us paid a small commission per search.
+                  Sign up now and we will add you to the notification list when
+                  we relaunch our app!
+                </p>
+              </article>
+            </div>
+          </div>
           <GoogleSearch />
         </section>
-        //TODO: Add newletter sign up, gen sign up, see more sites
-        <section className='grid z-20'>
-          <section className='p-10 grid'>
-            <div className='grid outline outline-4 bg-transparent-white outline-green-800 rounded px-4 items-center h-fit'>
-              <div className='grid'>
+
+        {/* CTA */}
+        <section className='grid z-20 bg-blue-300 items-center'>
+          <div className='mx-auto bg-green-200'>
+            <section className='p-10 grid grid-cols-3 bg-red-200 gap-4'>
+              <Link className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'>
                 <article>
-                  <p className='py-1 '>
-                    While we are in development, you can still help and donate
-                    to our causes - without using your own money! Just use the
-                    google search bar below to get us paid a small commission
-                    per search. Sign up now and we will add you to the
-                    notification list when we relaunch our app!
-                  </p>
+                  <h5>Sign Up For Newsletter</h5>
                 </article>
-              </div>
-            </div>
-          </section>
+              </Link>
+              <Link to='/register' className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'>
+                <article>
+                  <h5>Join As A Member</h5>
+                </article>
+              </Link>
+              <Link className='outline outline-4 outline-green-800 rounded-lg p-2 grid items-center justify-center text-center text-xl font-semibold bg-main-colour hover:bg-green-400 hover:text-gray-100'>
+                <article>
+                  <h5>Find Out More</h5>
+                </article>
+              </Link>
+            </section>
+          </div>
         </section>
       </main>
     </div>
