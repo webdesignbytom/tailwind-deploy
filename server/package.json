@@ -5,6 +5,7 @@
   "description": "server to control user functions and store web data for www.myecoapp.org",
   "main": "src/server.js",
   "scripts": {
+    "postinstall": "prisma generate",
     "start": "nodemon src/server.js"
   },
   "prisma": {
