@@ -1,11 +1,13 @@
 import React from 'react';
 // Images
 import TreeBG from '../../assets/img/trees.jpeg';
+import Navbar from '../../components/navigation/Navbar';
 
 function Error404() {
   return (
-    <>
-      <div className='h-screen overflow-hidden font-pops'>
+    <div className='h-screen overflow-hidden grid grid-rows-reg bg-gray-50 dark:bg-black dark:text-gray-100'>
+      <Navbar />
+      <div className='font-poppins'>
         <main className='relative h-full w-full'>
           <section className='grid absolute w-full text-center h-full items-center justify-center z-10'>
             <section className='grid gap-2'>
@@ -25,7 +27,7 @@ function Error404() {
           </section>
         </main>
       </div>
-    </>
+    </div>
   );
 }
 

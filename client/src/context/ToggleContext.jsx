@@ -1,17 +1,26 @@
-import React from 'react'
+import React from 'react';
 import { useState } from 'react';
 
-export const ToggleContext = React.createContext()
-
+export const ToggleContext = React.createContext();
 
 const ToggleContextProvider = ({ children }) => {
-  const [toggleNavigation, setToggleNavigation] = useState(false)  
+  const [toggleNavigation, setToggleNavigation] = useState(false);
 
-    return (
-        <ToggleContext.Provider value={{ toggleNavigation, setToggleNavigation }}>
-          {children}
-        </ToggleContext.Provider> 
-      );
-}
+  const toggleNavbar = () => {
+    setToggleNavigation(!toggleNavigation)
+  }
+ 
+  return (
+    <ToggleContext.Provider
+      value={{
+        toggleNavigation,
+        setToggleNavigation,
+        toggleNavbar
+      }}
+    >
+      {children}
+    </ToggleContext.Provider>
+  );
+};
 
-export default ToggleContextProvider
+export default ToggleContextProvider;

@@ -6,11 +6,11 @@ import Account from './pages/account/Account';
 import AdminPage from './pages/admin/AdminPage';
 import DeveloperPage from './pages/developer/DeveloperPage';
 import Error404 from './pages/error/Error404';
-import Home from './pages/home/Home';
+import HomePage from './pages/home/HomePage';
 import MyecohomeMain from './pages/myecohome/MyecohomeMain';
 import NewsletterSignup from './pages/newsletter/NewsletterSignup';
 import RegisterPage from './users/register/RegisterPage';
-import TemporaryHome from './pages/home/TemporaryHome';
+import SearchBarEcoHome from './pages/myecohome/SearchBarEcoHome';
 import TestPage from './pages/test/TestPage';
 import UserAgreement from './pages/auth/UserAgreement';
 // Utils
@@ -27,10 +27,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<TemporaryHome />} index />
-        <Route path='/about' element={<Home />} />
+        <Route path='/' index element={<HomePage />} />
+        <Route path='/newsletter-signup' element={<NewsletterSignup />} />
+        <Route path='/newsletter-signup' element={<NewsletterSignup />} />
+
         <Route path='/myecohome' element={<MyecohomeMain />} />
-        <Route path='/newsletter' element={<NewsletterSignup />} />
+        <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />}  />
 
         {/* User routes */}
         <Route path='/login' />

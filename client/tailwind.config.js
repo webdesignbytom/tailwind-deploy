@@ -65,6 +65,7 @@ module.exports = {
         '1a1': '1fr auto 1fr',
         'aa': 'auto auto',
         '3x': '3fr 1fr',
+        '2x': '2fr 1fr',
       },
     },
   },

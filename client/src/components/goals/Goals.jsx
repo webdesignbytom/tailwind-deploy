@@ -6,16 +6,16 @@ import Goal from './Goal';
 
 function Goals() {
   return (
-    <>
-      <section id='goals' className='section__container'>
-        <section className='flex flex-col justify-between w-full'>
-          <article className='pb-4'>
-            <h4 className='small__title'>What will be do?</h4>
-            <h2 className='section__title'>Goals</h2>
+
+      <section id='goals' className='grid'>
+        <section className=''>
+          <article className=''>
+            <h4 className=''>What will be do?</h4>
+            <h2 className=''>Goals</h2>
           </article>
           <section className=''>
             <article className='mb-2'>
-              <p className='text__container mx-6'>
+              <p className=''>
               <span className='font-extrabold'>The funds we raised need to have a goal that people can get
                 behind.</span> Our project relies on this site and our project reaching
                 as many people as possible. Growing exponentially to allow us to
@@ -29,7 +29,7 @@ function Goals() {
           {/* Secondary info */}
           <section className='grid'>
             <div className='text-center mt-2 mb-6'>
-              <h3 className='secondary__title'>Our Ideas</h3>
+              <h3 className=''>Our Ideas</h3>
             </div>
             <section className='grid lg:grid-cols-3 gap-4'>
               {GoalsList.map((goal, index) => {
@@ -43,7 +43,7 @@ function Goals() {
           </section>
         </section>
       </section>
-    </>
+
   );
 }
 
