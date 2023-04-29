@@ -6,17 +6,17 @@ function HeaderCTA() {
     <div className="grid grid-flow-col gap-6 h-fit">
       <Link to='#' className="p-2 outline-2 outline-black outline rounded-xl text-center flex items-center justify-center bg-main-colour hover:bg-colour-pale active:scale-110 duration-200 ease-in-out text-xl font-semibold text-gray-100">
         <article>
-          <h3>See More</h3>
+          <h3>GOALS</h3>
         </article>
       </Link>
       <Link to='#' className="p-2 outline-2 outline-black outline rounded-xl text-center flex items-center justify-center bg-main-colour hover:bg-colour-pale active:scale-110 duration-200 ease-in-out text-xl font-semibold text-gray-100">
         <article>
-          <h3>Projects</h3>
+          <h3>PROJECTS</h3>
         </article>
       </Link>
       <Link to='#' className="p-2 outline-2 outline-black outline rounded-xl text-center flex items-center justify-center bg-main-colour hover:bg-colour-pale active:scale-110 duration-200 ease-in-out text-xl font-semibold text-gray-100">
         <article>
-          <h3>Goals</h3>
+          <h3>ABOUT</h3>
         </article>
       </Link>
     </div>

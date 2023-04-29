@@ -4,6 +4,8 @@ import Navbar from "../../components/navigation/Navbar";
 import HomePageHeader from "../../components/home/HomePageHeader";
 import Goals from "../../components/goals/Goals";
 import Funding from "../../components/funding/Funding";
+import GoalsContainer from '../../components/home/GoalsContainer';
+import FundRaisingHomePage from '../../components/home/FundRaisingHomePage';
 
 function HomePage() {
   return (
@@ -13,7 +15,8 @@ function HomePage() {
         <HomePageHeader />
       </section>
       <section>
-        <Goals />
+        <GoalsContainer />
+        <FundRaisingHomePage />
         <Funding />
       </section>
     </div>

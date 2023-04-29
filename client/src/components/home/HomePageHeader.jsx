@@ -4,16 +4,16 @@ import HeaderCTA from "./HeaderCTA";
 
 function HomePageHeader() {
   return (
-    <header id="hero" className="bg-red-300 grid p-4 w-full">
+    <header id="hero" className=" grid p-4 w-full">
       <div className="grid md:grid-cols-2x h-full">
         {/* Text Section Left */}
-        <section className="bg-blue-300 grid h-full">
-          <div className="bg-white mt-6 pl-10 ">
+        <section className=" grid h-full">
+          <div className=" mt-6 pl-10 ">
             <article className="h-fit">
               <div className="text-lg">
                 <h4>Brand new web project</h4>
               </div>
-              <h1 className="text-main-colour font-extrabold text-8xl pb-6 md:pb-8 md:mt-10 text-center md:text-left">
+              <h1 className="text-main-colour font-extrabold text-9xl pb-6 md:pb-8 md:mt-10 text-center md:text-left">
                 myecoapp
               </h1>
               <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 sm:text-4xl sm:leading-none max-w-lg mb-6">
@@ -35,25 +35,46 @@ function HomePageHeader() {
               <HeaderCTA />
             </section>
           </div>
-          {/* IMages */}
-          <section className="grid bg-red-200 h-full p-2">image</section>
+
+          {/* icons */}
+          <section className="grid  h-full p-2">
+            <div className="grid grid-cols-5 gap-2 mx-5">
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
+                1
+              </article>
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
+                1
+              </article>
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
+                1
+              </article>
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
+                1
+              </article>
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
+                1
+              </article>
+            </div>
+          </section>
         </section>
 
         {/* Phone images */}
-        <section className="grid bg-yellow-400 grid-flow-col">
-          <div className="w-2/5">
-            <img
-              className="object-cover"
-              src="https://kitwind.io/assets/kometa/one-girl-phone.png"
-              alt=""
-            />
-          </div>
-          <div className="w-5/12 -ml-16 lg:-ml-32">
-            <img
-              className="object-cover"
-              src="https://kitwind.io/assets/kometa/two-girls-phone.png"
-              alt=""
-            />
+        <section className="grid ">
+          <div className="grid relative grid-flow-col">
+            <div className=" relative z-10 -ml-4 grid items-center">
+              <img
+                className="object-cover"
+                src="https://kitwind.io/assets/kometa/one-girl-phone.png"
+                alt=""
+              />
+            </div>
+            <div className="relative z-0 grid items-center">
+              <img
+                className="object-cover "
+                src="https://kitwind.io/assets/kometa/two-girls-phone.png"
+                alt=""
+              />
+            </div>
           </div>
         </section>
       </div>

@@ -7,8 +7,9 @@ import Goal from './Goal';
 function Goals() {
   return (
 
-      <section id='goals' className='grid'>
-        <section className=''>
+      <section id='goals' className='grid min-h-screen mt-16 bg-red-400 p-4'>
+        {/* Main */}
+        <section className='bg-blue-200 '>
           <article className=''>
             <h4 className=''>What will be do?</h4>
             <h2 className=''>Goals</h2>
