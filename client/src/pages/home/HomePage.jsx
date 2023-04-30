@@ -9,7 +9,7 @@ import FundRaisingHomePage from '../../components/home/FundRaisingHomePage';
 function HomePage() {
   return (
     <div className="grid min-h-screen bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100">
-      <section className="grid h-screen lg:max-h-screen grid-rows-reg">
+      <section className="grid h-screen xl:max-h-screen grid-rows-reg">
         <Navbar />
         <HomePageHeader />
       </section>
