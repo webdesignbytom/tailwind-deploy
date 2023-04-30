@@ -1,22 +1,25 @@
 import React from "react";
 // Components
 import HeaderCTA from "./HeaderCTA";
+// Icon
+import GameIcon from '../../assets/img/space-invaders.png'
+import TechIcon from '../../assets/img/technology.png'
 
 function HomePageHeader() {
   return (
-    <header id="hero" className=" grid p-4 w-full">
+    <header id="hero" className="grid p-4 w-full">
       <div className="grid md:grid-cols-2x h-full">
         {/* Text Section Left */}
-        <section className=" grid h-full">
-          <div className=" mt-6 pl-10 ">
+        <section className="grid h-full">
+          <div className="mt-6 pl-10">
             <article className="h-fit">
               <div className="text-lg">
                 <h4>Brand new web project</h4>
               </div>
-              <h1 className="text-main-colour font-extrabold text-9xl pb-6 md:pb-8 md:mt-10 text-center md:text-left">
+              <h1 className="text-main-colour font-extrabold text-6xl lg:text-7xl 2xl:text-9xl pb-6 md:pb-8 text-center md:text-left">
                 myecoapp
               </h1>
-              <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 sm:text-4xl sm:leading-none max-w-lg mb-6">
+              <h2 className="font-sans text-2xl 2xl:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 max-w-lg mb-6">
                 Help The Planet <br className="hidden md:block" />
                 by existing,{" "}
                 <span className="inline-block text-deep-purple-accent-400">
@@ -24,7 +27,7 @@ function HomePageHeader() {
                 </span>
               </h2>
               <div className="md:max-w-[80%]">
-                <p className="text-text-grey dark:text-slate-100 text-base md:text-lg font-poppins">
+                <p className="text-text-grey leading-5 dark:text-slate-100 text-base md:text-lg font-poppins">
                   Help the environment from anywhere for free! At home or at any
                   event. Use our apps to earn while you relax. We have done what
                   we can to provide entertainment for you. Check it out below.
@@ -37,22 +40,47 @@ function HomePageHeader() {
           </div>
 
           {/* icons */}
-          <section className="grid  h-full p-2">
-            <div className="grid grid-cols-5 gap-2 mx-5">
-              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
-                1
+          <section className="grid bg-red-300">
+            <div className="grid grid-cols-5 gap-2 ml-10 mr-20 h-fit">
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 h-fit">
+                <div>
+                  <img src={GameIcon} className='w-10 h-min' alt="gaming icon" />
+                </div>
+                <div>
+                  <h4>GAMING</h4>
+                </div>
               </article>
-              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
-                1
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2">
+                <div>
+                  <img className='w-20' src={GameIcon} alt="" />
+                </div>
+                <div>
+                  <h4>SERVICES</h4>
+                </div>
               </article>
-              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
-                1
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2">
+                <div>
+                  <img src="" alt="" />
+                </div>
+                <div>
+                  <h4>SHOPPING</h4>
+                </div>
               </article>
-              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
-                1
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2">
+                <div>
+                  <img className='w-20' src={TechIcon} alt="" />
+                </div>
+                <div>
+                  <h4>TECHNOLOGY</h4>
+                </div>
               </article>
-              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2 w-[180px] h-[180px]">
-                1
+              <article className="grid outline-2 outline-main-colour outline rounded-xl p-2">
+                <div>
+                  <img src="" alt="" />
+                </div>
+                <div>
+                  <h4>Titles</h4>
+                </div>
               </article>
             </div>
           </section>

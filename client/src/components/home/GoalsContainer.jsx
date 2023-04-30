@@ -1,5 +1,10 @@
 import React from "react";
+// Components
 import TimelineHomePage from "./TimelineHomePage";
+// Images
+import Image1 from '../../assets/img/solar.jpg'
+import Image2 from '../../assets/img/park.jpg'
+import Image3 from '../../assets/img/engineering.jpg'
 
 function GoalsContainer() {
   return (
@@ -22,7 +27,7 @@ function GoalsContainer() {
               </div>
               {/* Main article */}
               <article className="grid relative items-center z-10 shadow-[inset_-12px_-8px_40px_#46464620] justify-center h-full">
-                <ol className="p-1 capitalize text-xl font-semibold grid gap-4">
+                <ol className="p-1 capitalize text-xl font-semibold grid gap-2 xl:gap-4">
                   <li>
                     <div>
                       <p>
@@ -47,25 +52,25 @@ function GoalsContainer() {
                   <li>
                     <div>
                       <p>
-                        <span>4.</span>Make it look easy
+                        <span>4.</span>Make it look easy!
                       </p>
                     </div>
                   </li>
                 </ol>
               </article>
               {/* IMAGES */}
-              <section className="absolute grid gap-6 -bottom-20 -right-20">
+              <section className="absolute grid gap-6 -bottom-24 z-10 -right-24">
                 <section className="grid justify-end">
                   <article className="h-[150px] w-[150px] outline outline-green-400 outline-4 shadow-[10px_10px_0px_0px_rgba(74,173,55)]">
-                    1
+                    <img src={Image1} className='object-cover h-full w-full' alt="" />
                   </article>
                 </section>
                 <section className="grid grid-flow-col gap-6">
                   <article className="h-[150px] w-[150px] outline outline-green-400 outline-4 shadow-[10px_10px_0px_0px_rgba(74,173,55)]">
-                    1
+                    <img src={Image2} className='object-cover h-full w-full' alt="" />
                   </article>
                   <article className="h-[150px] w-[150px] outline outline-green-400 outline-4 shadow-[10px_10px_0px_0px_rgba(74,173,55)]">
-                    1
+                    <img src={Image3} className='object-cover h-full w-full' alt="" />
                   </article>
                 </section>
               </section>
@@ -78,8 +83,9 @@ function GoalsContainer() {
           <section className="grid  h-2/3 my-auto">
             <article>
               <div>
-                <h2 className="text-5xl text-gray-800 text-center font-bold">
+                <h2 className="text-5xl relative text-gray-800 text-center z-20 font-bold">
                   OUR GOALS...
+                  <span className="text-8xl top-0 left-0 ml-6 -mt-16 absolute font-bold text-main-colour text__stroke2 z-0">OUR GOALS</span>
                 </h2>
               </div>
               <div className="flex justify-center my-4">
@@ -99,8 +105,6 @@ function GoalsContainer() {
             <TimelineHomePage />
           </section>
         </section>
-
-        <section className="leaf__bg h-[100px] w-full absolute bottom-4"></section>
       </section>
     </section>
   );
