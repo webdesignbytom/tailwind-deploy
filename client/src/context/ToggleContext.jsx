@@ -14,7 +14,6 @@ const ToggleContextProvider = ({ children }) => {
     <ToggleContext.Provider
       value={{
         toggleNavigation,
-        setToggleNavigation,
         toggleNavbar
       }}
     >

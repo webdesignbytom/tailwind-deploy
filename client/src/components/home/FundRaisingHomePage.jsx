@@ -23,15 +23,15 @@ function FundRaisingHomePage() {
         {/* DISPLAY */}
         <section className='my-10 mr-10'>
           <div className='h-full'>
-            <section className='bg-main-colour relative h-full w-2/3 pl-20 shadow-[10px_10px_0px_0px_rgba(0,0,0)]'>
+            <section className='bg-main-colour leaf__bg relative h-full w-2/3 pl-20 shadow-[10px_10px_0px_0px_rgba(0,0,0)]'>
               <article className='grid text-5xl md:text-7xl top-0 text-center leading-[48px] md:left-0 -mt-10 absolute font-bold text__stroke3 -ml-20'>
                 <p>INNOVATIVE</p>
                 <p>FUNDING...</p>
               </article>
-              <section className='grid grid-cols-2 gap-x-32 absolute md:ml-20 mt-16 h-full w-fit'>
+              <section className='grid grid-cols-2 gap-x-28 md:gap-x-32 absolute md:ml-20 mt-16 h-full w-fit'>
                 {FundingOptions.map((option, index) => {
                   return (
-                    <article className='h-[75px] md:h-[150px] w-[75px] md:w-[150px] outline outline-green-400 rounded outline-4 shadow-[10px_10px_0px_0px_rgba(0,0,0)]'>
+                    <article className='h-[90px] md:h-[150px] w-[90px] md:w-[150px] outline outline-green-400 rounded outline-4 shadow-[10px_10px_0px_0px_rgba(0,0,0)]'>
                       <img
                         src={option.image}
                         className='object-cover h-full w-full'

@@ -29,7 +29,6 @@ function App() {
       <Routes>
         <Route path='/' index element={<HomePage />} />
         <Route path='/newsletter-signup' element={<NewsletterSignup />} />
-        <Route path='/newsletter-signup' element={<NewsletterSignup />} />
 
         <Route path='/myecohome' element={<MyecohomeMain />} />
         <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />}  />
