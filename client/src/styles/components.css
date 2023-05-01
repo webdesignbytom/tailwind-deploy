@@ -38,3 +38,8 @@
   /* -webkit-text-stroke: 1px #f5f5f5; */
   color: #ffffff;
 }
+.text__stroke4 {
+  -webkit-text-stroke: 1px #080707;
+  /* -webkit-text-stroke: 1px #f5f5f5; */
+  color: #1A7408;
+}

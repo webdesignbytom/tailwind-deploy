@@ -7,7 +7,7 @@ import TechIcon from '../../assets/img/technology.png';
 
 function HomePageHeader() {
   return (
-    <header id='hero' className='grid p-4 w-full mb-20 md:mb-0'>
+    <header id='hero' className='grid p-4 w-full'>
       <div className='grid md:grid-cols-2x h-full'>
         {/* Text Section Left */}
         <section className='grid h-full'>
