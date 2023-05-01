@@ -13,9 +13,6 @@ export const findUserByEmail = (email) =>
     include: {
       messages: true,
       notifications: true,
-      favorites: true,
-      designs: true,
-      projects: true,
     },
   });
 
@@ -68,9 +65,6 @@ export const findUserById = (userId) =>
     include: {
       messages: true,
       notifications: true,
-      favorites: true,
-      designs: true,
-      projects: true,
     },
   });
 

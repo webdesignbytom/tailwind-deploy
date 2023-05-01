@@ -18,9 +18,9 @@ import {
 
 const router = Router();
 
-router.get('/', getAllUsers);
+router.get('/all-users', getAllUsers);
 router.post('/register', registerNewUser);
-router.get('/:id', getUserById);
+router.get('/user/id/:id', getUserById);
 router.get('/verify/:userId/:uniqueString', verifyUser);
 router.post('/verify/resend-email/:email', resendVerificationEmail);
 router.post('/send-password-reset', sendPasswordReset);

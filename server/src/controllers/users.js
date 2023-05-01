@@ -117,11 +117,7 @@ export const registerNewUser = async (req, res) => {
   try {
     if (
       !lowerCaseEmail ||
-      !password ||
-      !firstName ||
-      !lastName ||
-      !country ||
-      !agreedToTerms
+      !password
     ) {
       //
       const missingField = new MissingFieldEvent(
