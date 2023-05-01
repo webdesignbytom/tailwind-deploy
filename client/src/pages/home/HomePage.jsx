@@ -14,7 +14,7 @@ function HomePage() {
           <Navbar />
           <HomePageHeader />
         </section>
-        <section className=''>
+        <section className='mb-8'>
           <GoalsContainer />
         </section>
         <FundRaisingHomePage />

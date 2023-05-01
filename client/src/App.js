@@ -13,6 +13,7 @@ import RegisterPage from './users/register/RegisterPage';
 import SearchBarEcoHome from './pages/myecohome/SearchBarEcoHome';
 import TestPage from './pages/test/TestPage';
 import UserAgreement from './pages/auth/UserAgreement';
+import AboutPage from './pages/about/AboutPage';
 // Utils
 import {
   AuthenticateUser,
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path='/' index element={<HomePage />} />
         <Route path='/newsletter-signup' element={<NewsletterSignup />} />
+        <Route path='/about' element={<AboutPage />} />
 
         <Route path='/myecohome' element={<MyecohomeMain />} />
         <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />}  />

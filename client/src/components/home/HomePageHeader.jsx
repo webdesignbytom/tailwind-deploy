@@ -11,15 +11,15 @@ function HomePageHeader() {
       <div className='grid md:grid-cols-2x h-full'>
         {/* Text Section Left */}
         <section className='grid h-full'>
-          <div className='mt-2 md:mt-6 md:pl-10'>
+          <div className='mt-2 md:mt-4 md:pl-10'>
             <article className='h-fit'>
               <div className='text-lg'>
-                <h4>Brand new web project</h4>
+                <h4 className='text-main-colour'>Brand new web project</h4>
               </div>
-              <h1 className='text-main-colour font-extrabold text-6xl lg:text-7xl 2xl:text-9xl pb-6 md:pb-8 text-center md:text-left'>
+              <h1 className='text-main-colour font-extrabold text-6xl lg:text-8xl 2xl:text-9xl pb-6 text-center md:text-left'>
                 myecoapp
               </h1>
-              <h2 className='font-sans text-2xl 2xl:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 max-w-lg mb-6'>
+              <h2 className='font-sans text-2xl 2xl:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 max-w-lg mb-4'>
                 Help The Planet <br className='hidden md:block' />
                 by existing,{' '}
                 <span className='inline-block text-deep-purple-accent-400'>
@@ -34,52 +34,62 @@ function HomePageHeader() {
                 </p>
               </div>
             </article>
-            <section className='grid md:max-w-[80%] mb-6 md:mb-0 mt-8'>
+            <section className='grid md:max-w-[80%] mb-6 md:mb-0 mt-6'>
               <HeaderCTA />
             </section>
           </div>
 
           {/* icons */}
           <section className='grid'>
-            <div className='grid grid-cols-5 gap-2 md:ml-10 md:mr-20 h-fit'>
-              <article className='grid outline-2 outline-main-colour outline rounded-xl p-2'>
-                <div className='grid items-center w-fit justify-center'>
-                  <img className='w-10 md:w-20' src={GameIcon} alt='' />
+            <div className='grid grid-cols-5 gap-2 md:ml-10 md:mr-20 h-fit md:max-w-[80%]'>
+              <article className='grid items-center justify-center p-2'>
+                <div className='grid'>
+                  <img className='w-10 md:w-16' src={GameIcon} alt='' />
                 </div>
                 <div>
-                  <h4 className='font-semibold text-xs md:text-base text-center'>SERVICES</h4>
+                  <h4 className='font-semibold text-xs md:text-base text-center'>
+                    SERVICES
+                  </h4>
                 </div>
               </article>
-              <article className='grid outline-2 outline-main-colour outline rounded-xl p-2'>
-                <div className='grid items-center w-fit justify-center'>
-                  <img className='w-10 md:w-20' src={GameIcon} alt='' />
+              <article className='grid items-center justify-center p-2'>
+                <div className='grid'>
+                  <img className='w-10 md:w-16' src={GameIcon} alt='' />
                 </div>
                 <div>
-                  <h4 className='font-semibold text-xs md:text-base text-center'>SERVICES</h4>
+                  <h4 className='font-semibold text-xs md:text-base text-center'>
+                    SERVICES
+                  </h4>
                 </div>
               </article>
-              <article className='grid outline-2 outline-main-colour outline rounded-xl p-2'>
-                <div className='grid items-center w-fit justify-center'>
-                  <img className='w-10 md:w-20' src={GameIcon} alt='' />
+              <article className='grid items-center justify-center p-2'>
+                <div className='grid'>
+                  <img className='w-10 md:w-16' src={GameIcon} alt='' />
                 </div>
                 <div>
-                  <h4 className='font-semibold text-xs md:text-base text-center'>SERVICES</h4>
+                  <h4 className='font-semibold text-xs md:text-base text-center'>
+                    SERVICES
+                  </h4>
                 </div>
               </article>
-              <article className='grid outline-2 outline-main-colour outline rounded-xl p-2'>
-                <div className='grid items-center w-fit justify-center'>
-                  <img className='w-10 md:w-20' src={GameIcon} alt='' />
+              <article className='grid items-center justify-center p-2'>
+                <div className='grid'>
+                  <img className='w-10 md:w-16' src={GameIcon} alt='' />
                 </div>
                 <div>
-                  <h4 className='font-semibold text-xs md:text-base text-center'>SERVICES</h4>
+                  <h4 className='font-semibold text-xs md:text-base text-center'>
+                    SERVICES
+                  </h4>
                 </div>
               </article>
-              <article className='grid outline-2 outline-main-colour outline rounded-xl p-2'>
-                <div className='grid items-center w-fit justify-center'>
-                  <img className='w-10 md:w-20' src={GameIcon} alt='' />
+              <article className='grid items-center justify-center p-2'>
+                <div className='grid'>
+                  <img className='w-10 md:w-16' src={GameIcon} alt='' />
                 </div>
                 <div>
-                  <h4 className='font-semibold text-xs md:text-base text-center'>SERVICES</h4>
+                  <h4 className='font-semibold text-xs md:text-base text-center'>
+                    SERVICES
+                  </h4>
                 </div>
               </article>
             </div>
