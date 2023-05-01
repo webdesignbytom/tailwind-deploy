@@ -2,15 +2,14 @@ import React from "react";
 // Components
 import TimelineHomePage from "./TimelineHomePage";
 // Images
-import Image1 from '../../assets/img/solar.jpg'
-import Image2 from '../../assets/img/park.jpg'
-import Image3 from '../../assets/img/engineering.jpg'
+import { GoalsList } from '../../utils/data/CompanyData';
+
 
 function GoalsContainer() {
   return (
     <section className="p-4 my-10">
       {/* Main */}
-      <section className="min-h-screen relative grid grid-cols-2 gap-2 h-full">
+      <section className="relative grid md:grid-cols-2 gap-2 h-full">
         {/* Titles */}
         <article className="absolute top-8 left-8">
           <h4 className="font-semibold text-xl">What will be do?</h4>
@@ -23,7 +22,7 @@ function GoalsContainer() {
             {/* DISPLAY */}
             <div className="relative w-2/3 h-2/3 shadow-[-25px_-25px_0px_0px_rgba(74,173,55)] mx-auto">
               <div className="absolute -top-20 -left-20 z-0">
-                <h3 className="text-8xl font-bold text__stroke">myecoapp</h3>
+                <h3 className="text-3xl md:text-8xl font-bold text__stroke">myecoapp</h3>
               </div>
               {/* Main article */}
               <article className="grid relative items-center z-10 shadow-[inset_-12px_-8px_40px_#46464620] justify-center h-full">
@@ -62,15 +61,15 @@ function GoalsContainer() {
               <section className="absolute grid gap-6 -bottom-24 z-10 -right-24">
                 <section className="grid justify-end">
                   <article className="h-[150px] w-[150px] outline outline-green-400 outline-4 shadow-[10px_10px_0px_0px_rgba(74,173,55)]">
-                    <img src={Image1} className='object-cover h-full w-full' alt="" />
+                    <img src={GoalsList[0].image} className='object-cover h-full w-full' alt="" />
                   </article>
                 </section>
                 <section className="grid grid-flow-col gap-6">
                   <article className="h-[150px] w-[150px] outline outline-green-400 outline-4 shadow-[10px_10px_0px_0px_rgba(74,173,55)]">
-                    <img src={Image2} className='object-cover h-full w-full' alt="" />
+                    <img src={GoalsList[1].image} className='object-cover h-full w-full' alt="" />
                   </article>
                   <article className="h-[150px] w-[150px] outline outline-green-400 outline-4 shadow-[10px_10px_0px_0px_rgba(74,173,55)]">
-                    <img src={Image3} className='object-cover h-full w-full' alt="" />
+                    <img src={GoalsList[2].image} className='object-cover h-full w-full' alt="" />
                   </article>
                 </section>
               </section>
@@ -79,17 +78,17 @@ function GoalsContainer() {
         </section>
 
         {/* Right sections */}
-        <section className="grid  mb-8">
+        <section className="grid mb-8">
           <section className="grid  h-2/3 my-auto">
             <article>
               <div>
-                <h2 className="text-5xl relative text-gray-800 text-center z-20 font-bold">
+                <h2 className="text-2xl md:text-5xl relative text-gray-800 text-center z-20 font-bold">
                   OUR GOALS...
-                  <span className="text-8xl top-0 left-0 ml-6 -mt-16 absolute font-bold text-main-colour text__stroke2 z-0">OUR GOALS</span>
+                  <span className="text-2xl md:text-8xl top-0 left-0 ml-6 -mt-16 absolute font-bold text-main-colour text__stroke2 z-0">OUR GOALS</span>
                 </h2>
               </div>
               <div className="flex justify-center my-4">
-                <p className="w-1/2">
+                <p className="md:w-2/3">
                   The funds we raised need to have a goal that people can get
                   behind. Our project relies on this site and our project
                   reaching as many people as possible. Growing exponentially to
