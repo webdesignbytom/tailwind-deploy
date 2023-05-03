@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <>
-      <div className='px-6 py-4 bg-green-400'>
+      <div className='px-6 py-4'>
         <header className='grid grid-flow-col rounded bg-colour-dark p-2 justify-between w-full h-fit items-center px-4 font-poppins'>
           <section>
             <Link className='cursor-pointer' to='/'>

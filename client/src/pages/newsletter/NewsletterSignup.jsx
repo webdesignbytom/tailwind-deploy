@@ -1,13 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 // Components
 import Navbar from '../../components/navigation/Navbar';
 
 function NewsletterSignup() {
+  const [newsletterSignupData, setNewsletterSignupData] = useState({
+    email: '',
+  });
+
   const myComponentStyle = {
     background: 'rgba(255, 255, 255, 0.55)',
     backdropFilter: 'blur(20px)',
     zIndex: 1,
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setNewsletterSignupData({
+      ...newsletterSignupData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmitNewsletterSignUp = (event) => {
+    console.log('submit');
+    event.preventDefault();
   };
 
   return (
@@ -22,7 +40,7 @@ function NewsletterSignup() {
                   <article class='md:mt-12 lg:mt-0 mb-12 lg:mb-0'>
                     <div
                       style={myComponentStyle}
-                      class='relative block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14'
+                      class='relative block rounded-lg shadow-lg px-6 py-12 md:px-20 lg:-mr-14'
                     >
                       <h1 class='text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-6'>
                         Are you ready <br />
@@ -34,11 +52,17 @@ function NewsletterSignup() {
                         Join out mailing list to hear about upcoming projects
                         and events.
                       </h2>
-                      <section class='md:flex flex-row my-2'>
+                      <form
+                        onSubmit={handleSubmitNewsletterSignUp}
+                        class='md:flex flex-row my-2'
+                      >
                         <input
-                          type='text'
-                          class='form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                          id='email'
+                          type='email'
+                          name='email'
+                          class='form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                           placeholder='Enter your email'
+                          onChange={handleChange}
                         />
                         <button
                           type='submit'
@@ -48,17 +72,25 @@ function NewsletterSignup() {
                         >
                           Subscribe
                         </button>
-                      </section>
+                      </form>
                       <article>
-                        <h3 class='text-xl tracking-tight mb-3'>Sponsorship money. from our newsletter goes towards our community and environmental <Link to='/our-goals'><span className='font-semibold text-main-colour italic underline'>goals.</span></Link></h3>
+                        <h3 class='text-xl tracking-tight mb-3'>
+                          Sponsorship money. from our newsletter goes towards
+                          our community and environmental{' '}
+                          <Link to='/our-goals'>
+                            <span className='font-semibold text-main-colour italic underline'>
+                              goals.
+                            </span>
+                          </Link>
+                        </h3>
                       </article>
                       <section></section>
                     </div>
                   </article>
-                  <div class='md:mb-12 lg:mb-0'>
+                  <div class='md:mb-12 lg:mb-0 shadow-[5px_5px_rgba(74,_173,_55,_0.4),_10px_10px_rgba(74,_173,_55,_0.3),_15px_15px_rgba(74,_173,_55,_0.2),_20px_20px_rgba(74,_173,_55,_0.1),_25px_25px_rgba(74,_173,_55,_0.1)]'>
                     <img
-                      src='https://mdbootstrap.com/img/new/ecommerce/vertical/056.jpg'
-                      class='w-full rounded-lg shadow-lg rotate-lg-6'
+                      src='https://raw.githubusercontent.com/webdesignsbytom/myecoapp-deploy/main/client/src/assets/img/myea/general-bg-myea.png'
+                      class='w-full max-h-[700px] rounded-lg shadow-lg object-cover rotate-lg-6'
                       alt=''
                     />
                   </div>
