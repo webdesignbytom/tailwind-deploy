@@ -14,12 +14,16 @@ import SearchBarEcoHome from './pages/myecohome/SearchBarEcoHome';
 import TestPage from './pages/test/TestPage';
 import UserAgreement from './pages/auth/UserAgreement';
 import AboutPage from './pages/about/AboutPage';
+import ProjectsPage from './pages/projects/ProjectsPage';
+import GoalsPage from './pages/goals/GoalsPage';
+import FundingPage from './pages/funding/FundingPage';
 // Utils
 import {
   AuthenticateUser,
   AuthenticateAdmin,
   AuthenticateDeveloper,
 } from './utils/AuthenticateUser';
+import ContactUsPage from './pages/contact/ContactUsPage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -29,13 +33,18 @@ function App() {
     <>
       <Routes>
         <Route path='/' index element={<HomePage />} />
-        <Route path='/newsletter-signup' element={<NewsletterSignup />} />
+
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/projects' element={<ProjectsPage />} />
+        <Route path='/our-goals' element={<GoalsPage />} />
+        <Route path='/funding' element={<FundingPage />} />
+        <Route path='/contact-us' element={<ContactUsPage />} />
 
         <Route path='/myecohome' element={<MyecohomeMain />} />
         <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />}  />
 
         {/* User routes */}
+        <Route path='/newsletter-signup' element={<NewsletterSignup />} />
         <Route path='/login' />
         <Route path='/register' element={<RegisterPage />} />
         <Route
