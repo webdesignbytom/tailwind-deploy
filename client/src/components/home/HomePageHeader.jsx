@@ -3,15 +3,14 @@ import React from 'react';
 import HeaderCTA from './HeaderCTA';
 // Icon
 import GameIcon from '../../assets/img/space-invaders.png';
-import TechIcon from '../../assets/img/technology.png';
 
 function HomePageHeader() {
   return (
     <header id='hero' className='grid p-4 w-full'>
       <div className='grid md:grid-cols-2x h-full'>
         {/* Text Section Left */}
-        <section className='grid h-full'>
-          <div className='mt-2 md:mt-4 md:pl-10'>
+        <section className='grid h-full my-10'>
+          <div className='mt-2 md:mt-4 md:pl-20'>
             <article className='h-fit'>
               <div className='text-lg'>
                 <h4 className='text-main-colour'>Brand new web project</h4>
@@ -97,7 +96,7 @@ function HomePageHeader() {
         </section>
 
         {/* Phone images */}
-        <section className='grid mt-10 md:mt-0'>
+        <section className='grid mt-10 md:mt-0 md:mr-10'>
           <div className='grid relative grid-flow-col'>
             <div className=' relative z-10 md:-ml-4 grid items-center'>
               <img

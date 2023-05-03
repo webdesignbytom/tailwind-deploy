@@ -5,7 +5,7 @@ import MyeaLogo from '../../assets/svg/myea-logo.svg';
 // Context
 import { ToggleContext } from '../../context/ToggleContext';
 // Components
-import SocialBar from '../../components/social/SocialBar'
+import SocialBar from '../../components/social/SocialBar';
 
 function Navbar() {
   const { toggleNavbar, toggleNavigation } = useContext(ToggleContext);
@@ -18,7 +18,11 @@ function Navbar() {
         <header className='grid grid-flow-col rounded bg-colour-dark p-2 justify-between w-full h-fit items-center px-4 font-poppins'>
           <section>
             <Link className='cursor-pointer' to='/'>
-              <img className='w-12 h-12 rounded no__highlights' src={MyeaLogo} alt='my eco app logo' />
+              <img
+                className='w-12 h-12 rounded no__highlights'
+                src={MyeaLogo}
+                alt='my eco app logo'
+              />
             </Link>
           </section>
 
@@ -53,51 +57,127 @@ function Navbar() {
               {/* Home */}
               <li>
                 <Link to='/'>
-                  <span className={
-                    activeNav === '/'
-                      ? 'px-2 py-4 text-center text-green-400'
-                      : 'px-2 py-4 text-center text-gray-100'
-                  }>Home</span>
+                  <span
+                    className={
+                      activeNav === '/'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    Home
+                  </span>
                 </Link>
               </li>
               {/* Myecohome */}
               <li>
                 <Link to='/myecohome'>
-                  <span className={
-                    activeNav === '/myecohome'
-                      ? 'px-2 py-4 text-center text-green-400'
-                      : 'px-2 py-4 text-center text-gray-100'
-                  }>Myecohome</span>
+                  <span
+                    className={
+                      activeNav === '/myecohome'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    Myecohome
+                  </span>
                 </Link>
               </li>
               {/* About */}
               <li>
                 <Link to='/about'>
-                  <span className={
-                    activeNav === '/about'
-                      ? 'px-2 py-4 text-center text-green-400'
-                      : 'px-2 py-4 text-center text-gray-100'
-                  }>About</span>
+                  <span
+                    className={
+                      activeNav === '/about'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    About
+                  </span>
+                </Link>
+              </li>
+              {/* Projects */}
+              <li>
+                <Link to='/projects'>
+                  <span
+                    className={
+                      activeNav === '/projects'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    Projects
+                  </span>
+                </Link>
+              </li>
+              {/* Goals */}
+              <li>
+                <Link to='/our-goals'>
+                  <span
+                    className={
+                      activeNav === '/our-goalsv'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    Goals
+                  </span>
+                </Link>
+              </li>
+              {/* Newsletter */}
+              <li>
+                <Link to='/newsletter-signup'>
+                  <span
+                    className={
+                      activeNav === '/newsletter-signup'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    Newsletter
+                  </span>
+                </Link>
+              </li>
+              {/* Contact */}
+              <li>
+                <Link to='/contact-us'>
+                  <span
+                    className={
+                      activeNav === '/contact-us'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    Contact Us
+                  </span>
                 </Link>
               </li>
               {/* Login */}
               <li>
                 <Link to='/login'>
-                  <span className={
-                    activeNav === '/login'
-                      ? 'px-2 py-4 text-center text-green-400'
-                      : 'px-2 py-4 text-center text-gray-100'
-                  }>Login</span>
+                  <span
+                    className={
+                      activeNav === '/login'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    Login
+                  </span>
                 </Link>
               </li>
               {/* Sign-up */}
               <li>
                 <Link to='/sign-up'>
-                  <span className={
-                    activeNav === '/sign-up'
-                      ? 'px-2 py-4 text-center text-green-400'
-                      : 'px-2 py-4 text-center text-gray-100'
-                  }>Sign Up</span>
+                  <span
+                    className={
+                      activeNav === '/sign-up'
+                        ? 'px-2 py-4 text-center text-green-400'
+                        : 'px-2 py-4 text-center text-gray-100'
+                    }
+                  >
+                    Sign Up
+                  </span>
                 </Link>
               </li>
             </ul>
@@ -112,6 +192,7 @@ function Navbar() {
           <section className='w-full absolute z-30 top-[98px] px-2'>
             <nav className='bg-green-800 text-gray-100 grid outline outline-4 outline-main-colour'>
               <ul className='grid gap-4 items-center py-4 text-xl'>
+                {/* Home */}
                 <li
                   onClick={toggleNavbar}
                   className={
@@ -124,6 +205,7 @@ function Navbar() {
                     <span>Home</span>
                   </Link>
                 </li>
+                {/* Myecohome */}
                 <li
                   onClick={toggleNavbar}
                   className={
@@ -136,6 +218,7 @@ function Navbar() {
                     <span>Myecohome</span>
                   </Link>
                 </li>
+                {/* About */}
                 <li
                   onClick={toggleNavbar}
                   className={
@@ -148,16 +231,60 @@ function Navbar() {
                     <span>About Us</span>
                   </Link>
                 </li>
-                <li
-                  onClick={toggleNavbar}
-                  className={
-                    activeNav === '/projects'
-                      ? 'px-2 py-4 text-center text-main-colour'
-                      : 'px-2 py-4 text-center'
-                  }
-                >
+                {/* Projects */}
+                <li>
                   <Link to='/projects'>
-                    <span>Projects</span>
+                    <span
+                      className={
+                        activeNav === '/projects'
+                          ? 'px-2 py-4 text-center text-green-400'
+                          : 'px-2 py-4 text-center text-gray-100'
+                      }
+                    >
+                      Projects
+                    </span>
+                  </Link>
+                </li>
+                {/* Goals */}
+                <li>
+                  <Link to='/our-goals'>
+                    <span
+                      className={
+                        activeNav === '/our-goalsv'
+                          ? 'px-2 py-4 text-center text-green-400'
+                          : 'px-2 py-4 text-center text-gray-100'
+                      }
+                    >
+                      Goals
+                    </span>
+                  </Link>
+                </li>
+                {/* Newsletter */}
+                <li>
+                  <Link to='/newsletter-signup'>
+                    <span
+                      className={
+                        activeNav === '/newsletter-signup'
+                          ? 'px-2 py-4 text-center text-green-400'
+                          : 'px-2 py-4 text-center text-gray-100'
+                      }
+                    >
+                      Newsletter
+                    </span>
+                  </Link>
+                </li>
+                {/* Contact */}
+                <li>
+                  <Link to='/contact-us'>
+                    <span
+                      className={
+                        activeNav === '/contact-us'
+                          ? 'px-2 py-4 text-center text-green-400'
+                          : 'px-2 py-4 text-center text-gray-100'
+                      }
+                    >
+                      Contact Us
+                    </span>
                   </Link>
                 </li>
                 <li
