@@ -75,7 +75,7 @@ function NewsletterSignup() {
                       </form>
                       <article>
                         <h3 className='text-xl tracking-tight mb-3'>
-                          Sponsorship money. from our newsletter goes towards
+                          Sponsorship money from our newsletter goes towards
                           our community and environmental{' '}
                           <Link to='/our-goals'>
                             <span className='font-semibold text-main-colour italic underline'>
