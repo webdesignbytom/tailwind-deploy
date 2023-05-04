@@ -42,10 +42,10 @@ function HomePageHeader() {
 
           {/* icons */}
           <section className='grid -mt-10'>
-            <div className='grid grid-cols-5 px-10 md:ml-10 md:mr-20 h-fit md:max-w-[80%]'>
+            <div className='grid grid-cols-5 px-10 md:ml-10 md:mr-20 h-fit md:max-w-[80%] '>
               <article className='grid items-center justify-center p-2'>
                 <div className='grid justify-center mb-4'>
-                  <MdGamepad className='text-main-colour' size={90} />
+                  <MdGamepad className='text-main-colour ' size={90} />
                 </div>
                 <div>
                   <h4 className='font-bold text-xs md:text-2xl text-center text-main-colour'>

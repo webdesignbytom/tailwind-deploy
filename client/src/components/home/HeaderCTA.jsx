@@ -6,23 +6,23 @@ function HeaderCTA() {
     <div className='grid grid-flow-col gap-6 h-fit'>
       <Link
         to='/our-goals'
-        className='p-2 outline-2 no__highlights outline-black outline rounded text-center flex items-center justify-center bg-main-colour hover:bg-colour-pale active:scale-110 duration-200 ease-in-out lg:text-base 2xl:text-xl font-semibold text-gray-100'
+        className='p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] outline-2 no__highlights outline-black outline rounded text-center flex items-center justify-center bg-main-colour hover:bg-colour-pale active:scale-110 duration-200 ease-in-out lg:text-base 2xl:text-xl font-semibold text-gray-100'
       >
         <article>
           <h3>GOALS</h3>
         </article>
       </Link>
       <Link
-        to='/projects'
-        className='p-2 outline-2 no__highlights outline-black outline rounded text-center flex items-center justify-center bg-gray-100 hover:bg-colour-pale active:scale-110 duration-200 ease-in-out lg:text-base 2xl:text-xl font-semibold text-gray-800'
+        to='/funding'
+        className='p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] outline-2 no__highlights outline-black outline rounded text-center flex items-center justify-center bg-gray-100 hover:bg-colour-pale active:scale-110 duration-200 ease-in-out lg:text-base 2xl:text-xl font-semibold text-gray-800'
       >
         <article>
-          <h3>PROJECTS</h3>
+          <h3>FUNDING</h3>
         </article>
       </Link>
       <Link
         to='/about-us'
-        className='p-2 outline-2 no__highlights outline-black outline rounded text-center flex items-center justify-center bg-gray-100 hover:bg-colour-pale active:scale-110 duration-200 ease-in-out lg:text-base 2xl:text-xl font-semibold text-gray-800'
+        className='p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] outline-2 no__highlights outline-black outline rounded text-center flex items-center justify-center bg-gray-100 hover:bg-colour-pale active:scale-110 duration-200 ease-in-out lg:text-base 2xl:text-xl font-semibold text-gray-800'
       >
         <article>
           <h3>ABOUT</h3>

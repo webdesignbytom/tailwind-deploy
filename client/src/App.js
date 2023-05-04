@@ -14,7 +14,6 @@ import SearchBarEcoHome from './pages/myecohome/SearchBarEcoHome';
 import TestPage from './pages/test/TestPage';
 import UserAgreement from './pages/auth/UserAgreement';
 import AboutPage from './pages/about/AboutPage';
-import ProjectsPage from './pages/projects/ProjectsPage';
 import GoalsPage from './pages/goals/GoalsPage';
 import FundingPage from './pages/funding/FundingPage';
 // Utils
@@ -36,10 +35,10 @@ function App() {
         <Route path='/' index element={<HomePage />} />
 
         <Route path='/about-us' element={<AboutPage />} />
-        <Route path='/projects' element={<ProjectsPage />} />
         <Route path='/our-goals' element={<GoalsPage />} />
         <Route path='/funding' element={<FundingPage />} />
         <Route path='/contact-us' element={<ContactUsPage />} />
+        <Route path='/games-home' element={<ContactUsPage />} />
 
         <Route path='/myecohome' element={<MyecohomeMain />} />
         <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />}  />

@@ -96,17 +96,17 @@ function Navbar() {
                   </span>
                 </Link>
               </li>
-              {/* Projects */}
+              {/* Funding */}
               <li>
-                <Link to='/projects'>
+                <Link to='/funding'>
                   <span
                     className={
-                      activeNav === '/projects'
+                      activeNav === '/funding'
                         ? 'px-2 py-4 text-center text-green-400'
                         : 'px-2 py-4 text-center text-gray-100'
                     }
                   >
-                    Projects
+                    Funding
                   </span>
                 </Link>
               </li>
@@ -231,17 +231,17 @@ function Navbar() {
                     <span>About Us</span>
                   </Link>
                 </li>
-                {/* Projects */}
+                {/* Funding */}
                 <li
                   onClick={toggleNavbar}
                   className={
-                    activeNav === '/projects'
+                    activeNav === '/funding'
                       ? 'px-2 py-4 text-center text-main-colour'
                       : 'px-2 py-4 text-center'
                   }
                 >
-                  <Link to='/projects'>
-                    <span>Projects</span>
+                  <Link to='/funding'>
+                    <span>Funding</span>
                   </Link>
                 </li>
                 {/* Goals */}

@@ -28,7 +28,7 @@ function GoalsPage() {
                 data-mdb-ripple-color='light'
               >
                 <img
-                  src='https://mdbootstrap.com/img/new/standard/city/028.jpg'
+                  src={GoalsList[0].image}
                   className='w-full'
                   alt='Louvre'
                 />
@@ -69,7 +69,7 @@ function GoalsPage() {
                 data-mdb-ripple-color='light'
               >
                 <img
-                  src='https://mdbootstrap.com/img/new/standard/city/033.jpg'
+                  src={GoalsList[1].image}
                   className='w-full'
                   alt='Louvre'
                 />
@@ -108,7 +108,7 @@ function GoalsPage() {
                 data-mdb-ripple-color='light'
               >
                 <img
-                  src='https://mdbootstrap.com/img/new/standard/city/028.jpg'
+                  src={GoalsList[2].image}
                   className='w-full'
                   alt='Louvre'
                 />
