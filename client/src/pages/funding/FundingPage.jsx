@@ -14,8 +14,8 @@ function FundingPage() {
         <div className='container mb-20 mt-10 px-6 mx-auto'>
           <section className='mb-2 text-gray-800 text-center lg:text-left'>
             <article>
-              <h2 className='text-6xl font-bold mb-16 text-center text-main-colour'>
-                Funding Projects
+              <h2 className='text-4xl lg:text-5xl 2xl:text-6xl font-extrabold mb-16 text-center text-main-colour'>
+                Funding With Content
               </h2>
               <section className='mb-10'>
                 <p className='text__container mx-6'>
