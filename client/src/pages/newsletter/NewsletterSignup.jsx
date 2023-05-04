@@ -29,13 +29,13 @@ function NewsletterSignup() {
   };
 
   return (
-    <div className='bg-white dark:bg-black min-h-screen lg:max-h-screen lg:grid-rows-reg grid'>
+    <div className='bg-white dark:bg-black min-h-screen lg:max-h-screen lg:overflow-hidden lg:grid-rows-reg grid'>
       <Navbar />
-      <main className='h-full grid'>
-        <div class='container px-6 mx-auto lg:mt-5'>
+      <main className='grid'>
+        <div class='container px-6 mx-auto'>
           <section class='text-gray-800 text-center lg:text-left'>
-            <div class='px-6 py-12 md:px-12'>
-              <div class='container mx-auto xl:px-32'>
+            <div class='px-6 md:px-12'>
+              <div class='container mx-auto my-10 xl:px-32'>
                 <section class='grid lg:grid-cols-2 items-center'>
                   <article class='md:mt-12 lg:mt-0 mb-12 lg:mb-0'>
                     <div
@@ -90,7 +90,7 @@ function NewsletterSignup() {
                   <div class='md:mb-12 lg:mb-0 shadow-[5px_5px_rgba(74,_173,_55,_0.4),_10px_10px_rgba(74,_173,_55,_0.3),_15px_15px_rgba(74,_173,_55,_0.2),_20px_20px_rgba(74,_173,_55,_0.1),_25px_25px_rgba(74,_173,_55,_0.1)]'>
                     <img
                       src='https://raw.githubusercontent.com/webdesignsbytom/myecoapp-deploy/main/client/src/assets/img/myea/general-bg-myea.png'
-                      class='w-full max-h-[700px] rounded-lg shadow-lg object-cover rotate-lg-6'
+                      class='w-full max-h-[650px] rounded-lg shadow-lg object-cover rotate-lg-6'
                       alt=''
                     />
                   </div>
