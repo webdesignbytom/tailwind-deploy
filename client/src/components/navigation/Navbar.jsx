@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <>
-      <div className='px-6 py-4 lg:pt-6'>
+      <div className='mx-6 py-4 lg:pt-6'>
         <header className='grid grid-flow-col rounded bg-colour-dark p-2 justify-between w-full h-fit items-center px-4 font-poppins'>
           <section>
             <Link className='cursor-pointer' to='/'>
@@ -69,7 +69,7 @@ function Navbar() {
                 </Link>
               </li>
               {/* Myecohome */}
-              <li>
+              {/* <li>
                 <Link to='/myecohome'>
                   <span
                     className={
@@ -81,7 +81,7 @@ function Navbar() {
                     Myecohome
                   </span>
                 </Link>
-              </li>
+              </li> */}
               {/* About */}
               <li>
                 <Link to='/about-us'>
@@ -189,9 +189,9 @@ function Navbar() {
         </header>
 
         {toggleNavigation && (
-          <section className='w-full absolute z-30 top-[98px] px-2'>
+          <section className='z-30 mt-6 lg:hidden'>
             <nav className='bg-green-800 text-gray-100 grid outline outline-4 outline-main-colour'>
-              <ul className='grid gap-4 items-center py-4 text-xl'>
+              <ul className='grid items-center py-4 text-xl'>
                 {/* Home */}
                 <li
                   onClick={toggleNavbar}
@@ -206,7 +206,7 @@ function Navbar() {
                   </Link>
                 </li>
                 {/* Myecohome */}
-                <li
+                {/* <li
                   onClick={toggleNavbar}
                   className={
                     activeNav === '/myecohome'
@@ -217,7 +217,7 @@ function Navbar() {
                   <Link to='/myecohome'>
                     <span>Myecohome</span>
                   </Link>
-                </li>
+                </li> */}
                 {/* About */}
                 <li
                   onClick={toggleNavbar}
@@ -232,61 +232,58 @@ function Navbar() {
                   </Link>
                 </li>
                 {/* Projects */}
-                <li>
+                <li
+                  onClick={toggleNavbar}
+                  className={
+                    activeNav === '/projects'
+                      ? 'px-2 py-4 text-center text-main-colour'
+                      : 'px-2 py-4 text-center'
+                  }
+                >
                   <Link to='/projects'>
-                    <span
-                      className={
-                        activeNav === '/projects'
-                          ? 'px-2 py-4 text-center text-green-400'
-                          : 'px-2 py-4 text-center text-gray-100'
-                      }
-                    >
-                      Projects
-                    </span>
+                    <span>Projects</span>
                   </Link>
                 </li>
                 {/* Goals */}
-                <li>
+                <li
+                  onClick={toggleNavbar}
+                  className={
+                    activeNav === '/our-goals'
+                      ? 'px-2 py-4 text-center text-main-colour'
+                      : 'px-2 py-4 text-center'
+                  }
+                >
                   <Link to='/our-goals'>
-                    <span
-                      className={
-                        activeNav === '/our-goalsv'
-                          ? 'px-2 py-4 text-center text-green-400'
-                          : 'px-2 py-4 text-center text-gray-100'
-                      }
-                    >
-                      Goals
-                    </span>
+                    <span>Goals</span>
                   </Link>
                 </li>
                 {/* Newsletter */}
-                <li>
+                <li
+                  onClick={toggleNavbar}
+                  className={
+                    activeNav === '/newsletter-signup'
+                      ? 'px-2 py-4 text-center text-main-colour'
+                      : 'px-2 py-4 text-center'
+                  }
+                >
                   <Link to='/newsletter-signup'>
-                    <span
-                      className={
-                        activeNav === '/newsletter-signup'
-                          ? 'px-2 py-4 text-center text-green-400'
-                          : 'px-2 py-4 text-center text-gray-100'
-                      }
-                    >
-                      Newsletter
-                    </span>
+                    <span>Newsletter</span>
                   </Link>
                 </li>
                 {/* Contact */}
-                <li>
+                <li
+                  onClick={toggleNavbar}
+                  className={
+                    activeNav === '/contact-us'
+                      ? 'px-2 py-4 text-center text-main-colour'
+                      : 'px-2 py-4 text-center'
+                  }
+                >
                   <Link to='/contact-us'>
-                    <span
-                      className={
-                        activeNav === '/contact-us'
-                          ? 'px-2 py-4 text-center text-green-400'
-                          : 'px-2 py-4 text-center text-gray-100'
-                      }
-                    >
-                      Contact Us
-                    </span>
+                    <span>Contact</span>
                   </Link>
                 </li>
+                {/* Login */}
                 <li
                   onClick={toggleNavbar}
                   className={
@@ -299,6 +296,7 @@ function Navbar() {
                     <span>Login</span>
                   </Link>
                 </li>
+                {/* Sign Up */}
                 <li
                   onClick={toggleNavbar}
                   className={
