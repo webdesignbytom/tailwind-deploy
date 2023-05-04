@@ -58,53 +58,51 @@ function EnterNewPassword() {
       });
   };
   return (
-    <>
-      <div className='w-full dark:bg-black'>
-        <Navbar />
-        <main>
-          <article className='dark:text-white text-center my-4'>
-            <h1>Enter New Password</h1>
-          </article>
+    <div className='bg-white dark:bg-black min-h-screen lg:max-h-screen lg:overflow-hidden lg:grid-rows-reg grid'>
+      <Navbar />
+      <main className='grid'>
+        <article className='dark:text-white text-center my-4'>
+          <h1>Enter New Password</h1>
+        </article>
 
-          <form onSubmit={handleSubmit}>
-            {/* <!-- Password input --> */}
-            <div className='mb-6'>
-              <input
-                type='password'
-                name='password'
-                className='standard__inputs'
-                placeholder='Password'
-                onChange={handleChange}
-              />
-            </div>
+        <form onSubmit={handleSubmit}>
+          {/* <!-- Password input --> */}
+          <div className='mb-6'>
+            <input
+              type='password'
+              name='password'
+              className='standard__inputs'
+              placeholder='Password'
+              onChange={handleChange}
+            />
+          </div>
 
-            {/* <!-- Confirm Password input --> */}
-            <div className='mb-6'>
-              <input
-                type='password'
-                name='confirmPassword'
-                className='standard__inputs'
-                placeholder='Confirm Password'
-                onChange={handleChange}
-              />
-            </div>
+          {/* <!-- Confirm Password input --> */}
+          <div className='mb-6'>
+            <input
+              type='password'
+              name='confirmPassword'
+              className='standard__inputs'
+              placeholder='Confirm Password'
+              onChange={handleChange}
+            />
+          </div>
 
-            {/* <!-- Submit button --> */}
-            <div className='mb-2'>
-              <button
-                type='submit'
-                className='submit__button'
-                data-mdb-ripple='true'
-                data-mdb-ripple-color='light'
-              >
-                Submit New Password
-              </button>
-            </div>
-          </form>
-        </main>
-        {successPasswordReset && <h3>SUCCESS {page.title}</h3>}
-      </div>
-    </>
+          {/* <!-- Submit button --> */}
+          <div className='mb-2'>
+            <button
+              type='submit'
+              className='submit__button'
+              data-mdb-ripple='true'
+              data-mdb-ripple-color='light'
+            >
+              Submit New Password
+            </button>
+          </div>
+        </form>
+      </main>
+      {successPasswordReset && <h3>SUCCESS {page.title}</h3>}
+    </div>
   );
 }
 

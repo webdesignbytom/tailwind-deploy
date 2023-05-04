@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react';
 // Components
 import Navbar from '../../components/navigation/Navbar';
 
 function AboutPage() {
   return (
-    <div className="bg-main-colour grid grid-rows-reg lg:max-h-screen h-screen font-poppins">
+    <div className='bg-white dark:bg-black min-h-screen lg:max-h-screen lg:overflow-hidden lg:grid-rows-reg grid'>
       <Navbar />
-      <section>
-        a
-      </section>
+      <main className='grid'></main>
     </div>
   );
 }

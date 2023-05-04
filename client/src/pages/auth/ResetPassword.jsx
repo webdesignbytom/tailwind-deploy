@@ -21,41 +21,41 @@ function ResetPassword() {
   const handleReset = (event) => {
     event.preventDefault();
 
-    postPasswordReset(resetEmail, setSuccessResetPassword)
+    postPasswordReset(resetEmail, setSuccessResetPassword);
   };
 
   return (
-    <>
+    <div className='bg-white dark:bg-black min-h-screen lg:max-h-screen lg:overflow-hidden lg:grid-rows-reg grid'>
       <Navbar />
-      <div>ResetPassword</div>
-      <form onSubmit={handleReset}>
-        {/* <!-- Email input --> */}
-        <div className='mb-6'>
-          <input
-            type='text'
-            name='resetEmail'
-            className='standard__inputs'
-            placeholder='Email address'
-            onChange={handleChange}
-          />
-        </div>
+      <main className='grid'>
+        <div>ResetPassword</div>
+        <form onSubmit={handleReset}>
+          {/* <!-- Email input --> */}
+          <div className='mb-6'>
+            <input
+              type='text'
+              name='resetEmail'
+              className='standard__inputs'
+              placeholder='Email address'
+              onChange={handleChange}
+            />
+          </div>
 
-        {/* <!-- Submit button --> */}
-        <div className='mb-2'>
-          <button
-            type='submit'
-            className='submit__button'
-            data-mdb-ripple='true'
-            data-mdb-ripple-color='light'
-          >
-            Send Email
-          </button>
-        </div>
-      </form>
-      <div>
-        {successResetPassword && <p>Change successful</p>}
-      </div>
-    </>
+          {/* <!-- Submit button --> */}
+          <div className='mb-2'>
+            <button
+              type='submit'
+              className='submit__button'
+              data-mdb-ripple='true'
+              data-mdb-ripple-color='light'
+            >
+              Send Email
+            </button>
+          </div>
+        </form>
+        <div>{successResetPassword && <p>Change successful</p>}</div>
+      </main>
+    </div>
   );
 }
 

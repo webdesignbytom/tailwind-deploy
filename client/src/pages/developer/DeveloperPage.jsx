@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+// Components
+import Navbar from '../../components/navigation/Navbar';
 
 function DeveloperPage() {
   return (
-    <div>DeveloperPage</div>
-  )
+    <div className='bg-white dark:bg-black min-h-screen lg:max-h-screen lg:overflow-hidden lg:grid-rows-reg grid'>
+      <Navbar />
+      <main className='grid'></main>
+    </div>
+  );
 }
 
-export default DeveloperPage
+export default DeveloperPage;
