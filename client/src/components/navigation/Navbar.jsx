@@ -53,7 +53,7 @@ function Navbar() {
           </nav>
 
           <nav className='text-gray-100 hidden md:grid'>
-            <ul className='grid grid-flow-col gap-6 text-lg mr-8'>
+            <ul className='grid grid-flow-col gap-4 mr-8'>
               {/* Home */}
               <li>
                 <Link to='/'>
