@@ -9,7 +9,30 @@ import SolarPanel from '../../assets/img/solar.jpg';
 import SolarHeater from '../../assets/img/solarheater.jpeg';
 import Park from '../../assets/img/park.jpg';
 
-// HOME PAGE
+// About Page
+export const aboustUsDataArray = [
+  {
+    title: 'How we differ',
+    content: 'lorem Ips sod lorem ipsum dolor sit amet, consectetur adip sdsa te velit sed asdasd dsfsdf',
+    icon: ''
+  },
+  {
+    title: 'Why we do it',
+    content: 'lorem Ips sod lorem ipsum dolor sit amet, consectetur adip sdsa te velit sed asdasd dsfsdf',
+    icon: ''
+  },
+  {
+    title: 'How we',
+    content: 'lorem Ips sod lorem ipsum dolor sit amet, consectetur adip sdsa te velit sed asdasd dsfsdf',
+    icon: ''
+  },
+  {
+    title: 'How we ',
+    content: 'lorem Ips sod lorem ipsum dolor sit amet, consectetur adip sdsa te velit sed asdasd dsfsdf',
+    icon: ''
+  },
+]
+// GOALS PAGE
 export const GoalsList = [
   {
     title: 'Increasae Solar Production',

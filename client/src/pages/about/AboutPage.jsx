@@ -1,6 +1,7 @@
 import React from 'react';
 // Components
 import Navbar from '../../components/navigation/Navbar';
+import { aboustUsDataArray } from '../../utils/data/CompanyData';
 
 function AboutPage() {
   return (
@@ -41,13 +42,11 @@ function AboutPage() {
                   </span>
 
                   <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
-                    New Components
+                    {aboustUsDataArray[0].title}
                   </h1>
 
                   <p class='text-gray-500 dark:text-gray-300'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident ab nulla quod dignissimos vel non corrupti
-                    doloribus voluptatum eveniet
+                  {aboustUsDataArray[0].content}
                   </p>
                 </div>
 
@@ -76,13 +75,11 @@ function AboutPage() {
                   </span>
 
                   <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
-                    elegant Dark Mode
+                  {aboustUsDataArray[1].title}
                   </h1>
 
                   <p class='text-gray-500 dark:text-gray-300'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident ab nulla quod dignissimos vel non corrupti
-                    doloribus voluptatum eveniet
+                  {aboustUsDataArray[1].content}
                   </p>
                 </div>
 
@@ -105,13 +102,11 @@ function AboutPage() {
                   </span>
 
                   <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
-                    Easy to customiztions
+                  {aboustUsDataArray[2].title}
                   </h1>
 
                   <p class='text-gray-500 dark:text-gray-300'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident ab nulla quod dignissimos vel non corrupti
-                    doloribus voluptatum eveniet
+                  {aboustUsDataArray[2].content}
                   </p>
                 </div>
 
@@ -134,13 +129,11 @@ function AboutPage() {
                   </span>
 
                   <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
-                    Simple & clean designs
+                  {aboustUsDataArray[3].title}
                   </h1>
 
                   <p class='text-gray-500 dark:text-gray-300'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident ab nulla quod dignissimos vel non corrupti
-                    doloribus voluptatum eveniet
+                  {aboustUsDataArray[3].content}
                   </p>
                 </div>
               </div>
@@ -148,7 +141,7 @@ function AboutPage() {
               <div class='hidden relative lg:flex lg:w-1/2 lg:justify-center'>
                 <img
                   class='w-[28rem] h-[28rem] flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[34rem] xl:h-[34rem] rounded-full'
-                  src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+                  src={'../../assets/img/myea/myea-tshirt.jpg'}
                   alt=''
                 />
                 <img
