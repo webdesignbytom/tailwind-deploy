@@ -84,7 +84,7 @@ function Navbar() {
               </li>
               {/* About */}
               <li>
-                <Link to='/about'>
+                <Link to='/about-us'>
                   <span
                     className={
                       activeNav === '/about'
@@ -227,7 +227,7 @@ function Navbar() {
                       : 'px-2 py-4 text-center'
                   }
                 >
-                  <Link to='/about'>
+                  <Link to='/about-us'>
                     <span>About Us</span>
                   </Link>
                 </li>

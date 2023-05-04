@@ -2,9 +2,6 @@ import React from 'react';
 // Components
 import Navbar from '../../components/navigation/Navbar';
 import HomePageHeader from '../../components/home/HomePageHeader';
-import GoalsContainer from '../../components/home/GoalsContainer';
-import FundRaisingHomePage from '../../components/home/FundRaisingHomePage';
-import FooterComponent from '../../components/footer/FooterComponent';
 
 function HomePage() {
   return (

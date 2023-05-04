@@ -2,65 +2,65 @@ import React from 'react';
 
 function SignUpCTA() {
   return (
-    <div class='container my-24 px-6 mx-auto'>
+    <div className='container my-24 px-6 mx-auto'>
       {/* <!-- Section: Design Block --> */}
-      <section class='mb-32 text-gray-800 text-center lg:text-left'>
+      <section className='mb-32 text-gray-800 text-center lg:text-left'>
         <div
-          class='px-6 py-12 md:px-12'
+          className='px-6 py-12 md:px-12'
           style='background-color: hsl(0, 0%, 96%)'
         >
-          <div class='grid lg:grid-cols-2 gap-12 items-center'>
-            <div class='mt-12 lg:mt-0'>
-              <h1 class='text-5xl font-bold tracking-tight leading-tight mb-12'>
+          <div className='grid lg:grid-cols-2 gap-12 items-center'>
+            <div className='mt-12 lg:mt-0'>
+              <h1 className='text-5xl font-bold tracking-tight leading-tight mb-12'>
                 The best offer <br />
-                <span class='text-main-colour'>for your business</span>
+                <span className='text-main-colour'>for your business</span>
               </h1>
-              <p class='text-gray-600'>
+              <p className='text-gray-600'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Eveniet, itaque accusantium odio, soluta, corrupti aliquam
                 quibusdam tempora at cupiditate quis eum maiores libero
                 veritatis? Dicta facilis sint aliquid ipsum atque?
               </p>
             </div>
-            <div class='mb-12 lg:mb-0'>
-              <div class='block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12'>
+            <div className='mb-12 lg:mb-0'>
+              <div className='block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12'>
                 <form>
-                  <div class='grid md:grid-cols-2 md:gap-6'>
-                    <div class='mb-6'>
+                  <div className='grid md:grid-cols-2 md:gap-6'>
+                    <div className='mb-6'>
                       <input
                         type='text'
-                        class='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
+                        className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                         placeholder='First name'
                       />
                     </div>
-                    <div class='mb-6'>
+                    <div className='mb-6'>
                       <input
                         type='text'
-                        class='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
+                        className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                         placeholder='Last name'
                       />
                     </div>
                   </div>
                   <input
                     type='email'
-                    class='form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
+                    className='form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                     placeholder='Email address'
                   />
                   <input
                     type='password'
-                    class='form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
+                    className='form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                     placeholder='Password'
                   />
-                  <div class='form-check flex justify-center mb-6'>
+                  <div className='form-check flex justify-center mb-6'>
                     <input
-                      class='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-main-colour checked:border-main-colour focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
+                      className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-main-colour checked:border-main-colour focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
                       type='checkbox'
                       value=''
                       id='flexCheckChecked'
                       checked
                     />
                     <label
-                      class='form-check-label inline-block text-gray-800'
+                      className='form-check-label inline-block text-gray-800'
                       for='flexCheckChecked'
                     >
                       Subscribe to our newsletter
@@ -70,24 +70,24 @@ function SignUpCTA() {
                     type='button'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
-                    class='inline-block px-6 py-2.5 mb-6 w-full bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out'
+                    className='inline-block px-6 py-2.5 mb-6 w-full bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out'
                   >
                     Sign up
                   </button>
-                  <div class='text-center'>
-                    <p class='mb-6'>or sign up with:</p>
+                  <div className='text-center'>
+                    <p className='mb-6'>or sign up with:</p>
                   </div>
-                  <div class='flex justify-center'>
+                  <div className='flex justify-center'>
                     <a
                       href='#!'
                       role='button'
-                      class='text-main-colour hover:text-colour-dark focus:text-colour-dark action:text-green-900 transition duration-200 ease-in-out'
+                      className='text-main-colour hover:text-colour-dark focus:text-colour-dark action:text-green-900 transition duration-200 ease-in-out'
                     >
                       {/* <!-- Facebook --> */}
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 320 512'
-                        class='w-4 h-4 mx-4'
+                        className='w-4 h-4 mx-4'
                       >
                         {/* <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
                         <path
@@ -99,13 +99,13 @@ function SignUpCTA() {
                     <a
                       href='#!'
                       role='button'
-                      class='text-main-colour hover:text-colour-dark focus:text-colour-dark action:text-green-900 transition duration-200 ease-in-out'
+                      className='text-main-colour hover:text-colour-dark focus:text-colour-dark action:text-green-900 transition duration-200 ease-in-out'
                     >
                       {/* <!-- Google --> */}
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 488 512'
-                        class='w-4 h-4 mx-4'
+                        className='w-4 h-4 mx-4'
                       >
                         {/* <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
                         <path
@@ -117,13 +117,13 @@ function SignUpCTA() {
                     <a
                       href='#!'
                       role='button'
-                      class='text-main-colour hover:text-colour-dark focus:text-colour-dark action:text-green-900 transition duration-200 ease-in-out'
+                      className='text-main-colour hover:text-colour-dark focus:text-colour-dark action:text-green-900 transition duration-200 ease-in-out'
                     >
                       {/* <!-- Twitter --> */}
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 512 512'
-                        class='w-4 h-4 mx-4'
+                        className='w-4 h-4 mx-4'
                       >
                         {/* <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
                         <path
@@ -135,13 +135,13 @@ function SignUpCTA() {
                     <a
                       href='#!'
                       role='button'
-                      class='text-main-colour hover:text-colour-dark focus:text-colour-dark action:text-green-900 transition duration-200 ease-in-out'
+                      className='text-main-colour hover:text-colour-dark focus:text-colour-dark action:text-green-900 transition duration-200 ease-in-out'
                     >
                       {/* <!-- Github --> */}
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 496 512'
-                        class='w-4 h-4 mx-4'
+                        className='w-4 h-4 mx-4'
                       >
                         {/* <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
                         <path

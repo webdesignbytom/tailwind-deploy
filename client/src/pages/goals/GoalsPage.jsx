@@ -8,42 +8,42 @@ function GoalsPage() {
   return (
     <div className='bg-white grid'>
       <Navbar />
-      <div class='container my-24 px-6 mx-auto'>
-        <section class='mb-32 text-gray-800'>
+      <div className='container my-24 px-6 mx-auto'>
+        <section className='mb-32 text-gray-800'>
           <div>
-            <h2 class='text-8xl font-bold mb-20 text-center text-main-colour'>
+            <h2 className='text-8xl font-bold mb-20 text-center text-main-colour'>
               OUR GOALS
             </h2>
           </div>
-          <section class='flex flex-wrap mb-12'>
-            <div class='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0'>
+          <section className='flex flex-wrap mb-12'>
+            <div className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0'>
               <div
-                class='relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg'
+                className='relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg'
                 style={{ backgroundPosition: '50%' }}
                 data-mdb-ripple='true'
                 data-mdb-ripple-color='light'
               >
                 <img
                   src='https://mdbootstrap.com/img/new/standard/city/028.jpg'
-                  class='w-full'
+                  className='w-full'
                   alt='Louvre'
                 />
                 <a href='#!'>
                   <div
-                    class='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
+                    className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                     style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}
                   ></div>
                 </a>
               </div>
             </div>
 
-            <article class='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6'>
-              <h3 class='text-2xl font-bold mb-4'>That's the news!</h3>
-              <div class='text-red-600 text-sm mb-4 flex items-center font-medium'>
+            <article className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6'>
+              <h3 className='text-2xl font-bold mb-4'>That's the news!</h3>
+              <div className='text-red-600 text-sm mb-4 flex items-center font-medium'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 496 512'
-                  class='w-4 h-4 mr-2'
+                  className='w-4 h-4 mr-2'
                 >
                   {/* <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --> */}
                   <path
@@ -53,12 +53,12 @@ function GoalsPage() {
                 </svg>
                 Travels
               </div>
-              <p class='text-gray-500 mb-6'>
+              <p className='text-gray-500 mb-6'>
                 Ut pretium ultricies dignissim. Sed sit amet mi eget urna
                 placerat vulputate. Ut vulputate est non quam dignissim
                 elementum. Donec a ullamcorper diam.
               </p>
-              <p class='text-gray-500'>
+              <p className='text-gray-500'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae
                 nulla saepe rerum aspernatur odio amet perferendis tempora
                 mollitia? Ratione unde magni omnis quaerat blanditiis cumque
@@ -72,35 +72,35 @@ function GoalsPage() {
             </article>
           </section>
 
-          <div class='flex flex-wrap lg:flex-row-reverse mb-12'>
-            <div class='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0'>
+          <div className='flex flex-wrap lg:flex-row-reverse mb-12'>
+            <div className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0'>
               <div
-                class='relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg'
+                className='relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg'
                 style={{ backgroundPosition: '50%' }}
                 data-mdb-ripple='true'
                 data-mdb-ripple-color='light'
               >
                 <img
                   src='https://mdbootstrap.com/img/new/standard/city/033.jpg'
-                  class='w-full'
+                  className='w-full'
                   alt='Louvre'
                 />
                 <a href='#!'>
                   <div
-                    class='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
+                    className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                     style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}
                   ></div>
                 </a>
               </div>
             </div>
 
-            <div class='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6'>
-              <h3 class='text-2xl font-bold mb-4'>Exhibition in Paris</h3>
-              <div class='text-blue-600 text-sm mb-4 flex items-center font-medium'>
+            <div className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6'>
+              <h3 className='text-2xl font-bold mb-4'>Exhibition in Paris</h3>
+              <div className='text-blue-600 text-sm mb-4 flex items-center font-medium'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 512 512'
-                  class='w-4 h-4 mr-2'
+                  className='w-4 h-4 mr-2'
                 >
                   {/* <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --> */}
                   <path
@@ -110,7 +110,7 @@ function GoalsPage() {
                 </svg>
                 Art
               </div>
-              <p class='text-gray-500'>
+              <p className='text-gray-500'>
                 Duis sagittis, turpis in ullamcorper venenatis, ligula nibh
                 porta dui, sit amet rutrum enim massa in ante. Curabitur in
                 justo at lorem laoreet ultricies. Nunc ligula felis, sagittis
@@ -126,35 +126,35 @@ function GoalsPage() {
             </div>
           </div>
 
-          <div class='flex flex-wrap'>
-            <div class='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0'>
+          <div className='flex flex-wrap'>
+            <div className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0'>
               <div
-                class='relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg'
+                className='relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg'
                 style={{ backgroundPosition: '50%' }}
                 data-mdb-ripple='true'
                 data-mdb-ripple-color='light'
               >
                 <img
                   src='https://mdbootstrap.com/img/new/standard/city/079.jpg'
-                  class='w-full'
+                  className='w-full'
                   alt='Louvre'
                 />
                 <a href='#!'>
                   <div
-                    class='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
+                    className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                     style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}
                   ></div>
                 </a>
               </div>
             </div>
 
-            <div class='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6'>
-              <h3 class='text-2xl font-bold mb-4'>Stock market boom</h3>
-              <div class='text-yellow-600 text-sm mb-4 flex items-center font-medium'>
+            <div className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6'>
+              <h3 className='text-2xl font-bold mb-4'>Stock market boom</h3>
+              <div className='text-yellow-600 text-sm mb-4 flex items-center font-medium'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 640 512'
-                  class='w-4 h-4 mr-2'
+                  className='w-4 h-4 mr-2'
                 >
                   {/* <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --> */}
                   <path
@@ -164,11 +164,11 @@ function GoalsPage() {
                 </svg>
                 Business
               </div>
-              <p class='text-gray-500 mb-6 text-sm'>
+              <p className='text-gray-500 mb-6 text-sm'>
                 Published <u>10.01.2022</u> by
                 <a href='#!'>Joe Svan</a>
               </p>
-              <p class='text-gray-500'>
+              <p className='text-gray-500'>
                 Sed sollicitudin purus sed nulla dignissim ullamcorper. Aenean
                 tincidunt vulputate libero, nec imperdiet sapien pulvinar id.
                 Nullam scelerisque odio vel lacus faucibus, tincidunt feugiat

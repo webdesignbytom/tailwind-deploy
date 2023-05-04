@@ -24,6 +24,7 @@ import {
   AuthenticateDeveloper,
 } from './utils/AuthenticateUser';
 import ContactUsPage from './pages/contact/ContactUsPage';
+import LoginPage from './users/login/LoginPage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -34,7 +35,7 @@ function App() {
       <Routes>
         <Route path='/' index element={<HomePage />} />
 
-        <Route path='/about' element={<AboutPage />} />
+        <Route path='/about-us' element={<AboutPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
         <Route path='/our-goals' element={<GoalsPage />} />
         <Route path='/funding' element={<FundingPage />} />
@@ -45,8 +46,8 @@ function App() {
 
         {/* User routes */}
         <Route path='/newsletter-signup' element={<NewsletterSignup />} />
-        <Route path='/login' />
-        <Route path='/register' element={<RegisterPage />} />
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/sign-up' element={<RegisterPage />} />
         <Route
           path='/account'
           element={
