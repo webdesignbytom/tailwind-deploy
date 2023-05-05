@@ -47,7 +47,7 @@ export const createGetAllNewsletterEvent = async (user) => {
   }
 };
 
-export const createCreateMessageEvent = async (user) => {
+export const createRegisterNewsletterEvent = async (user) => {
   let type = 'USER';
   if (user.role === 'ADMIN') {
     type = 'ADMIN';
@@ -60,14 +60,13 @@ export const createCreateMessageEvent = async (user) => {
     await dbClient.event.create({
       data: {
         type: type,
-        topic: 'Create message',
-        content: `Create message successful for ${user.email}`,
-        createdById: user.id,
+        topic: 'Register for newsletter',
+        content: `Register for newsletter successful for ${user.email}`,
         code: 201
       },
     });
   } catch (err) {
-    const error = new CreateEventError(user.id, 'Create message');
+    const error = new CreateEventError(user.id, 'Register for newsletter');
     myEmitterErrors.emit('error', error);
     throw err;
   }

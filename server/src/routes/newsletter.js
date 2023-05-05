@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { getAllNewsletterMembers } from '../controllers/newsletter.js';
+import { createNewNewsletterMember, getAllNewsletterMembers } from '../controllers/newsletter.js';
 import {
   validateAuthentication,
   validateDeveloperRole,
@@ -9,6 +9,6 @@ import {
 const router = Router();
 
 router.get('/all-newsletter-members', getAllNewsletterMembers);
-router.post('/newsletter-signup');
+router.post('/newsletter-signup', createNewNewsletterMember);
 
 export default router;
