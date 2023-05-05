@@ -1,9 +1,23 @@
 import dbClient from '../../utils/dbClient.js';
 // Error events
 import { myEmitterErrors } from '../errorEvents.js';
-import { CreateEventError } from './errorUtils.js';
+import { CreateEventError, NoPermissionEvent } from './errorUtils.js';
 
 export const createGetAllNewsletterEvent = async (user) => {
+  let type = 'TEST'
+
+  if (user === null || user === undefined) {
+    console.log('XXXXXXXXXXXXXX');
+
+    user = {
+      id: '6aa67f8e-dbde-49a1-a008-cfec77f88eee',
+      email: 'test@example.com'
+    }
+  }
+  
+  console.log('user: ', user);
+
+
   if (user.role === 'ADMIN') {
     type = 'ADMIN';
   }
@@ -15,17 +29,17 @@ export const createGetAllNewsletterEvent = async (user) => {
     myEmitterErrors.emit('error', notAuthorized);
     return;
   }
-  
+
   try {
     await dbClient.event.create({
       data: {
         type: type,
         topic: 'Get all newsletter',
         content: `Get all newsletter successful for ${user.email}`,
-        createdById: user.id,
         code: 200
       },
     });
+    
   } catch (err) {
     const error = new CreateEventError(user.id, 'Get all newsletter');
     myEmitterErrors.emit('error', error);

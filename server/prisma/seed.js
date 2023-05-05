@@ -34,6 +34,11 @@ async function seed() {
       email: 'x@g.com',
     },
   });
+  const newsletterMemberTwo = await dbClient.newsletterMember.create({
+    data: {
+      email: 'x2@g.com',
+    },
+  });
 
   // EVENTS
   const eventOne = await dbClient.event.create({

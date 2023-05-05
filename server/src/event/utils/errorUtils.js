@@ -15,12 +15,12 @@ export const createErrorEvent = async (errorEvent) => {
   if (errorEvent.code) {
     codeId = errorEvent.code;
   }
+
   await dbClient.event.create({
     data: {
       type: 'ERROR',
       topic: errorEvent.topic,
       content: `${errorEvent.code} ${errorEvent.message}`,
-      receivedById: userId,
       code: codeId,
     },
   });
