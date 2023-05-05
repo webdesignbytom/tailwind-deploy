@@ -22,7 +22,7 @@ The Frontend can be view at [myecoapp](https://dazzling-biscuit-b01617.netlify.a
 
 A new design for my website as a professional portfolio. Coupled with an attempt to sell freelance work through a sale page.
 
-Server deployment with Vercel @ [https://webdesignsbytom-app.vercel.app/](https://webdesignsbytom-app.vercel.app/)
+Server deployment with Vercel @ [https://myecoapp-deploy.vercel.app/](https://myecoapp-deploy.vercel.app/)
 
 ## Technologies
 
