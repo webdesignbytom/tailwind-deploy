@@ -189,6 +189,13 @@ model PasswordReset {
   updatedAt    DateTime? @updatedAt
 }
 
+model NewsletterMember {
+  id        String    @id @default(uuid())
+  email     String    @unique
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+}
+
 enum NotificationType {
   PURCHASE
   MESSAGE

@@ -13,6 +13,7 @@ import eventRouter from './routes/events.js';
 import notificationRouter from './routes/notifications.js';
 import messageRouter from './routes/messages.js';
 import reviewRouter from './routes/reviews.js';
+import newsletterRouter from './routes/newsletter.js';
 import userRouter from './routes/users.js';
 // Env
 import { HTTP_URL, PORT } from './utils/config.js';
@@ -40,6 +41,7 @@ app.use('/complaints', complaintRouter);
 app.use('/contacts', contactRouter);
 app.use('/events', eventRouter);
 app.use('/messages', messageRouter);
+app.use('/newsletter', newsletterRouter);
 app.use('/notifications', notificationRouter);
 app.use('/reviews', reviewRouter);
 app.use('/users', userRouter);

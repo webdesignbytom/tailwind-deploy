@@ -34,6 +34,13 @@ export const EVENT_MESSAGES = {
   userMessagesNotFound: `Failed to find user messages`,
   createMessageFail: `Failed to create message`,
   markMessageViewedFailed: `Failed to mark message as viewed`,
+  // Newsletters
+  newsletterTag: `Newsletter database`,
+  newsletterIdNotFound: `Failed find newsletter/s`,
+  userNewslettersNotFound: `Failed to find user newsletters`,
+  createNewsletterFail: `Failed to create newsletter`,
+  newsletterSignupFail: `Failed to sign up to newsletter mailing list`,
+  markNewsletterViewedFailed: `Failed to mark newsletter as viewed`,
   // Notifications
   notificationTag: `Notification database`,
   notificationIdNotFound: `Failed find notification/s`,
