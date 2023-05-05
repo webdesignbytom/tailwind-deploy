@@ -12,7 +12,7 @@ function GoalsPage() {
   return (
     <div className='bg-white grid'>
       <Navbar />
-      <div className='container mb-24 mt-10 px-6 mx-auto'>
+      <div className='container lg:mb-24 mt-10 px-6 mx-auto'>
         <section className='mb-32 text-gray-800'>
           <div>
             <h2 className='text-4xl lg:text-5xl 2xl:text-6xl mb-16 font-extrabold text-center text-main-colour'>
@@ -41,9 +41,9 @@ function GoalsPage() {
               </div>
             </div>
 
-            <article className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:p-6'>
+            <article className='text-center px-3 pb-4 lg:text-left grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:p-6'>
               <h3 className='text-2xl font-bold mb-4'>{GoalsList[0].title}</h3>
-              <div className='text-colour-dark text-sm mb-4 flex items-center font-medium'>
+              <div className='text-colour-dark text-sm mb-4 justify-center lg:justify-start flex items-center font-medium'>
                 <MdSolarPower size={25} className='mr-4' />
                 <h4>Travels</h4>
               </div>
@@ -82,9 +82,9 @@ function GoalsPage() {
               </div>
             </div>
 
-            <article className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:p-6'>
+            <article className='text-center px-3 pb-4 lg:text-left grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:p-6'>
               <h3 className='text-2xl font-bold mb-4'>{GoalsList[1].title}</h3>
-              <div className='text-blue-600 text-sm mb-4 flex items-center font-medium'>
+              <div className='text-blue-600 text-sm mb-4 flex justify-center lg:justify-start items-center font-medium'>
                 <MdSolarPower size={25} className='mr-4' />
                 {GoalsList[1].type}
               </div>
@@ -122,9 +122,9 @@ function GoalsPage() {
               </div>
             </div>
 
-            <article className='grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:p-6'>
+            <article className='text-center px-3 pb-4 lg:text-left grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:p-6'>
               <h3 className='text-2xl font-bold mb-4'>{GoalsList[2].title}</h3>
-              <div className='text-colour-dark text-sm mb-4 flex items-center font-medium'>
+              <div className='text-colour-dark text-sm mb-4 flex justify-center lg:justify-start items-center font-medium'>
                 <MdSolarPower size={25} className='mr-4' />
                 <h4>{GoalsList[2].type}</h4>
               </div>

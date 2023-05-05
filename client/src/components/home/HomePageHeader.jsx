@@ -1,6 +1,7 @@
 import React from 'react';
 // Components
 import HeaderCTA from './HeaderCTA';
+import NewsletterCTA from '../newsletter/NewsletterCTA';
 // Icon
 import { MdGamepad } from 'react-icons/md';
 import { HiFilm, HiShoppingCart } from 'react-icons/hi';
@@ -13,7 +14,7 @@ function HomePageHeader() {
         {/* Text Section Left */}
         <section className='grid h-full my-10'>
           <div className='mt-2 md:mt-4 md:pl-20'>
-            <article className='h-fit'>
+            <article className='h-fit px-2'>
               <div className='text-lg'>
                 <h4 className='text-main-colour'>Brand new web project</h4>
               </div>
@@ -42,8 +43,8 @@ function HomePageHeader() {
           </div>
 
           {/* icons */}
-          <section className='grid -mt-10'>
-            <div className='grid grid-cols-5 px-10 md:ml-10 md:mr-20 h-fit md:max-w-[80%] '>
+          <section className='grid md:-mt-10'>
+            <div className='grid grid-cols-5 mdpx-10 md:ml-10 md:mr-20 h-fit md:max-w-[80%] '>
               <article className='grid items-center justify-center p-2'>
                 <div className='grid justify-center mb-4'>
                   <MdGamepad className='text-main-colour ' size={90} />
@@ -99,7 +100,7 @@ function HomePageHeader() {
         </section>
 
         {/* Phone images */}
-        <section className='grid mt-10 md:mt-0 md:mr-10 -ml-10 p-6'>
+        <section className='grid mt-10 md:mt-0 md:mr-10 md:-ml-10 p-6'>
           <div className='grid relative grid-flow-col'>
             <div className=' relative z-10 md:-ml-4 grid items-center'>
               <img
@@ -118,6 +119,9 @@ function HomePageHeader() {
           </div>
         </section>
       </div>
+      <section className='lg:hidden'>
+        <NewsletterCTA />
+      </section>
     </header>
   );
 }
