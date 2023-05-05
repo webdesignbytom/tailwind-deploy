@@ -41,7 +41,7 @@ function App() {
         <Route path='/games-home' element={<ContactUsPage />} />
 
         <Route path='/myecohome' element={<MyecohomeMain />} />
-        <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />}  />
+        <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />} />
 
         {/* User routes */}
         <Route path='/newsletter-signup' element={<NewsletterSignup />} />
@@ -79,7 +79,6 @@ function App() {
         <Route path='/terms-and-conditions' element={<UserAgreement />} />
         <Route path='/test' element={<TestPage />} />
         <Route path='*' element={<Error404 />} />
-
       </Routes>
     </>
   );
