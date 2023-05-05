@@ -1,7 +1,10 @@
 import React from 'react';
 // Components
 import Navbar from '../../components/navigation/Navbar';
+// Data
 import { aboustUsDataArray } from '../../utils/data/CompanyData';
+import MyeaLogo from '../../assets/img/myea/myea-logo.jpg';
+import NewsletterCTA from '../../components/newsletter/NewsletterCTA';
 
 function AboutPage() {
   return (
@@ -21,8 +24,8 @@ function AboutPage() {
               <span class='inline-block w-1 h-1 ml-1 bg-main-colour rounded-full'></span>
             </div>
 
-            <div class='mt-8 xl:mt-2 lg:flex lg:items-center'>
-              <div class='grid w-full grid-cols-1 gap-8 lg:w-1/2 xl:gap-16 md:grid-cols-2'>
+            <div class='mt-8 xl:mt-6 lg:flex lg:items-center'>
+              <section class='grid w-full grid-cols-1 gap-8 lg:w-[75%] xl:gap-4 md:grid-cols-2'>
                 <div class='space-y-3'>
                   <span class='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
                     <svg
@@ -46,7 +49,7 @@ function AboutPage() {
                   </h1>
 
                   <p class='text-gray-500 dark:text-gray-300'>
-                  {aboustUsDataArray[0].content}
+                    {aboustUsDataArray[0].content}
                   </p>
                 </div>
 
@@ -75,11 +78,11 @@ function AboutPage() {
                   </span>
 
                   <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
-                  {aboustUsDataArray[1].title}
+                    {aboustUsDataArray[1].title}
                   </h1>
 
                   <p class='text-gray-500 dark:text-gray-300'>
-                  {aboustUsDataArray[1].content}
+                    {aboustUsDataArray[1].content}
                   </p>
                 </div>
 
@@ -102,11 +105,11 @@ function AboutPage() {
                   </span>
 
                   <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
-                  {aboustUsDataArray[2].title}
+                    {aboustUsDataArray[2].title}
                   </h1>
 
                   <p class='text-gray-500 dark:text-gray-300'>
-                  {aboustUsDataArray[2].content}
+                    {aboustUsDataArray[2].content}
                   </p>
                 </div>
 
@@ -129,29 +132,35 @@ function AboutPage() {
                   </span>
 
                   <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
-                  {aboustUsDataArray[3].title}
+                    {aboustUsDataArray[3].title}
                   </h1>
 
                   <p class='text-gray-500 dark:text-gray-300'>
-                  {aboustUsDataArray[3].content}
+                    {aboustUsDataArray[3].content}
                   </p>
                 </div>
-              </div>
+              </section>
 
               <div class='hidden relative lg:flex lg:w-1/2 lg:justify-center'>
-                <img
-                  class='w-[28rem] h-[28rem] flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[34rem] xl:h-[34rem] rounded-full'
-                  src={'../../assets/img/myea/myea-tshirt.jpg'}
-                  alt=''
-                />
-                <img
-                  class='w-[8rem] h-[8rem] absolute top-0 right-0 flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[12rem] xl:h-[12rem] rounded-full'
-                  src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
-                  alt=''
-                />
+                <section className=''>
+                  <img
+                    class='w-[28rem] h-[28rem] flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[24rem] xl:h-[24rem] rounded-full'
+                    src='https://github.com/webdesignsbytom/myecoapp-deploy/blob/main/client/src/assets/img/myea/myea-tshirt.jpg?raw=true'
+                    alt='my eco app tshirt'
+                  />
+                  <img
+                    class='w-[8rem] h-[8rem] absolute top-0 right-0 flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[12rem] xl:h-[12rem] rounded-full'
+                    src={MyeaLogo}
+                    alt='my eco app logo'
+                  />
+                </section>
               </div>
             </div>
           </article>
+        </section>
+
+        <section className='lg:hidden'>
+          <NewsletterCTA />
         </section>
       </main>
     </div>

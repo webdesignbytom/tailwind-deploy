@@ -4,6 +4,7 @@ import Navbar from '../../components/navigation/Navbar';
 import FooterComponent from '../../components/footer/FooterComponent';
 // Data
 import { FundingOptions } from '../../utils/data/CompanyData';
+import SignUpCTA from '../../components/users/SignUpCTA';
 
 function FundingPage() {
   return (
@@ -322,6 +323,10 @@ function FundingPage() {
             </div>
           </section>
         </div>
+
+        <section className='lg:hidden'>
+          <SignUpCTA />
+        </section>
       </main>
 
       <FooterComponent />

@@ -13,22 +13,22 @@ import Park from '../../assets/img/park.jpg';
 export const aboustUsDataArray = [
   {
     title: 'How we differ',
-    content: 'lorem Ips sod lorem ipsum dolor sit amet, consectetur adip sdsa te velit sed asdasd dsfsdf',
+    content: 'We are automating to save! No charity muggers, expensive adverts, mailing letters, merchandise and corporate events. All we need is servers and a few volunteers to run!',
     icon: ''
   },
   {
     title: 'Why we do it',
-    content: 'lorem Ips sod lorem ipsum dolor sit amet, consectetur adip sdsa te velit sed asdasd dsfsdf',
+    content: 'We had a great amount of enthusiasm for environmental progress lately, yet saldy nothing is moving fast enough. Instead of find areas to place blame. We are just going to get to work and do what we can to combat global warming and environmental damage.',
     icon: ''
   },
   {
-    title: 'How we',
-    content: 'lorem Ips sod lorem ipsum dolor sit amet, consectetur adip sdsa te velit sed asdasd dsfsdf',
+    title: 'See Us Spend Every Penny',
+    content: 'We wil be using media to show you every solar panel going up, you watching the video will raise money for the next panel!',
     icon: ''
   },
   {
-    title: 'How we ',
-    content: 'lorem Ips sod lorem ipsum dolor sit amet, consectetur adip sdsa te velit sed asdasd dsfsdf',
+    title: 'We Dont Blame The Individual',
+    content: 'We strongly believe that human can fight back against global warming and technology is progressing at a fantastic rate to combat it. The main trouble is lack of industry to roll out changes in time, and the unwillingness of countries to free up funds for renewable energy.',
     icon: ''
   },
 ]

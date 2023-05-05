@@ -59,11 +59,12 @@ function ContactUsPage() {
                 Send us a messgae directly throught the form below. Or select
                 from some of our email options for departments.
               </p>
+              <p className='lg:hidden text-colour-dark font-semibold pt-1'><a href="mailto:info@myecoapp.org">Email Us By Clicking Here</a></p>
             </div>
           </section>
 
           {/* sides */}
-          <section className='grid grid-cols-2'>
+          <section className='grid lg:grid-cols-2'>
             {/* LEFT */}
             <section>
               <ContactFormComponent
@@ -75,7 +76,7 @@ function ContactUsPage() {
               />
             </section>
             {/* RIGHT */}
-            <section className='grid w-full p-10'>
+            <section className='hidden lg:grid w-full p-10'>
               <section className='mx-auto mt-16 max-w-xl sm:mt-12 bg-main-colour shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] grid w-full py-20 px-32'>
                 <article className='bg-gray-50 shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] text-center grid items-center'>
                   <h3>

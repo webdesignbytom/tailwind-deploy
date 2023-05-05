@@ -1,69 +1,127 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function SignUpCTA() {
+  const [registerFormData, setRegisterFormData] = useState({
+    email: '',
+    password: '',
+    confirmPassword: '',
+    firstName: '',
+    lastName: '',
+    newsletterChecked: true,
+    termsChecked: true,
+  });
+
+  const handleSubmitRegisterForm = (event) => {
+    event.preventDefault();
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setRegisterFormData({
+      ...registerFormData,
+      [name]: value,
+    });
+  };
   return (
-    <div className='container my-24 px-6 mx-auto'>
-      {/* <!-- Section: Design Block --> */}
+    <div className='container mb-12 px-6 mx-auto'>
       <section className='mb-32 text-gray-800 text-center lg:text-left'>
         <div
           className='px-6 py-12 md:px-12'
-          style='background-color: hsl(0, 0%, 96%)'
+          style={{ backgroundColor: 'hsl(0, 0%, 96%)' }}
         >
           <div className='grid lg:grid-cols-2 gap-12 items-center'>
             <div className='mt-12 lg:mt-0'>
               <h1 className='text-5xl font-bold tracking-tight leading-tight mb-12'>
-                The best offer <br />
-                <span className='text-main-colour'>for your business</span>
+                The best way <br />
+                <span className='text-main-colour'>for you to help</span>
               </h1>
               <p className='text-gray-600'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-                quibusdam tempora at cupiditate quis eum maiores libero
-                veritatis? Dicta facilis sint aliquid ipsum atque?
+                Sign up now, join our mailing list, follow like and subscribe to
+                all our media. Stay in contact and keep informed. Due to the
+                power of advertising your flick of a thumb can turn into money
+                for the environment.
               </p>
             </div>
             <div className='mb-12 lg:mb-0'>
               <div className='block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12'>
-                <form>
+                <form onSubmit={handleSubmitRegisterForm}>
                   <div className='grid md:grid-cols-2 md:gap-6'>
                     <div className='mb-6'>
                       <input
                         type='text'
                         className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                         placeholder='First name'
+                        id='firstName'
+                        name='firstName'
+                        onChange={handleChange}
                       />
                     </div>
                     <div className='mb-6'>
                       <input
                         type='text'
+                        id='lastName'
+                        name='lastName'
                         className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                         placeholder='Last name'
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
                   <input
                     type='email'
+                    id='email'
+                    name='email'
                     className='form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                     placeholder='Email address'
+                    onChange={handleChange}
                   />
                   <input
                     type='password'
+                    id='password'
+                    name='password'
                     className='form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
                     placeholder='Password'
+                    onChange={handleChange}
+                  />
+                  <input
+                    type='password'
+                    id='confirmPassword'
+                    name='confirmPassword'
+                    className='form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-main-colour focus:outline-none'
+                    placeholder='Password'
+                    onChange={handleChange}
                   />
                   <div className='form-check flex justify-center mb-6'>
                     <input
                       className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-main-colour checked:border-main-colour focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
                       type='checkbox'
                       value=''
-                      id='flexCheckChecked'
+                      id='newsletterChecked'
+                      name='newsletterChecked'
                       checked
                     />
                     <label
                       className='form-check-label inline-block text-gray-800'
-                      for='flexCheckChecked'
+                      for='newsletterChecked'
                     >
                       Subscribe to our newsletter
+                    </label>
+                  </div>
+                  <div className='form-check flex justify-center mb-6'>
+                    <input
+                      className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-main-colour checked:border-main-colour focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
+                      type='checkbox'
+                      value=''
+                      id='termsChecked'
+                      name='termsChecked'
+                      checked
+                    />
+                    <label
+                      className='form-check-label inline-block text-gray-800'
+                      for='termsChecked'
+                    >
+                      I agree to all terms and conditions.
                     </label>
                   </div>
                   <button

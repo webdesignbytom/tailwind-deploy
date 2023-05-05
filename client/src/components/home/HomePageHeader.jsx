@@ -20,7 +20,7 @@ function HomePageHeader() {
               <h1 className='text-main-colour font-extrabold text-6xl lg:text-8xl 2xl:text-9xl pb-6 text-center md:text-left'>
                 myecoapp
               </h1>
-              <h2 className='font-sans text-2xl 2xl:text-3xl font-bold tracking-tight text-gray-800 dark:text-slate-100 max-w-lg mb-4'>
+              <h2 className='font-sans px-2 text-2xl 2xl:text-3xl font-bold tracking-tight text-gray-800 dark:text-slate-100 max-w-lg mb-4'>
                 Help The Planet <br className='hidden md:block' />
                 by existing,{' '}
                 <span className='inline-block text-deep-purple-accent-400'>
@@ -30,8 +30,9 @@ function HomePageHeader() {
               <div className='md:max-w-[80%]'>
                 <p className='text-text-grey leading-5 dark:text-slate-100 text-base md:text-lg font-poppins'>
                   Help the environment from anywhere for free! At home or at any
-                  event. Use our apps to help us earn while you relax. We have done what
-                  we can to provide entertainment for you. Check out some more feaure with the links below.
+                  event. Use our apps to help us earn while you relax. We have
+                  done what we can to provide entertainment for you. Check out
+                  some more feaure with the links below.
                 </p>
               </div>
             </article>
