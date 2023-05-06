@@ -27,6 +27,7 @@ import LoginPage from './users/login/LoginPage';
 import LotteryHomePage from './pages/lottery/LotteryHomePage';
 import MediaMainPage from './pages/media/MediaMainPage';
 import GamesMainPage from './pages/games/GamesMainPage';
+import PasswordResetPage from './pages/account/PasswordResetPage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -53,6 +54,7 @@ function App() {
         <Route path='/newsletter-signup' element={<NewsletterSignup />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/sign-up' element={<RegisterPage />} />
+        <Route path='/reset-password' element={<PasswordResetPage />} />
         <Route
           path='/account'
           element={

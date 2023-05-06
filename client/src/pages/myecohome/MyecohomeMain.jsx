@@ -72,7 +72,7 @@ function MyecohomeMain() {
                     >
                       <div className=''>
                         <img
-                          class='object-cover h-full'
+                          className='object-cover h-full'
                           src='https://tecdn.b-cdn.net/wp-content/uploads/2020/06/vertical.jpg'
                           alt=''
                         />

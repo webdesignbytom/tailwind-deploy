@@ -11,26 +11,26 @@ function AboutPage() {
     <div className='bg-white dark:bg-black min-h-screen lg:max-h-screen lg:overflow-hidden lg:grid-rows-reg grid'>
       <Navbar />
       <main className='grid'>
-        <section class='bg-white dark:bg-gray-900'>
-          <article class='container px-6 py-10 mx-auto'>
-            <h1 class='text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white'>
+        <section className='bg-white dark:bg-gray-900'>
+          <article className='container px-6 py-10 mx-auto'>
+            <h1 className='text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white'>
               About the team <br /> at{' '}
               <span className='text-main-colour font-semibold'>myecoapp</span>
             </h1>
 
-            <div class='mt-2'>
-              <span class='inline-block w-40 h-1 bg-main-colour rounded-full'></span>
-              <span class='inline-block w-3 h-1 ml-1 bg-main-colour rounded-full'></span>
-              <span class='inline-block w-1 h-1 ml-1 bg-main-colour rounded-full'></span>
+            <div className='mt-2'>
+              <span className='inline-block w-40 h-1 bg-main-colour rounded-full'></span>
+              <span className='inline-block w-3 h-1 ml-1 bg-main-colour rounded-full'></span>
+              <span className='inline-block w-1 h-1 ml-1 bg-main-colour rounded-full'></span>
             </div>
 
-            <div class='mt-8 xl:mt-6 lg:flex lg:items-center'>
-              <section class='grid w-full grid-cols-1 gap-8 lg:w-[75%] xl:gap-4 md:grid-cols-2'>
-                <div class='space-y-3'>
-                  <span class='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
+            <div className='mt-8 xl:mt-6 lg:flex lg:items-center'>
+              <section className='grid w-full grid-cols-1 gap-8 lg:w-[75%] xl:gap-4 md:grid-cols-2'>
+                <div className='space-y-3'>
+                  <span className='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
-                      class='w-6 h-6'
+                      className='w-6 h-6'
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -44,20 +44,20 @@ function AboutPage() {
                     </svg>
                   </span>
 
-                  <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
+                  <h1 className='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
                     {aboustUsDataArray[0].title}
                   </h1>
 
-                  <p class='text-gray-500 dark:text-gray-300'>
+                  <p className='text-gray-500 dark:text-gray-300'>
                     {aboustUsDataArray[0].content}
                   </p>
                 </div>
 
-                <div class='space-y-3'>
-                  <span class='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
+                <div className='space-y-3'>
+                  <span className='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
-                      class='w-6 h-6'
+                      className='w-6 h-6'
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -77,20 +77,20 @@ function AboutPage() {
                     </svg>
                   </span>
 
-                  <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
+                  <h1 className='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
                     {aboustUsDataArray[1].title}
                   </h1>
 
-                  <p class='text-gray-500 dark:text-gray-300'>
+                  <p className='text-gray-500 dark:text-gray-300'>
                     {aboustUsDataArray[1].content}
                   </p>
                 </div>
 
-                <div class='space-y-3'>
-                  <span class='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
+                <div className='space-y-3'>
+                  <span className='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
-                      class='w-6 h-6'
+                      className='w-6 h-6'
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -104,20 +104,20 @@ function AboutPage() {
                     </svg>
                   </span>
 
-                  <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
+                  <h1 className='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
                     {aboustUsDataArray[2].title}
                   </h1>
 
-                  <p class='text-gray-500 dark:text-gray-300'>
+                  <p className='text-gray-500 dark:text-gray-300'>
                     {aboustUsDataArray[2].content}
                   </p>
                 </div>
 
-                <div class='space-y-3'>
-                  <span class='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
+                <div className='space-y-3'>
+                  <span className='inline-block p-3 text-main-colour bg-green-100 rounded-xl dark:text-white dark:bg-main-colour'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
-                      class='w-6 h-6'
+                      className='w-6 h-6'
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -131,25 +131,25 @@ function AboutPage() {
                     </svg>
                   </span>
 
-                  <h1 class='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
+                  <h1 className='text-xl font-semibold text-gray-700 capitalize dark:text-white'>
                     {aboustUsDataArray[3].title}
                   </h1>
 
-                  <p class='text-gray-500 dark:text-gray-300'>
+                  <p className='text-gray-500 dark:text-gray-300'>
                     {aboustUsDataArray[3].content}
                   </p>
                 </div>
               </section>
 
-              <div class='hidden relative lg:flex lg:w-1/2 lg:justify-center'>
+              <div className='hidden relative lg:flex lg:w-1/2 lg:justify-center'>
                 <section className=''>
                   <img
-                    class='w-[28rem] h-[28rem] flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[24rem] xl:h-[24rem] rounded-full'
+                    className='w-[28rem] h-[28rem] flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[24rem] xl:h-[24rem] rounded-full'
                     src='https://github.com/webdesignsbytom/myecoapp-deploy/blob/main/client/src/assets/img/myea/myea-tshirt.jpg?raw=true'
                     alt='my eco app tshirt'
                   />
                   <img
-                    class='w-[8rem] h-[8rem] absolute top-0 right-0 flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[12rem] xl:h-[12rem] rounded-full'
+                    className='w-[8rem] h-[8rem] absolute top-0 right-0 flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[12rem] xl:h-[12rem] rounded-full'
                     src={MyeaLogo}
                     alt='my eco app logo'
                   />
