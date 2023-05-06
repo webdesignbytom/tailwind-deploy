@@ -1,18 +1,46 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 // Components
 import Navbar from '../../components/navigation/Navbar';
+import client from '../../utils/axios/client';
+// Context
+import { UserContext } from '../../context/UserContext';
 
 function LoginPage() {
+  const { setUser } = useContext(UserContext)
   const [loginFormData, setLoginFormData] = useState({
     email: '',
     password: '',
   });
 
+  
+  let navigate = useNavigate();
+
+  const homePage = () => {
+    navigate('/', { replace: true });
+  };
+
   const handleLogin = (event) => {
     event.preventDefault();
     console.log('login');
     console.log('data', loginFormData);
+
+    client
+    .post('/login', loginFormData, false)
+    .then((res) => {
+      console.log('res', res.data);
+      console.log('res.data.data.token', res.data.data.token);
+      localStorage.setItem(
+        process.env.REACT_APP_USER_TOKEN,
+        res.data.data.token
+      );
+      setUser(res.data.data.existingUser);
+    })
+    .then(() => homePage())
+
+    .catch((err) => {
+      console.error('Unable to login', err);
+    });
   };
 
   const handleChange = (event) => {
