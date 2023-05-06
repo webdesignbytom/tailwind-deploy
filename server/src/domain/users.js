@@ -5,6 +5,10 @@ export const findAllUsers = () =>
     orderBy: {
       createdAt: 'desc',
     },
+    include: {
+      profile: true,
+      newsletterMember: true,
+    },
   });
 
 export const findUserByEmail = (email) =>
@@ -22,24 +26,35 @@ export const findUsersByRole = (role) =>
       role: role,
     },
   });
+
 export const createUser = (
   email,
   password,
-  role,
   firstName,
   lastName,
-  country,
-  agreedToTerms
+  agreedToTerms,
+  agreedToNewsletter
 ) =>
   dbClient.user.create({
     data: {
       email: email,
       password: password,
-      role: role,
-      firstName: firstName,
-      lastName: lastName,
-      country: country,
       agreedToTerms: agreedToTerms,
+      agreedToNewsletter: agreedToNewsletter,
+      profile: {
+        create: {
+          firstName: firstName,
+          lastName: lastName,
+        },
+      },
+    },
+  });
+
+export const createNewsletterMembershipForNewMember = (userId, email) =>
+  dbClient.newsletterMember.create({
+    data: {
+      userId: userId,
+      email: email,
     },
   });
 

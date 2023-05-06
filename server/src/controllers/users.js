@@ -17,6 +17,7 @@ import {
   deleteUserById,
   updateUserById,
   findUsersByRole,
+  createNewsletterMembershipForNewMember,
 } from '../domain/users.js';
 import { createAccessToken } from '../utils/tokens.js';
 import {
@@ -56,7 +57,7 @@ export const getAllUsers = async (req, res) => {
   console.log('getAllUsers');
   try {
     const foundUsers = await findAllUsers();
-    
+
     if (!foundUsers) {
       const notFound = new NotFoundEvent(
         req.user,
@@ -67,9 +68,9 @@ export const getAllUsers = async (req, res) => {
       return sendMessageResponse(res, notFound.code, notFound.message);
     }
 
-    foundUsers.forEach(user => {
-      delete user.password
-    })
+    foundUsers.forEach((user) => {
+      delete user.password;
+    });
 
     // myEmitterUsers.emit('get-all-users', req.user);
     return sendDataResponse(res, 200, { users: foundUsers });
@@ -97,7 +98,7 @@ export const getUserById = async (req, res) => {
       myEmitterErrors.emit('error', notFound);
       return sendMessageResponse(res, notFound.code, notFound.message);
     }
-    
+
     console.log('found', foundUser);
     delete foundUser.password;
     delete foundUser.agreedToTerms;
@@ -115,15 +116,20 @@ export const getUserById = async (req, res) => {
 
 export const registerNewUser = async (req, res) => {
   console.log('create new user');
-  const { email, password, role, firstName, lastName, country, agreedToTerms } =
-    req.body;
+  const {
+    email,
+    password,
+    firstName,
+    lastName,
+    agreedToTerms,
+    agreedToNewsletter,
+  } = req.body;
   const lowerCaseEmail = email.toLowerCase();
+  const lowerCaseFirstName = firstName.toLowerCase();
+  const lowerCaseLastName = lastName.toLowerCase();
 
   try {
-    if (
-      !lowerCaseEmail ||
-      !password
-    ) {
+    if (!lowerCaseEmail || !password) {
       //
       const missingField = new MissingFieldEvent(
         null,
@@ -139,19 +145,18 @@ export const registerNewUser = async (req, res) => {
     }
 
     const hashedPassword = await bcrypt.hash(password, hashRate);
+
     const createdUser = await createUser(
       lowerCaseEmail,
       hashedPassword,
-      role,
-      firstName,
-      lastName,
-      country,
-      agreedToTerms
+      lowerCaseFirstName,
+      lowerCaseLastName,
+      agreedToTerms,
+      agreedToNewsletter
     );
 
     if (!createdUser) {
       const notCreated = new BadRequestEvent(
-        req.user,
         EVENT_MESSAGES.badRequest,
         EVENT_MESSAGES.createUserFail
       );
@@ -159,65 +164,32 @@ export const registerNewUser = async (req, res) => {
       return sendMessageResponse(res, notCreated.code, notCreated.message);
     }
 
+    console.log('created user', createdUser);
+
+    delete createdUser.password;
+    delete createdUser.updatedAt;
+
+    if (createdUser.agreedToNewsletter === true) {
+      console.log('TRE');
+
+      const signedUp = await createNewsletterMembershipForNewMember(
+        createdUser.id,
+        lowerCaseEmail
+      );
+      console.log('signed', signedUp);
+    }
+
     myEmitterUsers.emit('register', createdUser);
 
-    const uniqueString = uuid() + createdUser.id;
-    const hashedString = await bcrypt.hash(uniqueString, hashRate);
+    // const uniqueString = uuid() + createdUser.id;
+    // const hashedString = await bcrypt.hash(uniqueString, hashRate);
 
-    await createVerificationInDB(createdUser.id, hashedString);
-    await sendVerificationEmail(
-      createdUser.id,
-      createdUser.email,
-      uniqueString
-    );
-
-    const foundUsers = await findUsersByRole('ADMIN');
-    foundUsers.forEach(async (admin) => {
-      const message = {
-        subject: 'New user registered',
-        content: `New user has registered with ${email}. Check messages at link http://...`,
-        userId: admin.id,
-      };
-      const notification = {
-        type: 'MESSAGE',
-        content: `New user registered: ${email}`,
-        userId: admin.id,
-      };
-
-      const newMessage = await createMessage(
-        message.subject,
-        message.content,
-        'System',
-        'System',
-        message.userId
-      );
-
-      if (!newMessage) {
-        const notCreated = new BadRequestEvent(
-          req.user,
-          EVENT_MESSAGES.createMessageFail,
-          'Cant create message for admin - registration form'
-        );
-        myEmitterErrors.emit('error', notCreated);
-        return sendMessageResponse(res, notCreated.code, notCreated.message);
-      }
-
-      const newNotification = await createNewNotification(
-        notification.type,
-        notification.content,
-        notification.userId
-      );
-
-      if (!newNotification) {
-        const notCreated = new BadRequestEvent(
-          req.user,
-          EVENT_MESSAGES.createNotificationFail,
-          'Cant create notification for admin - registration form'
-        );
-        myEmitterErrors.emit('error', notCreated);
-        return sendMessageResponse(res, notCreated.code, notCreated.message);
-      }
-    });
+    // await createVerificationInDB(createdUser.id, hashedString);
+    // await sendVerificationEmail(
+    //   createdUser.id,
+    //   createdUser.email,
+    //   uniqueString
+    // );
 
     return sendDataResponse(res, 201, { createdUser });
   } catch (err) {

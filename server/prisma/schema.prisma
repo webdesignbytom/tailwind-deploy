@@ -35,6 +35,7 @@ model User {
   complaints         Complaint?
   passwordReset      PasswordReset?
   verifications      UserVerification?
+  newsletterMember   NewsletterMember?
   lastLoggedIn       DateTime          @updatedAt
   isVerified         Boolean           @default(false)
   agreedToTerms      Boolean           @default(false)
@@ -59,7 +60,7 @@ model Profile {
   id            String            @id @default(uuid())
   userId        String            @unique
   user          User              @relation(fields: [userId], references: [id], onDelete: Cascade)
-  username      String            @unique @db.VarChar(28)
+  username      String?           @unique @db.VarChar(28)
   city          String?           @db.VarChar(100)
   country       String            @default("Earth")
   gender        String?
@@ -192,6 +193,8 @@ model PasswordReset {
 model NewsletterMember {
   id        String    @id @default(uuid())
   email     String    @unique
+  userId    String?   @unique
+  user      User?     @relation(fields: [userId], references: [id])
   createdAt DateTime  @default(now())
   updatedAt DateTime? @updatedAt
 }
