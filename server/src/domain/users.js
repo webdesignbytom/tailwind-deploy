@@ -17,6 +17,19 @@ export const findUserByEmail = (email) =>
     include: {
       messages: true,
       notifications: true,
+      profile: true,
+      newsletterMember: true,
+    },
+  });
+
+export const findUserById = (userId) =>
+  dbClient.user.findUnique({
+    where: {
+      id: userId,
+    },
+    include: {
+      profile: true,
+      newsletterMember: true,
     },
   });
 
@@ -24,6 +37,12 @@ export const findUsersByRole = (role) =>
   dbClient.user.findMany({
     where: {
       role: role,
+    },
+    include: {
+      messages: true,
+      notifications: true,
+      profile: true,
+      newsletterMember: true,
     },
   });
 
@@ -69,17 +88,6 @@ export const findResetRequest = (userId) =>
   dbClient.passwordReset.findUnique({
     where: {
       userId: userId,
-    },
-  });
-
-export const findUserById = (userId) =>
-  dbClient.user.findUnique({
-    where: {
-      id: userId,
-    },
-    include: {
-      messages: true,
-      notifications: true,
     },
   });
 

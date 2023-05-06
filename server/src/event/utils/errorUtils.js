@@ -38,8 +38,8 @@ export const createLoginErrorEvent = async (errorEvent) => {
     data: {
       type: 'ERROR',
       topic: errorEvent.topic,
-      content: `${errorEvent.code} ${errorEvent.message} ${userEmail}`,
-      code: codeId,
+      content: `${errorEvent.code} ${errorEvent.message}`,
+      code: errorEvent.code,
     },
   });
 };
