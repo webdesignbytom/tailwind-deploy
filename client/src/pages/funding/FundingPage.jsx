@@ -5,6 +5,7 @@ import FooterComponent from '../../components/footer/FooterComponent';
 // Data
 import { FundingOptions } from '../../utils/data/CompanyData';
 import SignUpCTA from '../../components/users/SignUpCTA';
+import { Link } from 'react-router-dom';
 
 function FundingPage() {
   return (
@@ -54,12 +55,12 @@ function FundingPage() {
                     className='w-full rounded-t-lg'
                     alt='thing'
                   />
-                  <a href='#!'>
+                  <Link to='/fundraising'>
                     <div
                       className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                       style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
                     ></div>
-                  </a>
+                  </Link>
                   <svg
                     className='absolute'
                     xmlns='http://www.w3.org/2000/svg'
@@ -77,14 +78,14 @@ function FundingPage() {
                     {FundingOptions[0].title}
                   </h5>
                   <p className='mb-4 pb-2'>{FundingOptions[0].content}</p>
-                  <a
-                    href='#!'
+                  <Link
+                    to='/fundraising'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
                     className='inline-block px-6 py-2.5 bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out'
                   >
                     Learn more
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -99,12 +100,12 @@ function FundingPage() {
                     className='w-full rounded-t-lg'
                     alt='thing'
                   />
-                  <a href='#!'>
+                  <Link to='/media'>
                     <div
                       className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                       style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
                     ></div>
-                  </a>
+                  </Link>
                   <svg
                     className='absolute'
                     xmlns='http://www.w3.org/2000/svg'
@@ -123,14 +124,14 @@ function FundingPage() {
                     {FundingOptions[1].title}
                   </h5>
                   <p className='mb-4 pb-2'>{FundingOptions[1].content}</p>
-                  <a
-                    href='#!'
+                  <Link
+                    to='/media'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
                     className='inline-block px-6 py-2.5 bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out'
                   >
                     Learn more
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -145,12 +146,12 @@ function FundingPage() {
                     className='w-full rounded-t-lg'
                     alt='thing'
                   />
-                  <a href='#!'>
+                  <Link to='/games-home'>
                     <div
                       className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                       style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
                     ></div>
-                  </a>
+                  </Link>
                   <svg
                     className='absolute'
                     xmlns='http://www.w3.org/2000/svg'
@@ -168,14 +169,14 @@ function FundingPage() {
                     {FundingOptions[2].title}
                   </h5>
                   <p className='mb-4 pb-2'>{FundingOptions[2].content}</p>
-                  <a
-                    href='#!'
+                  <Link
+                    to='/games-home'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
                     className='inline-block px-6 py-2.5 bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out'
                   >
                     Learn more
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -183,6 +184,7 @@ function FundingPage() {
         </div>
 
         {/* FOUR - SIX */}
+        {/* Myecohome */}
         <div className='container px-6 mx-auto'>
           <section className='mb-32 text-gray-800 text-center lg:text-left'>
             <div className='grid lg:grid-cols-3 gap-x-6 lg:gap-x-12'>
@@ -197,12 +199,12 @@ function FundingPage() {
                     className='w-full rounded-t-lg'
                     alt='thing'
                   />
-                  <a href='#!'>
+                  <Link to='/myecohome'>
                     <div
                       className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                       style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
                     ></div>
-                  </a>
+                  </Link>
                   <svg
                     className='absolute'
                     xmlns='http://www.w3.org/2000/svg'
@@ -220,14 +222,14 @@ function FundingPage() {
                     {FundingOptions[3].title}
                   </h5>
                   <p className='mb-4 pb-2'>{FundingOptions[3].content}</p>
-                  <a
-                    href='#!'
+                  <Link
+                    to='/myecohome'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
                     className='inline-block px-6 py-2.5 bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out'
                   >
                     Learn more
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -242,7 +244,13 @@ function FundingPage() {
                     className='w-full rounded-t-lg'
                     alt='thing'
                   />
-                  <a href='#!'>
+                  <a
+                    href='http://www.myecoapp.shop'
+                    target='_blank'
+                    rel='noreferrer'
+                    data-mdb-ripple='true'
+                    data-mdb-ripple-color='light'
+                  >
                     <div
                       className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                       style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
@@ -266,7 +274,9 @@ function FundingPage() {
                   </h5>
                   <p className='mb-4 pb-2'>{FundingOptions[4].content}</p>
                   <a
-                    href='#!'
+                    href='http://www.myecoapp.shop'
+                    target='_blank'
+                    rel='noreferrer'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
                     className='inline-block px-6 py-2.5 bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out'
@@ -287,12 +297,12 @@ function FundingPage() {
                     className='w-full rounded-t-lg'
                     alt='thing'
                   />
-                  <a href='#!'>
+                  <Link to='/lottery-home'>
                     <div
                       className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out'
                       style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
                     ></div>
-                  </a>
+                  </Link>
                   <svg
                     className='absolute'
                     xmlns='http://www.w3.org/2000/svg'
@@ -310,14 +320,14 @@ function FundingPage() {
                     {FundingOptions[5].title}
                   </h5>
                   <p className='mb-4 pb-2'>{FundingOptions[5].content}</p>
-                  <a
-                    href='#!'
+                  <Link
+                    to='/lottery-home'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
                     className='inline-block px-6 py-2.5 bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded  hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]'
                   >
                     Learn more
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

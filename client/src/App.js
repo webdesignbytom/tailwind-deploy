@@ -24,6 +24,9 @@ import {
 } from './utils/AuthenticateUser';
 import ContactUsPage from './pages/contact/ContactUsPage';
 import LoginPage from './users/login/LoginPage';
+import LotteryHomePage from './pages/lottery/LotteryHomePage';
+import MediaMainPage from './pages/media/MediaMainPage';
+import GamesMainPage from './pages/games/GamesMainPage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -37,10 +40,13 @@ function App() {
         <Route path='/about-us' element={<AboutPage />} />
         <Route path='/our-goals' element={<GoalsPage />} />
         <Route path='/funding' element={<FundingPage />} />
+        <Route path='/fundraising' element={<FundingPage />} />
         <Route path='/contact-us' element={<ContactUsPage />} />
-        <Route path='/games-home' element={<ContactUsPage />} />
 
+        <Route path='/games-home' element={<GamesMainPage />} />
         <Route path='/myecohome' element={<MyecohomeMain />} />
+        <Route path='/media' element={<MediaMainPage />} />
+        <Route path='/lottery-home' element={<LotteryHomePage />} />
         <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />} />
 
         {/* User routes */}

@@ -121,3 +121,36 @@ export const AboutSections = [
       'With millions of people world wide able to help our causes by simplily visiting our sites or uing our free online products and resources. We can use the funds generated to achieve a few goals we feel Worthy. From giving away solar panel to families in need of a break from rising energy costs, to building parks and wildlife areas where ever we can.',
   },
 ];
+
+export const myecohomeOptionsArray = [
+  {
+    title: 'Google Search Home',
+    content: 'A google search bar which earns through use, and as many adverts as you select.',
+    image: ''
+  },
+  {
+    title: 'Fun Facts Home',
+    content: 'A google search bar which earns through use, and as many adverts as you select.',
+    image: ''
+  },
+  {
+    title: 'Classic Games',
+    content: 'A google search bar which earns through use, and as many adverts as you select.',
+    image: ''
+  },
+  {
+    title: 'News Updates Home',
+    content: 'A google search bar which earns through use, and as many adverts as you select.',
+    image: ''
+  },
+  {
+    title: 'Sketchpad Home',
+    content: 'A google search bar which earns through use, and as many adverts as you select.',
+    image: ''
+  },
+  {
+    title: 'Coming Soon',
+    content: 'A google search bar which earns through use, and as many adverts as you select.',
+    image: ''
+  },
+]
