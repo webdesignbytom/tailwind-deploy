@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import client from '../../utils/axios/client';
 
 function SignUpCTA() {
   const [registerFormData, setRegisterFormData] = useState({
@@ -7,12 +8,23 @@ function SignUpCTA() {
     confirmPassword: '',
     firstName: '',
     lastName: '',
-    newsletterChecked: true,
-    termsChecked: true,
+    agreedToNewsletter: true,
+    agreedToTerms: false,
   });
 
   const handleSubmitRegisterForm = (event) => {
     event.preventDefault();
+    console.log('zxx');
+
+    client
+      .post('/users/register', registerFormData, false)
+      .then((res) => {
+        console.log('res', res.data);
+      })
+
+      .catch((err) => {
+        console.error('Unable to register new user', err);
+      });
   };
 
   const handleChange = (event) => {
@@ -23,6 +35,7 @@ function SignUpCTA() {
       [name]: value,
     });
   };
+
   return (
     <div className='container mb-12 px-6 mx-auto'>
       <section className='mb-32 text-gray-800 text-center lg:text-left'>
@@ -125,7 +138,7 @@ function SignUpCTA() {
                     </label>
                   </div>
                   <button
-                    type='button'
+                    type='submit'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
                     className='inline-block px-6 py-2.5 mb-6 w-full bg-main-colour text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-colour-dark hover:shadow-lg focus:bg-colour-dark focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-900 active:shadow-lg transition duration-150 ease-in-out'
@@ -147,7 +160,6 @@ function SignUpCTA() {
                         viewBox='0 0 320 512'
                         className='w-4 h-4 mx-4'
                       >
-                        {/* <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
                         <path
                           fill='currentColor'
                           d='M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z'

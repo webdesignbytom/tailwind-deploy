@@ -1,16 +1,33 @@
-import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 // Images
 import MyeaLogo from '../../assets/svg/myea-logo.svg';
 // Context
 import { ToggleContext } from '../../context/ToggleContext';
 // Components
 import SocialBar from '../../components/social/SocialBar';
+import { UserContext } from '../../context/UserContext';
 
 function Navbar() {
   const { toggleNavbar, toggleNavigation } = useContext(ToggleContext);
+  const { user, setUser } = useContext(UserContext);
 
   const [activeNav, setActiveNav] = useState('/');
+
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    setActiveNav(window.location.pathname);
+  }, []);
+
+  const signOut = (event) => {
+    event.preventDefault();
+
+    setUser();
+    localStorage.removeItem(process.env.REACT_APP_USER_TOKEN);
+
+    navigate('/', { replace: true });
+  };
 
   return (
     <>
@@ -153,33 +170,43 @@ function Navbar() {
                 </Link>
               </li>
               {/* Login */}
-              <li>
-                <Link to='/login'>
-                  <span
-                    className={
-                      activeNav === '/login'
-                        ? 'px-2 py-4 text-center text-green-400'
-                        : 'px-2 py-4 text-center text-gray-100'
-                    }
-                  >
-                    Login
-                  </span>
-                </Link>
-              </li>
-              {/* Sign-up */}
-              <li>
-                <Link to='/sign-up'>
-                  <span
-                    className={
-                      activeNav === '/sign-up'
-                        ? 'px-2 py-4 text-center text-green-400'
-                        : 'px-2 py-4 text-center text-gray-100'
-                    }
-                  >
-                    Sign Up
-                  </span>
-                </Link>
-              </li>
+              {!user.email && (
+                <>
+                  <li>
+                    <Link to='/login'>
+                      <span
+                        className={
+                          activeNav === '/login'
+                            ? 'px-2 py-4 text-center text-green-400'
+                            : 'px-2 py-4 text-center text-gray-100'
+                        }
+                      >
+                        Login
+                      </span>
+                    </Link>
+                  </li>
+                  {/* Sign up */}
+                  <li>
+                    <Link to='/sign-up'>
+                      <span
+                        className={
+                          activeNav === '/sign-up'
+                            ? 'px-2 py-4 text-center text-green-400'
+                            : 'px-2 py-4 text-center text-gray-100'
+                        }
+                      >
+                        Sign Up
+                      </span>
+                    </Link>
+                  </li>
+                </>
+              )}
+              {/* Sign out */}
+              {user.email && (
+                <li className='nav__link'>
+                  <Link onClick={signOut}>Sign out</Link>
+                </li>
+              )}
             </ul>
           </nav>
 
