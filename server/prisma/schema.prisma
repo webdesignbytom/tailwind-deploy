@@ -31,6 +31,7 @@ model User {
   puchaseHistory     PuchaseHistory[]
   gameScores         GameScore[]
   loginData          LoginData[]
+  lotteryTickets     LotteryTicket[]
   review             Review?
   complaints         Complaint?
   passwordReset      PasswordReset?
@@ -233,6 +234,30 @@ model Message {
   starred      Boolean   @default(false)
   createdAt    DateTime  @default(now())
   updatedAt    DateTime? @updatedAt
+}
+
+// Lottery
+
+model LotteryDraw {
+  id        Int             @id @default(autoincrement())
+  prize     Int             @default(50)
+  tickets   LotteryTicket[]
+  drawDate  DateTime
+  createdAt DateTime        @default(now())
+  updatedAt DateTime?       @updatedAt
+}
+
+model LotteryTicket {
+  id        Int         @id @default(autoincrement())
+  price     Decimal     @default(0.25)
+  numbers   Int[]
+  bonusBall Int
+  draw      LotteryDraw @relation(fields: [drawId], references: [id])
+  drawId    Int
+  user      User        @relation(fields: [userId], references: [id])
+  userId    String
+  createdAt DateTime    @default(now())
+  updatedAt DateTime?   @updatedAt
 }
 
 // Games

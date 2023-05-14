@@ -1,6 +1,9 @@
 # myecoapp
 
 A page be built for a group charity project to raise money for renewable energy using the internet as a platfrom.
+Including Games, Services, Mailing Newsletters, Adverts, and Dontations.
+Dislays a few issues and some short files.
+The idea is to create a site that has a large amount of followers to make the advertising worth more.
 The Frontend can be view at [myecoapp](https://dazzling-biscuit-b01617.netlify.app/)
 
 ## Home Page
@@ -21,7 +24,13 @@ The Frontend can be view at [myecoapp](https://dazzling-biscuit-b01617.netlify.a
 
 ## General info
 
-A new design for my website as a professional portfolio. Coupled with an attempt to sell freelance work through a sale page.
+Built using tailwing css styling.
+Has a sign up feature currently working that user and vistors use to register to the mailing list.
+Using a built in google search bar, users can make off site searches.
+A lottery is being developed to help raise funds of the cause.
+
+Paypal connection for donations - not launced yet still under dummy account.
+
 
 Server deployment with Vercel @ [https://myecoapp-deploy.vercel.app/](https://myecoapp-deploy.vercel.app/)
 
