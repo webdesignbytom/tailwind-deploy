@@ -3,6 +3,7 @@ import { myEmitterErrors } from '../event/errorEvents.js';
 // Domain
 import {
   createLotteryDraw,
+  createSingleTicket,
   findAllDraws,
   findAllTickets,
   findDrawByDate,
@@ -92,8 +93,6 @@ export const getAllDraws = async (req, res) => {
 export const getAllDrawTickets = async (req, res) => {
   console.log('get all draw tickets');
   const drawId = Number(req.params.drawId)
-  console.log('req', req.params.drawId);
-console.log('drawid', drawId);
   try {
 
     if (!drawId) {
@@ -161,6 +160,54 @@ export const createNewDrawEvent = async (req, res) => {
     // myEmitterUsers.emit('draw-created', createdDraw);
 
     return sendDataResponse(res, 200, { draw: createdDraw });
+  } catch (err) {
+    //
+    const serverError = new ServerErrorEvent(req.user, `Create new draw`);
+    myEmitterErrors.emit('error', serverError);
+    sendMessageResponse(res, serverError.code, serverError.message);
+    throw err;
+  }
+};
+
+export const puchaseSingleTicketForEvent = async (req, res) => {
+  console.log('Create new draw event');
+  const { numbers, bonusBall } = req.body;
+  const drawId = Number(req.params.drawId)
+
+  try {
+    if (!numbers || !bonusBall || !drawId) {
+      //
+      const missingField = new MissingFieldEvent(
+        null,
+        'Ticket creation: Missing numbers in body'
+      );
+      myEmitterErrors.emit('error', missingField);
+      return sendMessageResponse(res, missingField.code, missingField.message);
+    }
+
+    // Check draw doesn't exist
+    const foundDraw = await findDrawById(drawId);
+
+    if (!foundDraw) {
+      return sendDataResponse(res, 400, { email: EVENT_MESSAGES.dateNotInUse });
+    }
+
+    const createdTicket = await createSingleTicket(drawId, numbers, bonusBall);
+
+    if (!createdTicket) {
+      const notCreated = new BadRequestEvent(
+        EVENT_MESSAGES.badRequest,
+        EVENT_MESSAGES.createTicketFail
+      );
+      myEmitterErrors.emit('error', notCreated);
+      return sendMessageResponse(res, notCreated.code, notCreated.message);
+    }
+
+    console.log('created ticket', createdTicket);
+
+    // myEmitterUsers.emit('draw-created', createdTicket);
+
+    return sendDataResponse(res, 200, { ticket: createdTicket });
   } catch (err) {
     //
     const serverError = new ServerErrorEvent(req.user, `Create new draw`);

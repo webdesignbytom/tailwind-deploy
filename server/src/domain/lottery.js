@@ -40,3 +40,12 @@ export const createLotteryDraw = (drawDate) =>
       drawDate: drawDate,
     },
   });
+
+export const createSingleTicket = (drawId, numbers, bonusBall) =>
+  dbClient.lotteryTicket.create({
+    data: {
+      draw: drawId,
+      numbers: numbers,
+      bonusBall: bonusBall
+    },
+  });
