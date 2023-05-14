@@ -1,7 +1,5 @@
 import { Router } from 'express';
-import {
-  getAllTickets
-} from '../controllers/lottery.js';
+import { getAllTickets, getAllDraws, createNewDrawEvent, getAllDrawTickets } from '../controllers/lottery.js';
 import {
   validateAuthentication,
   validateAdminRole,
@@ -10,6 +8,9 @@ import {
 const router = Router();
 
 router.get('/all-tickets', getAllTickets);
+router.get('/all-draws', getAllDraws);
+router.post('/draws/create-new-draw', createNewDrawEvent);
+router.get('/draws/:drawId/all-tickets', getAllDrawTickets);
 
 
 export default router;

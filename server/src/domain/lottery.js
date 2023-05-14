@@ -6,3 +6,37 @@ export const findAllTickets = () =>
       createdAt: 'desc',
     },
   });
+
+export const findAllDraws = () =>
+  dbClient.lotteryDraw.findMany({
+    orderBy: {
+      createdAt: 'desc',
+    },
+  });
+
+export const findDrawByDate = (drawDate) =>
+  dbClient.lotteryDraw.findFirst({
+    where: {
+      drawDate: drawDate,
+    },
+    include: {
+      tickets: true,
+    },
+  });
+
+export const findDrawById = (drawId) =>
+  dbClient.lotteryDraw.findFirst({
+    where: {
+      id: drawId,
+    },
+    include: {
+      tickets: true,
+    },
+  });
+
+export const createLotteryDraw = (drawDate) =>
+  dbClient.lotteryDraw.create({
+    data: {
+      drawDate: drawDate,
+    },
+  });
