@@ -6,6 +6,7 @@ The Frontend can be view at [myecoapp](https://dazzling-biscuit-b01617.netlify.a
 ## Home Page
 
 <img src='./assets/img/myeaMd.png' alt='about' />
+<img src='./assets/img/myeaSm.jpg' alt='home' style='width: 150px; height: 300px; />
 
 ## Table of contents
 
