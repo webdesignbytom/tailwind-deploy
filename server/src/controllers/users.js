@@ -128,6 +128,16 @@ export const registerNewUser = async (req, res) => {
   const lowerCaseFirstName = firstName.toLowerCase();
   const lowerCaseLastName = lastName.toLowerCase();
 
+  console.log(
+    'XXXXXXXXXX',
+    email,
+    password,
+    firstName,
+    lastName,
+    agreedToTerms,
+    agreedToNewsletter
+  );
+
   try {
     if (!lowerCaseEmail || !password) {
       //
