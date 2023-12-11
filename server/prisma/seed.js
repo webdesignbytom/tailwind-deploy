@@ -40,6 +40,12 @@ async function seed() {
     },
   });
 
+  const lotteryDraw = await dbClient.lotteryDraw.create({
+    data: {
+      drawDate: new Date(),
+    },
+  });
+
   // EVENTS
   const eventOne = await dbClient.event.create({
     data: {

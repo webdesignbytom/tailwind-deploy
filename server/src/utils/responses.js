@@ -28,6 +28,14 @@ export const EVENT_MESSAGES = {
   eventTag: `Event database`,
   eventNotFound: `Failed to find event`,
   createEventFail: `Failed to create event`,
+  // Lottery
+  lotteryTag: `Lottery database`,
+  lotteryNotFound: `Failed to find lottery`,
+  createLotteryFail: `Failed to create lottery`,
+  dateInUse: `Draw already taking place on this day`,
+  dateNotInUse: `Draw not place on this day`,
+  createDrawFail: `Failed to create draw`,
+  createTicketFail: `Failed to create ticket`,
   // Messages
   messageTag: `Message database`,
   messageNotFound: `Failed to find message/s`,
