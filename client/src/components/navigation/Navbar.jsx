@@ -30,7 +30,7 @@ function Navbar() {
   };
 
   return (
-    <nav className='bg-white px-1 py-1 drop-shadow border-b-[1px] border-main-border border-solid'>
+    <nav className='bg-main-bg-colour dark:bg-main-bg-dark-colour px-1 py-1 drop-shadow border-b-[1px] border-main-border border-solid'>
       <header className='grid grid-flow-col rounded bg-colour-dark p-2 justify-between w-full h-fit items-center px-4 font-poppins'>
         <section>
           <Link className='cursor-pointer' to='/'>
