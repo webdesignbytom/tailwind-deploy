@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 // Components
 import Navbar from '../../components/navigation/Navbar';
-import { myecohomeOptionsArray } from '../../utils/data/ListOfMyecohomeData';
+import { myecohomeOptionsArray } from '../../data/ListOfMyecohomeData';
 import EcoHomeItem from '../../components/myecohome/EcoHomeItem';
+import { useNavigate } from 'react-router-dom';
 // Data
 
 function MyHomeMain() {
   const [ecoPagesArray, setEcoPagesArray] = useState(myecohomeOptionsArray);
   console.log('ecoPagesArray', ecoPagesArray);
+
+  let navigate = useNavigate();
+
+  const navigateToMyecohomePage = (page) => {
+    console.log('page', page);
+    navigate(`${page.url}`, { replace: true });
+  }
 
   return (
     <div className='bg-main-bg-colour dark:bg-main-bg-dark-colour min-h-screen h-screen'>
@@ -49,7 +57,7 @@ function MyHomeMain() {
 
               <section className='grid grid-cols-2 gap-x-4 gap-y-2 pt-4'>
                 {ecoPagesArray.map((page, index) => {
-                  return <EcoHomeItem page={page} key={index} />;
+                  return <EcoHomeItem page={page} key={index} navigateToMyecohomePage={navigateToMyecohomePage} />;
                 })}
               </section>
             </section>

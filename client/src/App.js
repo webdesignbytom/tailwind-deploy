@@ -7,28 +7,32 @@ import AdminPage from './pages/admin/AdminPage';
 import DeveloperPage from './pages/developer/DeveloperPage';
 import Error404 from './pages/error/Error404';
 import HomePage from './pages/home/HomePage';
-import MyecohomeMain from './pages/myecohome/MyecohomeMain';
 import NewsletterSignup from './pages/newsletter/NewsletterSignup';
 import RegisterPage from './users/register/RegisterPage';
-import SearchBarEcoHome from './pages/myecohome/SearchBarEcoHome';
 import TestPage from './pages/test/TestPage';
 import UserAgreement from './pages/auth/UserAgreement';
 import AboutPage from './pages/about/AboutPage';
 import GoalsPage from './pages/goals/GoalsPage';
 import FundingPage from './pages/funding/FundingPage';
-// Utils
-import {
-  AuthenticateUser,
-  AuthenticateAdmin,
-  AuthenticateDeveloper,
-} from './utils/AuthenticateUser';
 import ContactUsPage from './pages/contact/ContactUsPage';
 import LoginPage from './users/login/LoginPage';
 import LotteryHomePage from './pages/lottery/LotteryHomePage';
 import MediaMainPage from './pages/media/MediaMainPage';
 import GamesMainPage from './pages/games/GamesMainPage';
 import PasswordResetPage from './pages/account/PasswordResetPage';
+// Myeco Home Pages
 import MyHomeMain from './pages/myecohome/MyHomeMain';
+import SearchBarEcoHome from './pages/myecohome/SearchBarEcoHome';
+// Utils
+import {
+  AuthenticateUser,
+  AuthenticateAdmin,
+  AuthenticateDeveloper,
+} from './utils/AuthenticateUser';
+import AppPageHomePage from './pages/myecohome/AppPageHomePage';
+import SketchPadHomePage from './pages/myecohome/SketchPadHomePage';
+import NewsPageHomePage from './pages/myecohome/NewsPageHomePage';
+import MirrorHomePage from './pages/myecohome/MirrorHomePage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -46,11 +50,18 @@ function App() {
         <Route path='/contact-us' element={<ContactUsPage />} />
 
         <Route path='/games-home' element={<GamesMainPage />} />
+
+        {/* Myeco Home Pages */}
         <Route path='/myecohome' element={<MyHomeMain />} />
-        <Route path='/myecohome2' element={<MyecohomeMain />} />
+        <Route path='/myecohome/search-home' element={<SearchBarEcoHome />} />
+        <Route path='/myecohome/mirror-home' element={<MirrorHomePage />} />
+        <Route path='/myecohome/myea-news-home' element={<NewsPageHomePage />} />
+        <Route path='/myecohome/sketch-home' element={<SketchPadHomePage />} />
+        <Route path='/myecohome/myea-home' element={<AppPageHomePage />} />
+
+        {/*  */}
         <Route path='/media' element={<MediaMainPage />} />
         <Route path='/lottery-home' element={<LotteryHomePage />} />
-        <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />} />
 
         {/* User routes */}
         <Route path='/newsletter-signup' element={<NewsletterSignup />} />

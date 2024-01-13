@@ -2,7 +2,7 @@ import React from 'react';
 // Components
 import Navbar from '../../components/navigation/Navbar';
 // Data
-import { aboustUsDataArray } from '../../utils/data/CompanyData';
+import { aboustUsDataArray } from '../../data/CompanyData';
 import MyeaLogo from '../../assets/img/myea/myea-logo.jpg';
 import NewsletterCTA from '../../components/newsletter/NewsletterCTA';
 

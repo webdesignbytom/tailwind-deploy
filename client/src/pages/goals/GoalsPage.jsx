@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../../components/navigation/Navbar';
 import FooterComponent from '../../components/footer/FooterComponent';
 // Data
-import { GoalsList } from '../../utils/data/CompanyData';
+import { GoalsList } from '../../data/CompanyData';
 // Icons
 import { MdSolarPower } from 'react-icons/md';
 

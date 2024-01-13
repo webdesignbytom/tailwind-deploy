@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '../../components/navigation/Navbar';
 import FooterComponent from '../../components/footer/FooterComponent';
 // Data
-import { FundingOptions } from '../../utils/data/CompanyData';
+import { FundingOptions } from '../../data/CompanyData';
 import SignUpCTA from '../../components/users/SignUpCTA';
 import { Link } from 'react-router-dom';
 
