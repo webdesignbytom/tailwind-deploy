@@ -28,6 +28,7 @@ import LotteryHomePage from './pages/lottery/LotteryHomePage';
 import MediaMainPage from './pages/media/MediaMainPage';
 import GamesMainPage from './pages/games/GamesMainPage';
 import PasswordResetPage from './pages/account/PasswordResetPage';
+import MyHomeMain from './pages/myecohome/MyHomeMain';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -45,7 +46,8 @@ function App() {
         <Route path='/contact-us' element={<ContactUsPage />} />
 
         <Route path='/games-home' element={<GamesMainPage />} />
-        <Route path='/myecohome' element={<MyecohomeMain />} />
+        <Route path='/myecohome' element={<MyHomeMain />} />
+        <Route path='/myecohome2' element={<MyecohomeMain />} />
         <Route path='/media' element={<MediaMainPage />} />
         <Route path='/lottery-home' element={<LotteryHomePage />} />
         <Route path='/myecohome/search-bar' element={<SearchBarEcoHome />} />

@@ -122,35 +122,3 @@ export const AboutSections = [
   },
 ];
 
-export const myecohomeOptionsArray = [
-  {
-    title: 'Google Search Home',
-    content: 'A google search bar which earns through use, and as many adverts as you select.',
-    image: ''
-  },
-  {
-    title: 'Fun Facts Home',
-    content: 'A google search bar which earns through use, and as many adverts as you select.',
-    image: ''
-  },
-  {
-    title: 'Classic Games',
-    content: 'A google search bar which earns through use, and as many adverts as you select.',
-    image: ''
-  },
-  {
-    title: 'News Updates Home',
-    content: 'A google search bar which earns through use, and as many adverts as you select.',
-    image: ''
-  },
-  {
-    title: 'Sketchpad Home',
-    content: 'A google search bar which earns through use, and as many adverts as you select.',
-    image: ''
-  },
-  {
-    title: 'Coming Soon',
-    content: 'A google search bar which earns through use, and as many adverts as you select.',
-    image: ''
-  },
-]
