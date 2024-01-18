@@ -50,7 +50,7 @@ module.exports = {
         one: '1fr',
         special: 'auto 1fr 0.5fr',
         ls: '1fr 0.4fr',
-        a1a: 'auto 1fr auto',
+        'a1a': 'auto 1fr auto',
         '1a1': '1fr auto 1fr',
         aa: 'auto auto',
         '3x': '3fr 1fr',
