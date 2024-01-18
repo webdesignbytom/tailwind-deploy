@@ -9,7 +9,7 @@ function FundingItem() {
     >
       <div className='relative overflow-hidden bg-no-repeat bg-cover'>
         <img
-          src='https://mdbootstrap.com/img/new/standard/nature/111.jpg'
+          src='https://mdbootstrap.com/images/new/standard/nature/111.jpg'
           className='w-full rounded-t-lg'
           alt='thing'
         />

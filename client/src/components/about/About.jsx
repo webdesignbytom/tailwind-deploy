@@ -4,8 +4,8 @@ import { AboutSections } from '../../utils/data/CompanyData';
 // Components
 import AboutElement from './AboutElement';
 // Images
-import Banner from '../../assets/img/bannerImg.jpeg';
-import MyeaBanner from '../../assets/img/myea/myea-banner.png';
+import Banner from '../../assets/images/bannerImg.jpeg';
+import MyeaBanner from '../../assets/images/myea/myea-banner.png';
 
 function About() {
   const [elementSelected, setElementSelected] = useState(AboutSections[0]);

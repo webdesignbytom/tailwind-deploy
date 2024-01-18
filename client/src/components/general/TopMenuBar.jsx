@@ -1,6 +1,6 @@
 import React from 'react';
 // Images
-import LogoNb from '../../assets/img/logos/myea_nb_160.svg';
+import LogoNb from '../../assets/images/logos/myea_nb_160.svg';
 
 function TopMenuBar() {
   return (

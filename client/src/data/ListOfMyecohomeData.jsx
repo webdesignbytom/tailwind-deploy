@@ -1,4 +1,4 @@
-import TempImage from '../assets/img/games.jpg'
+import TempImage from '../assets/images/games.jpg'
 
 export const myecohomeOptionsArray = [
     {

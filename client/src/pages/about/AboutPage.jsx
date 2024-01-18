@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '../../components/navigation/Navbar';
 // Data
 import { aboustUsDataArray } from '../../data/CompanyData';
-import MyeaLogo from '../../assets/img/myea/myea-logo.jpg';
+import MyeaLogo from '../../assets/images/myea/myea-logo.jpg';
 import NewsletterCTA from '../../components/newsletter/NewsletterCTA';
 
 function AboutPage() {
@@ -145,7 +145,7 @@ function AboutPage() {
                 <section className=''>
                   <img
                     className='w-[28rem] h-[28rem] flex-shrink-0 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] xl:w-[24rem] xl:h-[24rem] rounded-full'
-                    src='https://github.com/webdesignsbytom/myecoapp-deploy/blob/main/client/src/assets/img/myea/myea-tshirt.jpg?raw=true'
+                    src='https://github.com/webdesignsbytom/myecoapp-deploy/blob/main/client/src/assets/images/myea/myea-tshirt.jpg?raw=true'
                     alt='my eco app tshirt'
                   />
                   <img

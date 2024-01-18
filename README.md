@@ -8,8 +8,8 @@ The Frontend can be view at [myecoapp](https://dazzling-biscuit-b01617.netlify.a
 
 ## Home Page
 
-<img src='./assets/img/myeaMd.png' alt='about' />
-<img src='./assets/img/myeaSm.jpg' alt='home' style='width: 150px; height: 300px; />
+<img src='./assets/images/myeaMd.png' alt='about' />
+<img src='./assets/images/myeaSm.jpg' alt='home' style='width: 150px; height: 300px; />
 
 ## Table of contents
 
@@ -54,6 +54,6 @@ Backend: Express, Prisma, JavaScript, express-handlebars
 1. Link to ERD [ERD...](https://github.com/webdesignsbytom/webdesignsbytom-app/blob/main/assets/ERD-webdesignsbytom.png)
 2. Original Design sketches [Sketch](https://github.com/webdesignsbytom/webdesignsbytom-app/tree/main/assets/design-sketches)
 Phone version has tab options for each field
-<img src='./assets/img/about_page.png' alt='about' />
+<img src='./assets/images/about_page.png' alt='about' />
 ## Current ERD
-<img src='./assets/img/ERD-myecoapp.png' alt='about' />
+<img src='./assets/images/ERD-myecoapp.png' alt='about' />

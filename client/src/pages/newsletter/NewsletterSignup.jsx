@@ -89,7 +89,7 @@ function NewsletterSignup() {
                   </article>
                   <div className='md:mb-12 lg:mb-0 shadow-[5px_5px_rgba(74,_173,_55,_0.4),_10px_10px_rgba(74,_173,_55,_0.3),_15px_15px_rgba(74,_173,_55,_0.2),_20px_20px_rgba(74,_173,_55,_0.1),_25px_25px_rgba(74,_173,_55,_0.1)]'>
                     <img
-                      src='https://raw.githubusercontent.com/webdesignsbytom/myecoapp-deploy/main/client/src/assets/img/myea/general-bg-myea.png'
+                      src='https://raw.githubusercontent.com/webdesignsbytom/myecoapp-deploy/main/client/src/assets/images/myea/general-bg-myea.png'
                       className='w-full max-h-[650px] rounded-lg shadow-lg object-cover rotate-lg-6'
                       alt=''
                     />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // Images
-import MyeaLogo from '../../assets/img/logos/myea-logo.svg';
+import MyeaLogo from '../../assets/images/logos/myea-logo.svg';
 
 function FooterComponent() {
   return (

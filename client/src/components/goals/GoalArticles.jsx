@@ -16,7 +16,7 @@ function GoalArticles() {
           data-mdb-ripple-color='light'
         >
           <img
-            src='https://mdbootstrap.com/img/new/standard/city/028.jpg'
+            src='https://mdbootstrap.com/images/new/standard/city/028.jpg'
             className='w-full'
             alt='Louvre'
           />

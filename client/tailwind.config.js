@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'green-bg': "url('../assets/img/myea/green-bg1.png')",
+        'green-bg': "url('../assets/images/myea/green-bg1.png')",
       },
       colors: {
         'main-colour': '#4AAD37',
