@@ -92,7 +92,7 @@ function Navigation() {
         </ul>
       </nav>
 
-      <section className='grid'>
+      <section className='grid p-2'>
         <article className='grid items-end border-colour-dark border-2 border-solid p-2 bg-white'>
           <div className='text-center'>
             <p>Proudly Sponsored by</p>
