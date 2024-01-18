@@ -33,6 +33,7 @@ import AppPageHomePage from './pages/myecohome/AppPageHomePage';
 import SketchPadHomePage from './pages/myecohome/SketchPadHomePage';
 import NewsPageHomePage from './pages/myecohome/NewsPageHomePage';
 import MirrorHomePage from './pages/myecohome/MirrorHomePage';
+import HomePage2 from './pages/home/HomePage2';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -41,7 +42,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' index element={<HomePage />} />
+        <Route path='/' index element={<HomePage2 />} />
 
         <Route path='/about-us' element={<AboutPage />} />
         <Route path='/our-goals' element={<GoalsPage />} />
