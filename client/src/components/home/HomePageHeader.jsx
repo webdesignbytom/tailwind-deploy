@@ -16,7 +16,8 @@ function HomePageHeader() {
           <div className='mt-2 md:mt-4 md:pl-20'>
             <article className='h-fit px-2'>
               <div className='text-lg'>
-                <h4 className='text-main-colour'>Brand new web project</h4>
+                <h4 className='text-main-colour font-semibold'>Brand new web project</h4>
+                <h5>Proudly sponsored by Cat App </h5>
               </div>
               <h1 className='text-main-colour font-extrabold text-6xl lg:text-8xl 2xl:text-9xl pb-6 text-center md:text-left'>
                 myecoapp

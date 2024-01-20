@@ -10,7 +10,9 @@ function TopMenuBar() {
         {/* Logo container */}
         <section className='grid w-full min-w-[250px] max-w-[300px]'>
           <div className='grid w-full justify-center'>
-            <img src={LogoNb} alt='logo' className='z-20' />
+            <a href='/2'>
+              <img src={LogoNb} alt='logo' className='z-20' />
+            </a>
           </div>
         </section>
 
@@ -21,7 +23,9 @@ function TopMenuBar() {
                 <li>
                   <Link to='/login'>
                     <div className='px-2 py-1'>
-                      <span className='text-white text-xl font-semibold'>Login</span>
+                      <span className='text-white text-xl font-semibold'>
+                        Login
+                      </span>
                     </div>
                   </Link>
                 </li>

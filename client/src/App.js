@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 // Analytics
 import ReactGA from 'react-ga';
 // Pages
-import Account from './pages/account/Account';
 import AdminPage from './pages/admin/AdminPage';
 import DeveloperPage from './pages/developer/DeveloperPage';
 import Error404 from './pages/error/Error404';
@@ -80,14 +79,6 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/sign-up' element={<RegisterPage />} />
         <Route path='/reset-password' element={<PasswordResetPage />} />
-        <Route
-          path='/account'
-          element={
-            <AuthenticateUser>
-              <Account />
-            </AuthenticateUser>
-          }
-        />
 
         {/* Secure routes */}
         <Route
