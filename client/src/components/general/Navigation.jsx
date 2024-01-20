@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SponsorNavbarAdvert from '../sponsor/SponsorNavbarAdvert';
 
 function Navigation() {
   return (
@@ -74,7 +75,7 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link to='/donations2'>
+            <Link to='/donations'>
               <div className='text-center bg-main-colour border-solid border-black border-[1px] border-l-[2px] border-r-[2px] hover:bg-colour-dark link_shadow py-2'>
                 <span className='text-lg font-semibold text-white'>
                   Donations
@@ -83,7 +84,7 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link to='/events2'>
+            <Link to='/events'>
               <div className='text-center bg-main-colour border-solid border-black border-[1px] border-l-[2px] border-r-[2px] border-b-[2px] hover:bg-colour-dark link_shadow py-2'>
                 <span className='text-lg font-semibold text-white'>Events</span>
               </div>
@@ -93,12 +94,7 @@ function Navigation() {
       </nav>
 
       <section className='grid p-2'>
-        <article className='grid items-end border-colour-dark border-2 border-solid p-2 bg-white'>
-          <div className='text-center'>
-            <p>Proudly Sponsored by</p>
-            <p className='text-lg font-semibold'>CAT APP</p>
-          </div>
-        </article>
+       <SponsorNavbarAdvert />
       </section>
     </div>
   );

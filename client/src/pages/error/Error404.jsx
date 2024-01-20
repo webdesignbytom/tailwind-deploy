@@ -1,7 +1,8 @@
 import React from 'react';
-// Images
-import TreeBG from '../../assets/images/trees.jpeg';
+// Components
 import Navbar from '../../components/navigation/Navbar';
+// Images
+import TreeBG from '../../assets/images/general/trees.jpeg';
 
 function Error404() {
   return (

@@ -1,13 +1,13 @@
 // Images
-import Games from '../assets/images/games.jpg';
-import FundRaising from '../assets/images/fundraising.png';
-import SocialMedia from '../assets/images/socialMedia.jpg';
-import Power from '../assets/images/power.jpg';
-import Lottery from '../assets/images/lottery.jpg';
+import Games from '../assets/images/general/games.jpg';
+import FundRaising from '../assets/images/general/fundraising.png';
+import SocialMedia from '../assets/images/general/socialMedia.jpg';
+import Power from '../assets/images/general/power.jpg';
+import Lottery from '../assets/images/general/lottery.jpg';
 import MyeaLogo from '../assets/images/logos/myea-logo.svg';
-import SolarPanel from '../assets/images/solar.jpg';
-import SolarHeater from '../assets/images/solarheater.jpeg';
-import Park from '../assets/images/park.jpg';
+import SolarPanel from '../assets/images/general/solar.jpg';
+import SolarHeater from '../assets/images/general/solarheater.jpeg';
+import Park from '../assets/images/general/park.jpg';
 
 // About Page
 export const aboustUsDataArray = [
