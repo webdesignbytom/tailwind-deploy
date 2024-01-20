@@ -37,4 +37,10 @@ export const myecohomeOptionsArray = [
       image: TempImage,
       url: '/myecohome/sketch-home'
     },
+    {
+      title: 'Dailys Home',
+      content: 'Enjoy your selection of daily facts, quotes, songs to try, places to see and much more. You can choose from a huge number of settings ',
+      image: TempImage,
+      url: '/myecohome/dailys-home'
+    },
   ]

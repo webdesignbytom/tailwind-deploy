@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 // Components
-import TopMenuBar from '../../components/general/TopMenuBar';
-import Navigation from '../../components/general/Navigation';
-import FundingMainContent from '../../components/funding/FundingMainContent';
+import TopMenuBar from '../../components/general/TopMenuBar'
+import Navigation from '../../components/general/Navigation'
+import MyecohomeMainPageContent from '../../components/myecohome/MyecohomeMainPageContent'
 
-function FundraisingPage() {
+function MyecohomeMainPage() {
   return (
     <div className='h-screen max-h-screen grid overflow-hidden'>
       <div className='grid grid-rows-reg nav_bg overflow-hidden'>
@@ -18,13 +18,13 @@ function FundraisingPage() {
           {/* Main page content */}
           <section className='grid overflow-hidden'>
             <div className='grid bg-white rounded-tl-[150px] overflow-y-scroll p-2'>
-              <FundingMainContent />
+              <MyecohomeMainPageContent />
             </div>
           </section>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default FundraisingPage;
+export default MyecohomeMainPage

@@ -6,8 +6,8 @@ import HomePageMainContainer from '../../components/home/HomePageMainContainer';
 
 function HomePage2() {
   return (
-    <div className='h-screen max-h-screen grid overflow-hidden'>
-      <div className='grid grid-rows-reg nav_bg overflow-hidden'>
+    <div className='h-screen max-h-screen grid nav_bg overflow-hidden'>
+      <div className='grid grid-rows-reg rough_bg overflow-hidden'>
         {/* User menu */}
         <TopMenuBar />
 
@@ -16,8 +16,8 @@ function HomePage2() {
           <Navigation />
 
           {/* Main page content */}
-          <section className='grid overflow-hidden'>
-            <div className='grid bg-white rounded-tl-[150px] overflow-y-scroll p-2'>
+          <section className='grid overflow-hidden pl-1 pt-1'>
+            <div className='grid bg-gray-50 rounded-tl-[150px] outline outline-black outline-2 overflow-y-scroll p-2'>
               <HomePageMainContainer />
             </div>
           </section>
