@@ -5,6 +5,7 @@ import App from './App';
 // Context
 import ToggleContextProvider from './context/ToggleContext';
 import UserContextProvider from './context/UserContext';
+import BioClickerGameContextProvider from './context/BioClickerGameContext';
 // Styles
 import './styles/index.css';
 import './styles/components.css';
@@ -14,7 +15,9 @@ root.render(
   <BrowserRouter>
     <ToggleContextProvider>
       <UserContextProvider>
-        <App />
+        <BioClickerGameContextProvider>
+          <App />
+        </BioClickerGameContextProvider>
       </UserContextProvider>
     </ToggleContextProvider>
   </BrowserRouter>

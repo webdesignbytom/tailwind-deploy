@@ -60,7 +60,7 @@ function App() {
 
         <Route path='/games-home' element={<GamesMainPage />} />
         <Route path='/games2' element={<GamesMainPage2 />} />
-        <Route path='/games/bioclicker' element={<BioClikerMainGamePage />} />
+        <Route path='/games/bio-clicker/in-game' element={<BioClikerMainGamePage />} />
 
         {/* Myeco Home Pages */}
         <Route path='/myecohome' element={<MyHomeMain />} />

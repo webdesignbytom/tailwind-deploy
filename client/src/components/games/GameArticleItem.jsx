@@ -22,8 +22,8 @@ function GameArticleItem({ game }) {
           </div>
 
           <section className='grid grid-rows-rev pb-2'>
-            <div className='grid grid-cols-rev mr-1 h-full bg-pink-300'>
-              <section className='grid grid-rows-rev my-auto leading-5 bg-yellow-200'>
+            <div className='grid grid-cols-rev mr-1 h-full'>
+              <section className='grid grid-rows-rev my-auto leading-5'>
                 <div className='grid gap-4 ml-1 mr-2 py-4'>
                   <div>
                     <p>{gameData.gameDescription}</p>
