@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
+// Context
+import { BioClickerGameContext } from '../../../../context/BioClickerGameContext';
 // Image
 import AlgaeIcon from '../../../../assets/images/bioClicker/logos/algae.png';
 
 function AlgaeClicker() {
+  const { bioClickerGamePlayer, setBioClickerGamePlayer } = useContext(BioClickerGameContext)
 
   const manageClickOnAlgae = () => {
     console.log('AAA');
+    let currentScore = bioClickerGamePlayer.totalScore
+    let amountToAdd = bioClickerGamePlayer.pointsPerClick
+
+    let newScore = currentScore + amountToAdd
+
+    setBioClickerGamePlayer({
+      ...bioClickerGamePlayer,
+      totalScore: newScore
+    })
+
   }
 
   return (

@@ -58,30 +58,30 @@ function GamesMainPageContent() {
 
                 <section className='grid '>
                   <div className='grid justify-items-end px-4'>
-                    <ul className='grid grid-flow-col w-fit gap-2 py-1'>
+                    <ul className='grid grid-flow-col w-fit gap-2 py-1 border-b-4 border-main-colour border-solid pb-2'>
                       <li>
-                        <button className='px-2 py-1 outline outline-1 outline-black rounded-xl rough_bg bg-blue-600 active:scale-95 shadow hover:brightness-105'>
+                        <button className='px-4 py-1 outline outline-1 outline-black rounded-xl rough_bg bg-blue-600 active:scale-95 shadow hover:brightness-105'>
                           <span className='text-gray-50 font-semibold'>
                             All
                           </span>
                         </button>
                       </li>
                       <li>
-                        <button className='px-2 py-1 outline outline-1 outline-black rounded-xl rough_bg bg-blue-600 active:scale-95 shadow hover:brightness-105'>
+                        <button className='px-4 py-1 outline outline-1 outline-black rounded-xl rough_bg bg-blue-600 active:scale-95 shadow hover:brightness-105'>
                           <span className='text-gray-50 font-semibold'>
                             City
                           </span>
                         </button>
                       </li>
                       <li>
-                        <button className='px-2 py-1 outline outline-1 outline-black rounded-xl rough_bg bg-blue-600 active:scale-95 shadow hover:brightness-105'>
+                        <button className='px-4 py-1 outline outline-1 outline-black rounded-xl rough_bg bg-blue-600 active:scale-95 shadow hover:brightness-105'>
                           <span className='text-gray-50 font-semibold'>
                             Puzzle
                           </span>
                         </button>
                       </li>
                       <li>
-                        <button className='px-2 py-1 outline outline-1 outline-black rounded-xl rough_bg bg-blue-600 active:scale-95 shadow hover:brightness-105'>
+                        <button className='px-4 py-1 outline outline-1 outline-black rounded-xl rough_bg bg-blue-600 active:scale-95 shadow hover:brightness-105'>
                           <span className='text-gray-50 font-semibold'>
                             Clicker
                           </span>

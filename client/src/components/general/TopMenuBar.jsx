@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // Images
 import LogoNb from '../../assets/images/logos/myea_nb_160.svg';
+// Imported icons
+import { MdOutlineAccountCircle } from 'react-icons/md';
+import BadgesNavDisplay from '../badges/BadgesNavDisplay';
 
 function TopMenuBar() {
   return (
@@ -16,21 +19,41 @@ function TopMenuBar() {
           </div>
         </section>
 
-        <section className='grid h-[75px] w-full'>
-          <div>
-            <nav className='grid justify-end h-full'>
-              <ul className='grid w-fit items-center pr-4'>
-                <li>
-                  <Link to='/login'>
-                    <div className='px-2 py-1'>
-                      <span className='text-white text-xl font-semibold'>
-                        Login
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
+        <section className='grid h-[75px] w-full bg-red-500'>
+          <div className='grid bg-white h-full grid-cols-2'>
+
+            {/* Website Info */}
+            <section className='grid bg-blue-400'>
+              <div className='grid items-center justify-items-end z-10'>
+                <BadgesNavDisplay />
+              </div>
+            </section>
+            
+            {/* User Navigation */}
+            <section className='grid bg-pink-400'>
+              <nav className='grid justify-end h-full'>
+                <ul className='grid grid-flow-col gap-2 w-fit items-center pr-4'>
+                  <li>
+                    <Link to='/login'>
+                      <div className='px-2 py-1'>
+                        <span className='text-white text-xl font-semibold'>
+                          Login
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/account'>
+                      <div className='px-2 py-1'>
+                        <span className='text-white text-xl font-semibold'>
+                          <MdOutlineAccountCircle size={35} />
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </section>
           </div>
         </section>
       </div>
