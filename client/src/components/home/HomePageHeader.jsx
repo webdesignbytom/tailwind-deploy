@@ -6,6 +6,7 @@ import NewsletterCTA from '../newsletter/NewsletterCTA';
 import { MdGamepad } from 'react-icons/md';
 import { HiFilm, HiShoppingCart } from 'react-icons/hi';
 import { FaTools, FaServer } from 'react-icons/fa';
+import BannerAdvert from '../adverts/BannerAdvert';
 
 function HomePageHeader() {
   return (
@@ -118,6 +119,9 @@ function HomePageHeader() {
               />
             </div>
           </div>
+          <section className='mt-8'>
+            <BannerAdvert />
+          </section>
         </section>
       </div>
       <section className='lg:hidden'>

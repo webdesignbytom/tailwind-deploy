@@ -38,6 +38,7 @@ import HomePage2 from './pages/home/HomePage2';
 import AboutUsPage from './pages/about/AboutUsPage';
 import TheDailysHomePage from './pages/myecohome/TheDailysHomePage';
 import MyecohomeMainPage from './pages/myecohome/MyecohomeMainPage';
+import BioClikerMainGamePage from './pages/games/bioClicker/BioClikerMainGamePage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -59,6 +60,7 @@ function App() {
 
         <Route path='/games-home' element={<GamesMainPage />} />
         <Route path='/games2' element={<GamesMainPage2 />} />
+        <Route path='/games/bioclicker' element={<BioClikerMainGamePage />} />
 
         {/* Myeco Home Pages */}
         <Route path='/myecohome' element={<MyHomeMain />} />

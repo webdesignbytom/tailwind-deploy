@@ -21,6 +21,7 @@ The Frontend can be view at [myecoapp](https://dazzling-biscuit-b01617.netlify.a
   - [Run this project locally](#run-this-project-locally)
   - [Design Information](#design-information)
   - [Current ERD](#current-erd)
+  - [Game Ideas](#game-ideas)
 
 ## General info
 
@@ -57,3 +58,8 @@ Phone version has tab options for each field
 <img src='./assets/images/about_page.png' alt='about' />
 ## Current ERD
 <img src='./assets/images/ERD-myecoapp.png' alt='about' />
+
+
+## Game Ideas
+
+1. have 2 screens town and algea where you can build as well as tap
