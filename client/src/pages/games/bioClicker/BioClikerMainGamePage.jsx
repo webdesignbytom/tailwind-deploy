@@ -1,11 +1,11 @@
 import React from 'react';
 // Components
-import BioClickerNavbar from '../../../components/navigation/BioClickerNavbar';
+import BioClickerNavbar from '../../../components/games/bioClicker/containers/BioClickerNavbar';
 import BioClickerSideMenuContainer from '../../../components/games/bioClicker/containers/BioClickerSideMenuContainer';
+import BioClickerGamePlayContainer from '../../../components/games/bioClicker/containers/BioClickerGamePlayContainer';
 // DB
 import { ItemsDB } from '../../../data/bioClicker/ItemsDB';
 import { BuildingsDB } from '../../../data/bioClicker/BuildingsDB';
-import BioClickerGamePlayContainer from '../../../components/games/bioClicker/containers/BioClickerGamePlayContainer';
 
 function BioClikerMainGamePage() {
   return (
@@ -17,13 +17,15 @@ function BioClikerMainGamePage() {
         {/* Main Game Containers */}
         <main className='grid h-full overflow-hidden bg-blue-400'>
           {/* Container */}
-          <div className='grid grid-cols-a1a h-full bg-green-900'>
-            {/* Left Panel */}
-            <BioClickerSideMenuContainer displayArray={ItemsDB} />
-            {/* Main Panel */}
-            <BioClickerGamePlayContainer />
-            {/* Right Panel */}
-            <BioClickerSideMenuContainer displayArray={BuildingsDB} />
+          <div className='grid h-full bg-orange-300 p-2 overflow-hidden'>
+            <div className='grid grid-cols-a1a outline outline-4 outline-black rounded overflow-hidden'>
+              {/* Left Panel */}
+              <BioClickerSideMenuContainer displayArray={ItemsDB} />
+              {/* Main Panel */}
+              <BioClickerGamePlayContainer />
+              {/* Right Panel */}
+              <BioClickerSideMenuContainer displayArray={BuildingsDB} />
+            </div>
           </div>
         </main>
       </div>

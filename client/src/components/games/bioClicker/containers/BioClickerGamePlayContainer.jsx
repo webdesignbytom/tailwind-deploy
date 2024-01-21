@@ -6,7 +6,7 @@ import BioClickerPointsDataContainer from './BioClickerPointsDataContainer';
 
 function BioClickerGamePlayContainer() {
   return (
-    <section className='bg-white outline outline-2 outline-black grid'>
+    <section className='bg-white grid'>
       <div className='grid grid-rows-rev'>
         <section className='grid relative'>
           <BioClickerPointsDataContainer />
