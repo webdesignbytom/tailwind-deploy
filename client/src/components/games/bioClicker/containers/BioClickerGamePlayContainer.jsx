@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 // Components
+import TownDisplay from '../animations/TownDisplay';
+import AlgaeClicker from '../animations/AlgaeClicker';
 import GameAnimationsScreen from '../animations/GameAnimationsScreen';
 import BioClickerScrollingNewBar from '../animations/BioClickerScrollingNewBar';
-import AlgaeClicker from '../animations/AlgaeClicker';
 import BioClickerPointsDataContainer from './BioClickerPointsDataContainer';
-import TownDisplay from '../animations/TownDisplay';
 // Context
 import { BioClickerGameContext } from '../../../../context/BioClickerGameContext';
 
@@ -14,6 +14,8 @@ const { mainDisplayToggle } = useContext(BioClickerGameContext)
   return (
     <section className='bg-white grid'>
       <div className='grid grid-rows-rev'>
+
+        {/* Display settings */}
         {mainDisplayToggle ? (
           <section className='grid relative'>
             {/* Display Town */}

@@ -15,7 +15,7 @@ function BioClikerMainGamePage() {
         <BioClickerNavbar />
 
         {/* Main Game Containers */}
-        <main className='grid h-full overflow-hidden bg-blue-400'>
+        <main className='grid h-full overflow-hidden'>
           {/* Container */}
           <div className='grid h-full bg-orange-300 p-2 overflow-hidden'>
             <div className='grid grid-cols-a1a outline outline-4 outline-black rounded overflow-hidden'>
