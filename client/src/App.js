@@ -40,6 +40,7 @@ import TheDailysHomePage from './pages/myecohome/TheDailysHomePage';
 import MyecohomeMainPage from './pages/myecohome/MyecohomeMainPage';
 import BioClickerMainGamePage from './pages/games/bioClicker/BioClickerMainGamePage';
 import EcoCityMainGamePage from './pages/games/ecoCity/EcoCityMainGamePage';
+import CustomMyecohomePage from './pages/myecohome/CustomMyecohomePage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -51,6 +52,7 @@ function App() {
         <Route path='/' index element={<HomePage />} />
         <Route path='/2' index element={<HomePage2 />} />
 
+        {/* General */}
         <Route path='/about-us' element={<AboutPage />} />
         <Route path='/about-myecoapp' element={<AboutUsPage />} />
         <Route path='/our-goals' element={<GoalsPage />} />
@@ -58,7 +60,9 @@ function App() {
         <Route path='/funding' element={<FundingPage />} />
         <Route path='/funding2' element={<FundraisingPage />} />
         <Route path='/contact-us' element={<ContactUsPage />} />
+        <Route path='/media' element={<MediaMainPage />} />
 
+        {/* Games */}
         <Route path='/games-home' element={<GamesMainPage />} />
         <Route path='/games2' element={<GamesMainPage2 />} />
         <Route path='/games/bio-clicker/in-game' element={<BioClickerMainGamePage />} />
@@ -73,9 +77,9 @@ function App() {
         <Route path='/myecohome/sketch-home' element={<SketchPadHomePage />} />
         <Route path='/myecohome/myea-home' element={<AppPageHomePage />} />
         <Route path='/myecohome/the-dailys' element={<TheDailysHomePage />} />
+        <Route path='/myecohome/custom' element={<CustomMyecohomePage />} />
 
-        {/*  */}
-        <Route path='/media' element={<MediaMainPage />} />
+        {/* Lottery */}
         <Route path='/lottery-home' element={<LotteryHomePage />} />
 
         {/* User routes */}

@@ -23,7 +23,13 @@ export const myecohomeOptionsArray = [
       title: 'Classic Games',
       content: 'Open up and play a game',
       image: TempImage,
-      url: '/myecohome/'
+      url: '/myecohome/classic-games'
+    },
+    {
+      title: 'Custom...',
+      content: 'Create your own, drag and drop to design features for your own home page',
+      image: TempImage,
+      url: '/myecohome/custom'
     },
     {
       title: 'News Updates Home',
