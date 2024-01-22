@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 // Images
-import Logo from '../../../../assets/images/bioClicker/logos/algae.png';
+import BioClickerLogo from '../../../../assets/images/bioClicker/logos/algae.png';
+import MyeaLogo from '../../../../assets/images/logos/myea_nb_80.svg';
+// Context
+import { BioClickerGameContext } from '../../../../context/BioClickerGameContext';
 
 function BioClickerNavbar() {
-  const toggleNavbar = () => {
-    console.log('toggleNavbar');
-  };
+  const { toggleMainView } = useContext(BioClickerGameContext)
 
   return (
     <header className='grid h-[80px] w-full bg-[#00000060] border-b-4 border-solid border-black'>
@@ -14,7 +15,7 @@ function BioClickerNavbar() {
         <div className='grid items-center px-8'>
           <Link to='/'>
             <img
-              src={Logo}
+              src={BioClickerLogo}
               alt='Logo'
               className='object-contain w-[50px] h-[50px]'
             />
@@ -29,13 +30,27 @@ function BioClickerNavbar() {
 
           {/* Navigation */}
           <div className='grid grid-cols-rev justify-end bg-orange-300'>
-            <nav className='grid justify-items-end bg-purple-500'>nav</nav>
+            <nav className='grid justify-items-end bg-purple-500'>
+              <div className='grid items-center mr-8'>
+                <ul className='grid grid-flow-col gap-6'>
+                  <li className='grid'>Item</li>
+                  <li className='grid'>Item</li>
+                  <li className='grid'>Item</li>
+                  <li className='grid'>
+                    <button onClick={toggleMainView} className='outline outline-1 outline-black rounded px-2 py-1 bg-slate-300'>
+                      <span className='text-lg'>Toggle</span>
+                    </button>
+                  </li>
+
+                </ul>
+              </div>
+            </nav>
 
             {/* Myea logo */}
             <div className='grid items-center px-8 bg-pink-500'>
               <Link to='/'>
                 <img
-                  src={Logo}
+                  src={MyeaLogo}
                   alt='Logo'
                   className='object-contain w-[50px] h-[50px]'
                 />

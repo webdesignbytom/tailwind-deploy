@@ -85,6 +85,19 @@ function Navbar() {
                 </span>
               </Link>
             </li>
+            <li>
+              <Link to='/2'>
+                <span
+                  className={
+                    activeNav === '/'
+                      ? 'px-2 py-4 text-center text-green-400'
+                      : 'px-2 py-4 text-center text-gray-100'
+                  }
+                >
+                  Home 2
+                </span>
+              </Link>
+            </li>
             {/* Myecohome */}
             <li>
               <Link to='/myecohome'>
@@ -232,6 +245,18 @@ function Navbar() {
               >
                 <Link to='/'>
                   <span>Home</span>
+                </Link>
+              </li>
+              <li
+                onClick={toggleNavbar}
+                className={
+                  activeNav === '/'
+                    ? 'px-2 py-4 text-center text-main-colour'
+                    : 'px-2 py-4 text-center'
+                }
+              >
+                <Link to='/2'>
+                  <span>Home 2</span>
                 </Link>
               </li>
               {/* Myecohome */}

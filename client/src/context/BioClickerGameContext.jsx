@@ -50,12 +50,12 @@ const BioClickerGameContextProvider = ({ children }) => {
   const resetPlayerStats = () => {
     let newLevel = bioClickerGamePlayer.currentLevel + 1;
 
-    ItemsDB.content.forEach(item => {
-      item.quantityOwned = 0
+    ItemsDB.content.forEach((item) => {
+      item.quantityOwned = 0;
     });
 
-    BuildingsDB.content.forEach(buildings => {
-      buildings.quantityOwned = 0
+    BuildingsDB.content.forEach((buildings) => {
+      buildings.quantityOwned = 0;
     });
 
     setBioClickerGamePlayer({
@@ -83,6 +83,13 @@ const BioClickerGameContextProvider = ({ children }) => {
     });
   };
 
+  const [mainDisplayToggle, setMainDisplayToggle] = useState(false);
+
+  const toggleMainView = () => {
+    console.log('toggleNavbar');
+    setMainDisplayToggle(!mainDisplayToggle);
+  };
+
   return (
     <BioClickerGameContext.Provider
       value={{
@@ -94,6 +101,9 @@ const BioClickerGameContextProvider = ({ children }) => {
         increaseConstant,
         currentLevel,
         setBioClickerGamePlayer,
+        toggleMainView,
+        mainDisplayToggle,
+        setMainDisplayToggle,
       }}
     >
       {children}
