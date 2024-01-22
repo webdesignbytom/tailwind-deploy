@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 import LogoNb from '../../assets/images/logos/myea_nb_160.svg';
 // Imported icons
 import { MdOutlineAccountCircle } from 'react-icons/md';
+import { GrUserAdmin } from 'react-icons/gr';
+import { MdOutlineDeveloperMode } from 'react-icons/md';
+// Components
 import BadgesNavDisplay from '../badges/BadgesNavDisplay';
+import UserXpNavComponent from './UserXpNavComponent';
 
 function TopMenuBar() {
   return (
@@ -21,23 +25,52 @@ function TopMenuBar() {
 
         <section className='grid h-[75px] w-full'>
           <div className='grid h-full grid-cols-2'>
-
             {/* Website Info */}
-            <section className='grid'>
-              <div className='grid items-center justify-items-end z-10'>
+            <section className='grid grid-flow-col'>
+              {/* <div className='grid items-center justify-items-end z-10'>
                 <BadgesNavDisplay />
               </div>
+              <div className='grid items-center justify-items-end z-10'>
+                <UserXpNavComponent />
+              </div> */}
             </section>
-            
+
             {/* User Navigation */}
             <section className='grid'>
               <nav className='grid justify-end h-full'>
                 <ul className='grid grid-flow-col gap-2 w-fit items-center pr-4'>
                   <li>
+                    <Link to='/sign-up'>
+                      <div className='px-2 py-1'>
+                        <span className='text-white text-xl font-semibold'>
+                          Signup
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
                     <Link to='/login'>
                       <div className='px-2 py-1'>
                         <span className='text-white text-xl font-semibold'>
                           Login
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/developer'>
+                      <div className='px-2 py-1'>
+                        <span className='text-white text-xl font-semibold'>
+                          <MdOutlineDeveloperMode size={35} />
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/admin'>
+                      <div className='px-2 py-1'>
+                        <span className='text-white text-xl font-semibold'>
+                          <GrUserAdmin size={35} />
                         </span>
                       </div>
                     </Link>
