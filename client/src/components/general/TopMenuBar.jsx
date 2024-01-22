@@ -19,18 +19,18 @@ function TopMenuBar() {
           </div>
         </section>
 
-        <section className='grid h-[75px] w-full bg-red-500'>
-          <div className='grid bg-white h-full grid-cols-2'>
+        <section className='grid h-[75px] w-full'>
+          <div className='grid h-full grid-cols-2'>
 
             {/* Website Info */}
-            <section className='grid bg-blue-400'>
+            <section className='grid'>
               <div className='grid items-center justify-items-end z-10'>
                 <BadgesNavDisplay />
               </div>
             </section>
             
             {/* User Navigation */}
-            <section className='grid bg-pink-400'>
+            <section className='grid'>
               <nav className='grid justify-end h-full'>
                 <ul className='grid grid-flow-col gap-2 w-fit items-center pr-4'>
                   <li>
