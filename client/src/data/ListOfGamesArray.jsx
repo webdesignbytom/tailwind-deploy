@@ -33,13 +33,13 @@ export const gamesForMainDisplayData = [
   },
   {
     id: 3,
-    gameName: 'Eco Town',
-    gameGenre: 'Town Builder',
+    gameName: 'Eco City',
+    gameGenre: 'City Builder',
     gameImageUrl: MainGameImage,
-    gameDescription: 'Welcome to EcoTown, soon to be run by you the new mayor who is going to rebuild from the ground up to create a paradise for people and animals.',
+    gameDescription: 'Welcome to EcoCity, soon to be run by you the new mayor who is going to rebuild from the ground up to create a paradise for people and animals.',
     badgesAvailable: true,
     hasLeaderboard: true,
-    gameEndpointUrl: '/games/eco-town/in-game'
+    gameEndpointUrl: '/games/eco-city/in-game'
   },
   {
     id: 4,

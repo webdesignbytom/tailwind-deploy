@@ -7,7 +7,7 @@ import BioClickerGamePlayContainer from '../../../components/games/bioClicker/co
 import { ItemsDB } from '../../../data/bioClicker/ItemsDB';
 import { BuildingsDB } from '../../../data/bioClicker/BuildingsDB';
 
-function BioClikerMainGamePage() {
+function BioClickerMainGamePage() {
   return (
     <div className='h-screen max-h-screen grid nav_bg overflow-hidden'>
       <div className='grid grid-rows-reg rough_bg overflow-hidden'>
@@ -33,4 +33,4 @@ function BioClikerMainGamePage() {
   );
 }
 
-export default BioClikerMainGamePage;
+export default BioClickerMainGamePage;

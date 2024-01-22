@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 // Data
 import LoggedInUser from '../utils/LoggedInUser';
 // Fetch
-import client from '../utils/axios/client';
+import client from '../api/client';
 // Context
 export const UserContext = React.createContext();
 

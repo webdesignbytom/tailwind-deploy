@@ -6,6 +6,7 @@ import App from './App';
 import ToggleContextProvider from './context/ToggleContext';
 import UserContextProvider from './context/UserContext';
 import BioClickerGameContextProvider from './context/BioClickerGameContext';
+import EcoCityGameContextProvider from './context/EcoCityGameContext';
 // Styles
 import './styles/index.css';
 import './styles/components.css';
@@ -16,7 +17,9 @@ root.render(
     <ToggleContextProvider>
       <UserContextProvider>
         <BioClickerGameContextProvider>
-          <App />
+          <EcoCityGameContextProvider>
+            <App />
+          </EcoCityGameContextProvider>
         </BioClickerGameContextProvider>
       </UserContextProvider>
     </ToggleContextProvider>

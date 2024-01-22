@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+// Api
+import client from '../../api/client';
 // Components
 import Navbar from '../../components/navigation/Navbar';
-import client from '../../utils/axios/client';
 // Context
 import { UserContext } from '../../context/UserContext';
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import client from '../../utils/axios/client';
+import client from '../../api/client';
 
 function SignUpCTA() {
   const [registerFormData, setRegisterFormData] = useState({
