@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
 // Images
 import PlayerImg from '../components/games/ecoCity/images/player/user.png';
@@ -6,6 +6,11 @@ import PlayerImg from '../components/games/ecoCity/images/player/user.png';
 export const EcoCityGameContext = React.createContext();
 
 const EcoCityGameContextProvider = ({ children }) => {
+  // References
+  const mouseItemRef = useRef(null);
+  const mouseBuildingRef = useRef(null);
+  const buildingIDNumberRef = useRef(1);
+
   const [ecoCityGamePlayer, setEcoCityGamePlayer] = useState({
     // Player data
     id: 'txl',
@@ -45,6 +50,9 @@ const EcoCityGameContextProvider = ({ children }) => {
       value={{
         ecoCityGamePlayer,
         setEcoCityGamePlayer,
+        mouseItemRef,
+        mouseBuildingRef,
+        buildingIDNumberRef,
       }}
     >
       {children}

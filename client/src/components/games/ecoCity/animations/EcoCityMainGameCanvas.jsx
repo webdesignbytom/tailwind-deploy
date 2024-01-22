@@ -10,22 +10,17 @@ import {
 // Images
 import Gold from '../images/currency/goldCoin.png';
 
-
 function EcoCityMainGameCanvas() {
   const {
-    quickOpenBuildingsMenu,
-    openBuyTileModal,
-    player,
-    setPlayer,
+    ecoCityGamePlayer,
+    setEcoCityGamePlayer,
     mouseBuildingRef,
-    buildingIDNumberRef,
   } = useContext(EcoCityGameContext);
 
   // Canvas and animations
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
   const tilesRef = useRef([]);
-  const buildingsRef = useRef([]);
   const goldCoinRef = useRef(null);
 
   // Grid sizes
@@ -74,8 +69,6 @@ function EcoCityMainGameCanvas() {
       tileColumnOffset,
       tileRowOffset,
       tilesRef,
-      player,
-      setPlayer
     );
 
     // if (player.playerId) {
