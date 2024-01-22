@@ -9,13 +9,12 @@ import {
 } from '../functions/EcoCityGameFunctions';
 // Images
 import Gold from '../images/currency/goldCoin.png';
+import { Tile } from '../objects/Tile';
+import { ownedTileColourHex, unownedTileColourHex } from '../data/Constants';
 
 function EcoCityMainGameCanvas() {
-  const {
-    ecoCityGamePlayer,
-    setEcoCityGamePlayer,
-    mouseBuildingRef,
-  } = useContext(EcoCityGameContext);
+  const { ecoCityGamePlayer, setEcoCityGamePlayer, mouseBuildingRef } =
+    useContext(EcoCityGameContext);
 
   // Canvas and animations
   const canvasRef = useRef(null);
@@ -30,9 +29,6 @@ function EcoCityMainGameCanvas() {
   // Isometric offset
   const tileColumnOffset = 64; // pixels
   const tileRowOffset = 32; // pixels
-
-  // Don't allow clicking on two tiles
-  let isProcessingClick = false;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -60,7 +56,6 @@ function EcoCityMainGameCanvas() {
     goldCoin.src = Gold;
     goldCoinRef.current = goldCoin;
 
-    // Create tiles
     createNewGameTileGrid(
       originX,
       originY,
@@ -68,32 +63,11 @@ function EcoCityMainGameCanvas() {
       maxGridYLength,
       tileColumnOffset,
       tileRowOffset,
-      tilesRef,
+      tilesRef
     );
-
-    // if (player.playerId) {
-    //   drawTilesOwnedByPlayer();
-    //   drawBuildingsOwnedByPlayer(player, tilesRef, buildingsRef);
-    // }
-
     // Draw game on canvas
     drawCanvasElements();
   }, []);
-
-  // const drawTilesOwnedByPlayer = () => {
-  //   let tileOwnedArray = player.tileData.tilesArray;
-
-  //   let newTileRef = tilesRef.current;
-
-  //   tileOwnedArray.forEach((tile) => {
-  //     // Find tiles that match owned tile id
-  //     let foundTile = newTileRef.find((e) => e.id === tile.tileIdNum);
-  //     if (foundTile) {
-  //       foundTile.isOwned = true;
-  //       foundTile.fillColour = ownedTileColourHex;
-  //     }
-  //   });
-  // };
 
   // Main draw loop
   const drawCanvasElements = () => {
@@ -101,70 +75,61 @@ function EcoCityMainGameCanvas() {
     drawTileGrid(contextRef, tilesRef);
   };
 
-  const hoverMouseFunctions = ({ nativeEvent }) => {
-    const { offsetX, offsetY } = nativeEvent;
-    const context = contextRef.current;
+  const createNewGameTileGrid = (
+    originX,
+    originY,
+    maxGridXLength,
+    maxGridYLength,
+    tileColumnOffset,
+    tileRowOffset,
+    tilesRef
+  ) => {
+    // Create preowned tiles array
+    const numRows = 20;
+    const numCols = 15;
+    const centerSize = 5;
 
-    clearCanvas(canvasRef);
-    drawCanvasElements();
-    // Check for building to place
-    const mouseBuildingAvailable = mouseBuildingRef.current;
-    // Tiles
-    const tiles = tilesRef.current;
+    const TileGrid = [];
 
-    // Draw building under mouse position
-    if (mouseBuildingAvailable) {
-      mouseBuildingAvailable.update(context, offsetX, offsetY - 10);
+    for (let row = 1; row <= numRows; row++) {
+      for (let col = 1; col <= numCols; col++) {
+        const isStarterTile =
+          row >= (numRows - centerSize) / 2 &&
+          row <= (numRows + centerSize) / 2 &&
+          col >= (numCols - centerSize) / 2 &&
+          col <= (numCols + centerSize) / 2;
+
+        TileGrid.push([row, col, isStarterTile]);
+      }
     }
 
-    // Initially, assume no tiles are hovered over
-    tiles.forEach((tile) => {
-      tile.isHovered = false;
-    });
+    console.log('TileGrid: ', TileGrid);
+    let id = 1;
+    // Array of createdTiles
+    let createdTilesArray = [];
+    console.log('createdTilesArray', createdTilesArray);
 
-    // Check for hovered tiles
-    const hoveredTile = tiles.find((tile) => {
-      // Convert mouse coordinates to isometric coordinates
-      const isoX = (offsetX - tile.offX) / tile.tileColumnOffset;
-      const isoY = (offsetY - tile.offY) / tile.tileRowOffset;
+    for (let Xi = maxGridXLength - 1; Xi >= 0; Xi--) {
+      for (let Yi = 0; Yi < maxGridYLength; Yi++) {
+        const offX =
+          (Xi * tileColumnOffset) / 2 + (Yi * tileColumnOffset) / 2 + originX;
+        const offY =
+          (Yi * tileRowOffset) / 2 - (Xi * tileRowOffset) / 2 + originY;
 
-      // Check if the mouse is within the bounds of the tile
-      return (
-        isoX >= 0 && isoY >= 0 && isoX <= 1 && isoY <= 1 && isoX + isoY <= 1
-      );
-    });
+        // Create tile and give it cooridinates
+        const tile = new Tile(id, offX, offY, unownedTileColourHex, 'black');
+        createdTilesArray.push(tile);
 
-    if (hoveredTile) {
-      hoveredTile.isHovered = true;
-    }
-  };
-
-  const mouseClickFunctions = ({ nativeEvent }) => {
-    const { offsetX, offsetY } = nativeEvent;
-
-    // Ignore additional click events while processing one
-    if (isProcessingClick) {
-      return;
+        // Update id
+        id++;
+      }
     }
 
-    // Contexts
-    const context = contextRef.current;
-    const mouseBuildingAvailable = mouseBuildingRef.current;
-    const tiles = tilesRef.current;
-
-    // Set active tile
-    tiles.forEach((tile) => {
-      tile.isActive = false;
-    });
+    tilesRef.current = createdTilesArray;
   };
 
   return (
-    <canvas
-      ref={canvasRef}
-      onMouseMove={hoverMouseFunctions}
-      onMouseDown={mouseClickFunctions}
-      className='cursor-pointer'
-    />
+    <canvas ref={canvasRef} className='cursor-pointer bg-red-500 h-full' />
   );
 }
 

@@ -87,6 +87,7 @@ export const drawBuildingElements = (contextRef, buildingsRef, goldCoinRef) => {
   });
 };
 
+
 export const drawTileGrid = (contextRef, tilesRef) => {
   const context = contextRef.current;
 

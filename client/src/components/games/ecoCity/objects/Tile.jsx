@@ -29,6 +29,14 @@ export class Tile {
       context.fillStyle = this.fillColour;
     }
 
+    // Set colour and shade
+    let gradient = context.createLinearGradient(this.offX, this.offY, this.offX + this.tileColumnOffset, this.offY + this.tileRowOffset);
+    gradient.addColorStop(0, "rgba(255, 255, 255, 0.9)");
+    gradient.addColorStop(1, "rgba(0, 0, 0, 0.9)");
+    context.fillStyle = gradient;
+    context.fill();
+
+    // Draw tile
     context.moveTo(this.offX, this.offY + this.tileRowOffset / 2);
     context.lineTo(this.offX + this.tileColumnOffset / 2, this.offY);
     context.lineTo(
