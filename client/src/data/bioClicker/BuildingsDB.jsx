@@ -24,6 +24,7 @@ export const BuildingsDB = {
       cost: 1000,
       image: Pond,
       income: 0,
+      productType: 'building',
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -35,6 +36,7 @@ export const BuildingsDB = {
       cost: 2500,
       image: WaterPurifier,
       income: 0,
+      productType: 'building',
       desc: 'The panels earn for you all day once installed',
     },
     {
@@ -46,6 +48,7 @@ export const BuildingsDB = {
       cost: 25000,
       image: OfficeBuilding,
       income: 0,
+      productType: 'building',
       desc: 'Growth tubes for research and fuel production',
     },
     {
@@ -57,6 +60,7 @@ export const BuildingsDB = {
       cost: 150000,
       image: FireStation,
       income: 0,
+      productType: 'building',
       desc: 'Barrels of growth medium and fertilizers to increase growth',
     },
     {
@@ -68,6 +72,7 @@ export const BuildingsDB = {
       cost: 250000,
       image: FuelRefinery,
       income: null,
+      productType: 'building',
       desc: 'Unlocks fuel producers that turn your algae into fuel',
     },
     {
@@ -79,6 +84,7 @@ export const BuildingsDB = {
       cost: 500000,
       image: FuelStorage,
       income: 0,
+      productType: 'building',
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -90,6 +96,7 @@ export const BuildingsDB = {
       cost: 1010010,
       image: SmallFactory,
       income: 0,
+      productType: 'building',
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -101,6 +108,7 @@ export const BuildingsDB = {
       cost: 100000000,
       image: SmallPowerPlant,
       income: 0,
+      productType: 'building',
       desc: 'Start your town producing power from the fuel you make',
     },
     {
@@ -112,6 +120,7 @@ export const BuildingsDB = {
       cost: 5000000,
       image: Transformer,
       income: 0,
+      productType: 'building',
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -123,6 +132,7 @@ export const BuildingsDB = {
       cost: 11,
       image: GreenFactory,
       income: 0,
+      productType: 'building',
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
   
@@ -135,6 +145,7 @@ export const BuildingsDB = {
       cost: 11,
       image: LargePowerStation,
       income: 0,
+      productType: 'building',
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
   ],

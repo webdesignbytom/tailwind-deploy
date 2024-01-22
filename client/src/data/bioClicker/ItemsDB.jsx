@@ -26,6 +26,7 @@ export const ItemsDB = {
       cost: 10,
       image: Finger,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -37,6 +38,7 @@ export const ItemsDB = {
       cost: 25,
       image: SolarPanel,
       income: 0,
+      productType: 'item', 
       desc: 'The panels earn for you all day once installed',
     },
     {
@@ -48,6 +50,7 @@ export const ItemsDB = {
       cost: 100,
       image: TestTube,
       income: 0,
+      productType: 'item', 
       desc: 'Growth tubes for research and fuel production',
     },
     {
@@ -59,6 +62,7 @@ export const ItemsDB = {
       cost: 1000,
       image: Nutrients,
       income: 0,
+      productType: 'item', 
       desc: 'Barrels of growth medium and fertilizers to increase growth',
     },
     {
@@ -70,6 +74,7 @@ export const ItemsDB = {
       cost: 10000,
       image: Ultraviolet,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -81,6 +86,7 @@ export const ItemsDB = {
       cost: 50000,
       image: UnltrasonicRefinery,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -92,6 +98,7 @@ export const ItemsDB = {
       cost: 1000000,
       image: WaterPump,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -103,6 +110,7 @@ export const ItemsDB = {
       cost: 2500000,
       image: FillingMachine,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -114,6 +122,7 @@ export const ItemsDB = {
       cost: 10000000,
       image: Printer3D,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -125,6 +134,7 @@ export const ItemsDB = {
       cost: 12500000,
       image: PackingMachine,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -136,6 +146,7 @@ export const ItemsDB = {
       cost: 1000000000,
       image: CoffeeMachine,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
     {
@@ -147,6 +158,7 @@ export const ItemsDB = {
       cost: 10000000000,
       image: AIComputer,
       income: 0,
+      productType: 'item', 
       desc: 'Each finger doubles the amount of points earned per click on the screen',
     },
   ],
