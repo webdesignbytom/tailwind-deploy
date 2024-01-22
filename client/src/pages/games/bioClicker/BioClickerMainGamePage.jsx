@@ -4,8 +4,8 @@ import BioClickerNavbar from '../../../components/games/bioClicker/containers/Bi
 import BioClickerSideMenuContainer from '../../../components/games/bioClicker/containers/BioClickerSideMenuContainer';
 import BioClickerGamePlayContainer from '../../../components/games/bioClicker/containers/BioClickerGamePlayContainer';
 // DB
-import { ItemsDB } from '../../../data/bioClicker/ItemsDB';
-import { BuildingsDB } from '../../../data/bioClicker/BuildingsDB';
+import { ItemsDB } from '../../../components/games/bioClicker/data/ItemsDB';
+import { BuildingsDB } from '../../../components/games/bioClicker/data/BuildingsDB';
 
 function BioClickerMainGamePage() {
   return (

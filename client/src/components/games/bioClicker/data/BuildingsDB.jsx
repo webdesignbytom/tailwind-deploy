@@ -1,15 +1,15 @@
 // Images
-import FireStation from '../../assets/images/bioClicker/buildings/fire-station.png'
-import Pond from '../../assets/images/bioClicker/buildings/pond.png'
-import SmallFactory from '../../assets/images/bioClicker/buildings/factory.png'
-import Transformer from '../../assets/images/bioClicker/buildings/transformer.png'
-import FuelStorage from '../../assets/images/bioClicker/buildings/fuelStorage.png'
-import LargePowerStation from '../../assets/images/bioClicker/buildings/largePowerStation.png'
-import SmallPowerPlant from '../../assets/images/bioClicker/buildings/smallPowerPlant.png'
-import WaterPurifier from '../../assets/images/bioClicker/buildings/waterStorage.png'
-import FuelRefinery from '../../assets/images/bioClicker/buildings/fuelRefinery.png'
-import OfficeBuilding from '../../assets/images/bioClicker/buildings/officeBuilding.png'
-import GreenFactory from '../../assets/images/bioClicker/buildings/green-factory.png'
+import FireStation from '../images/buildings/fire-station.png'
+import Pond from '../images/buildings/pond.png'
+import SmallFactory from '../images/buildings/factory.png'
+import Transformer from '../images/buildings/transformer.png'
+import FuelStorage from '../images/buildings/fuelStorage.png'
+import LargePowerStation from '../images/buildings/largePowerStation.png'
+import SmallPowerPlant from '../images/buildings/smallPowerPlant.png'
+import WaterPurifier from '../images/buildings/waterStorage.png'
+import FuelRefinery from '../images/buildings/fuelRefinery.png'
+import OfficeBuilding from '../images/buildings/officeBuilding.png'
+import GreenFactory from '../images/buildings/green-factory.png'
 
 export const BuildingsDB = {
   title: 'Buildings',

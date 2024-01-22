@@ -10,6 +10,11 @@
   );
 }
 
+.eco_city_nav_bg {
+  background: rgb(26,235,198);
+  background: linear-gradient(59deg, rgba(26,235,198,1) 0%, rgba(0,174,239,1) 100%);
+}
+
 .rough_bg {
   background-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
 }

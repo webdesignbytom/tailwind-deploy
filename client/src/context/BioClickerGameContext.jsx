@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 // Data
-import { LevelsDB } from '../data/bioClicker/LevelsDB';
-import { ItemsDB } from '../data/bioClicker/ItemsDB';
-import { BuildingsDB } from '../data/bioClicker/BuildingsDB';
+import { LevelsDB } from '../components/games/bioClicker/data/LevelsDB';
+import { ItemsDB } from '../components/games/bioClicker/data/ItemsDB';
+import { BuildingsDB } from '../components/games/bioClicker/data/BuildingsDB';
 
 export const BioClickerGameContext = React.createContext();
 

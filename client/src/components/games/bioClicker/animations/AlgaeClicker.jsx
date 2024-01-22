@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 // Context
 import { BioClickerGameContext } from '../../../../context/BioClickerGameContext';
 // Image
-import AlgaeIcon from '../../../../assets/images/bioClicker/logos/algae.png';
+import AlgaeIcon from '../images/logos/algae.png';
 
 function AlgaeClicker() {
   const { bioClickerGamePlayer, setBioClickerGamePlayer } = useContext(BioClickerGameContext)
