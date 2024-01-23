@@ -5,16 +5,31 @@ export const ToggleContext = React.createContext();
 
 const ToggleContextProvider = ({ children }) => {
   const [toggleNavigation, setToggleNavigation] = useState(false);
+  const [toggleLevelUpContainer, setToggleLevelUpContainer] = useState(false);
 
+  // Popup menus
+  // Level up menu
+  const closeLevelUpMenu = () => {
+    setToggleLevelUpContainer(false);
+  };
+  const openLevelUpMenu = () => {
+    setToggleLevelUpContainer(true);
+  };
+
+  // Navbar
   const toggleNavbar = () => {
-    setToggleNavigation(!toggleNavigation)
-  }
- 
+    setToggleNavigation(!toggleNavigation);
+  };
+
   return (
     <ToggleContext.Provider
       value={{
         toggleNavigation,
-        toggleNavbar
+        toggleNavbar,
+        // Level up menu
+        toggleLevelUpContainer,
+        closeLevelUpMenu,
+        openLevelUpMenu,
       }}
     >
       {children}

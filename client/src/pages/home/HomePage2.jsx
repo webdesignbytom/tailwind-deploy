@@ -3,11 +3,12 @@ import React from 'react';
 import TopMenuBar from '../../components/general/TopMenuBar';
 import Navigation from '../../components/general/Navigation';
 import HomePageMainContainer from '../../components/home/HomePageMainContainer';
+import AbsoluteComponentsMain from '../../components/general/AbsoluteComponentsMain';
 
 function HomePage2() {
   return (
     <div className='h-screen max-h-screen grid nav_bg overflow-hidden'>
-      <div className='grid grid-rows-reg rough_bg overflow-hidden'>
+      <div className='grid grid-rows-reg rough_bg overflow-hidden relative'>
         {/* User menu */}
         <TopMenuBar />
 
@@ -22,6 +23,8 @@ function HomePage2() {
             </div>
           </section>
         </div>
+
+        <AbsoluteComponentsMain />
       </div>
     </div>
   );

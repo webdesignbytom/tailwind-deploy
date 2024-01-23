@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 function BadgesNavDisplay() {
   return (
-    <article className='grid w-fit'>
-      <div className='outline outline-1 outline-black rounded px-1 py-1 bg-red-200'><span>Badges: 2/100</span></div>
-    </article>
-  )
+    <section className='grid'>
+      <div className='neo_nav_out rounded overflow-hidden px-4 py-2'>
+        <div className='bg-transparent-black rounded'>
+          <span className='text-white px-4 font-semibold'>Badges: 2/100</span>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default BadgesNavDisplay
+export default BadgesNavDisplay;

@@ -13,12 +13,13 @@ const UserContextProvider = ({ children }) => {
     username: '',
     isVerified: false,
   });
+
   const [token, setToken] = useState(
     localStorage.getItem(process.env.REACT_APP_USER_TOKEN) || ''
   );
+
   const [toggleCookiePolicy, setToggleCookiePolicy] = useState(false);
 
-  console.log('usercontext', user);
   // useEffect(() => {
   //   const decodedUserData = LoggedInUser();
 

@@ -9,6 +9,7 @@ import { MdOutlineDeveloperMode } from 'react-icons/md';
 // Components
 import BadgesNavDisplay from '../badges/BadgesNavDisplay';
 import UserXpNavComponent from './UserXpNavComponent';
+import PetNavIcon from './PetNavIcon';
 
 function TopMenuBar() {
   return (
@@ -26,13 +27,16 @@ function TopMenuBar() {
         <section className='grid h-[75px] w-full'>
           <div className='grid h-full grid-cols-2'>
             {/* Website Info */}
-            <section className='grid grid-flow-col'>
-              {/* <div className='grid items-center justify-items-end z-10'>
+            <section className='grid grid-flow-col justify-end gap-6'>
+              <div className='grid items-center justify-items-end z-10'>
                 <BadgesNavDisplay />
               </div>
               <div className='grid items-center justify-items-end z-10'>
                 <UserXpNavComponent />
-              </div> */}
+              </div>
+              <div className='grid items-center justify-items-end z-10'>
+                <PetNavIcon />
+              </div>
             </section>
 
             {/* User Navigation */}

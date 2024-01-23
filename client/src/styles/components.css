@@ -1,18 +1,33 @@
-/* inputs */
 .nav_bg {
   background: rgb(93, 166, 80);
   background: linear-gradient(
     194deg,
     rgba(93, 166, 80, 1) 0%,
     rgba(74, 173, 55, 1) 12%,
-    rgba(74, 173, 55, 1) 74%,
+    rgb(74, 173, 55) 74%,
     rgba(129, 214, 113, 1) 100%
   );
 }
 
 .eco_city_nav_bg {
-  background: rgb(26,235,198);
-  background: linear-gradient(59deg, rgba(26,235,198,1) 0%, rgba(0,174,239,1) 100%);
+  background: rgb(26, 235, 198);
+  background: linear-gradient(
+    59deg,
+    rgba(26, 235, 198, 1) 0%,
+    rgba(0, 174, 239, 1) 100%
+  );
+}
+
+/* Neomorphic backgrounds */
+.neo_nav_out {
+  background: linear-gradient(145deg, #3F932F, #55C73F);
+  box-shadow: 8.11px 8.11px 19px #29601F, -8.11px -8.11px 19px #6BFA4F;
+}
+
+.bg_neo {
+  background: #fff;
+  box-shadow: 5.11px 5.11px 17px #f1efef, -5.11px -5.11px 17px #b5c2e7;
+  background: linear-gradient(145deg, #606a88, #f1f1f4);
 }
 
 .rough_bg {
@@ -20,11 +35,11 @@
 }
 
 .rough_bg2 {
-  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  background-image: url('https://www.transparenttextures.com/patterns/brushed-alum-dark.png');
 }
 
 .link_shadow {
-  box-shadow: 0px -17px 20px -20px rgba(0,0,0,0.45) inset;
+  box-shadow: 0px -17px 20px -20px rgba(0, 0, 0, 0.45) inset;
 }
 
 .leaf_bg {
@@ -50,4 +65,14 @@
   -webkit-text-stroke: 1px #080707;
   /* -webkit-text-stroke: 1px #f5f5f5; */
   color: #f0f8ff00;
+}
+
+/* Pet icon on nav */
+.pet_icon {
+  fill: #000000; /* Default fill color */
+  transition: fill 0.3s ease; /* Optional: for a smooth color transition */
+}
+
+.pet_icon:hover {
+  fill: #ffffff; /* Fill color on hover */
 }

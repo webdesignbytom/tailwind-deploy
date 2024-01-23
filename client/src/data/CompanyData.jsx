@@ -1,7 +1,7 @@
 // Images
 import Games from '../assets/images/general/games.jpg';
 import FundRaising from '../assets/images/general/fundraising.png';
-import SocialMedia from '../assets/images/general/socialMedia.jpg';
+import SocialMedia from '../assets/images/general/social_media.jpg';
 import Power from '../assets/images/general/power.jpg';
 import Lottery from '../assets/images/general/lottery.jpg';
 import MyeaLogo from '../assets/images/logos/myea-logo.svg';

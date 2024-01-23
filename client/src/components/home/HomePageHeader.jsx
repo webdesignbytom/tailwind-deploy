@@ -17,8 +17,8 @@ function HomePageHeader() {
           <div className='mt-2 md:mt-4 md:pl-20'>
             <article className='h-fit px-2'>
               <div className='text-lg'>
-                <h4 className='text-main-colour font-semibold'>Brand new web project</h4>
-                <h5>Proudly sponsored by Cat App </h5>
+                <h3 className='text-main-colour font-semibold'>Brand new web project</h3>
+                <h4>Proudly sponsored by Cat App </h4>
               </div>
               <h1 className='text-main-colour font-extrabold text-6xl lg:text-8xl 2xl:text-9xl pb-6 text-center md:text-left'>
                 myecoapp
@@ -45,16 +45,16 @@ function HomePageHeader() {
           </div>
 
           {/* icons */}
-          <section className='grid md:-mt-10'>
+          <section className='grid'>
             <div className='grid grid-cols-5 mdpx-10 md:ml-10 md:mr-20 h-fit md:max-w-[80%] '>
               <article className='grid items-center justify-center p-2'>
                 <div className='grid justify-center mb-4'>
                   <MdGamepad className='text-main-colour ' size={90} />
                 </div>
                 <div>
-                  <h4 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
+                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
                     GAMES
-                  </h4>
+                  </h5>
                 </div>
               </article>
               <article className='grid items-center justify-center p-2'>
@@ -62,9 +62,9 @@ function HomePageHeader() {
                   <HiFilm className='text-main-colour' size={90} />
                 </div>
                 <div>
-                  <h4 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
+                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
                     MEDIA
-                  </h4>
+                  </h5>
                 </div>
               </article>
               <article className='grid items-center justify-center p-2'>
@@ -72,9 +72,9 @@ function HomePageHeader() {
                   <FaTools className='text-main-colour' size={90} />
                 </div>
                 <div>
-                  <h4 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
+                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
                     SERVICES
-                  </h4>
+                  </h5>
                 </div>
               </article>
               <article className='grid items-center justify-center p-2'>
@@ -82,9 +82,9 @@ function HomePageHeader() {
                   <FaServer className='text-main-colour' size={90} />
                 </div>
                 <div>
-                  <h4 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
+                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
                     TECH
-                  </h4>
+                  </h5>
                 </div>
               </article>
               <article className='grid items-center justify-center p-2'>
@@ -92,9 +92,9 @@ function HomePageHeader() {
                   <HiShoppingCart className='text-main-colour' size={90} />
                 </div>
                 <div>
-                  <h4 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
+                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
                     SHOPPING
-                  </h4>
+                  </h5>
                 </div>
               </article>
             </div>

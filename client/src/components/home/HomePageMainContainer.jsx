@@ -1,79 +1,22 @@
 import React from 'react';
 import HomePageHeader from './HomePageHeader';
+import HomePageAboutSection from './HomePageAboutSection';
+import LargeBannerAdvert from '../adverts/LargeBannerAdvert';
 
 function HomePageMainContainer() {
   return (
     <section className='grid'>
-      <div className='grid mb-10'>
+      <section className='grid mb-10'>
         <HomePageHeader />
-      </div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
-      <div>HomePageMainContainer</div>
+      </section>
+
+      <section>
+        <HomePageAboutSection />
+      </section>
+
+      <section className='grid w-2/3 mx-auto my-10'>
+        <LargeBannerAdvert />
+      </section>
     </section>
   );
 }
