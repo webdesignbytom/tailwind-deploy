@@ -7,7 +7,7 @@ import MyeaLogo from '../../../../assets/images/logos/myea_nb_80.svg';
 import { BioClickerGameContext } from '../../../../context/BioClickerGameContext';
 
 function BioClickerNavbar() {
-  const { toggleMainView } = useContext(BioClickerGameContext);
+  const { toggleMainView, mainDisplayToggle } = useContext(BioClickerGameContext);
 
   return (
     <header className='grid h-[80px] w-full bg-[#00000060] border-b-4 border-solid border-black'>
@@ -24,24 +24,24 @@ function BioClickerNavbar() {
 
         <div className='grid grid-cols-reg'>
           {/* Player data */}
-          <div className='grid justify-start bg-blue-400'>
+          <div className='grid justify-start items-center'>
             <section>stuff</section>
           </div>
 
           {/* Navigation */}
-          <div className='grid grid-cols-rev justify-end bg-orange-300'>
-            <nav className='grid justify-items-end bg-purple-500'>
+          <div className='grid grid-cols-rev justify-end'>
+            <nav className='grid justify-items-end'>
               <div className='grid items-center mr-8'>
-                <ul className='grid grid-flow-col gap-6'>
+                <ul className='grid grid-flow-col gap-6 items-center'>
                   <li className='grid'>Item</li>
                   <li className='grid'>Item</li>
                   <li className='grid'>Item</li>
                   <li className='grid'>
                     <button
                       onClick={toggleMainView}
-                      className='outline outline-1 outline-black rounded px-2 py-1 bg-slate-300'
+                      className='outline outline-1 outline-black rounded px-2 py-1 bg-slate-300 min-w-[120px]'
                     >
-                      <span className='text-lg'>Toggle</span>
+                      <span className='text-lg'>{mainDisplayToggle ?  "Algae View" : "City View"}</span>
                     </button>
                   </li>
                 </ul>
@@ -49,7 +49,7 @@ function BioClickerNavbar() {
             </nav>
 
             {/* Myea logo */}
-            <div className='grid items-center px-8 bg-pink-500'>
+            <div className='grid items-center px-8'>
               <Link to='/'>
                 <img
                   src={MyeaLogo}

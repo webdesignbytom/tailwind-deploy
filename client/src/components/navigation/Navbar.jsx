@@ -9,7 +9,7 @@ import SocialBar from '../../components/social/SocialBar';
 import { UserContext } from '../../context/UserContext';
 
 function Navbar() {
-  const { toggleNavbar, toggleNavigation } = useContext(ToggleContext);
+  const { toggleNavbar, isNavbarMenuOpen } = useContext(ToggleContext);
   const { user, setUser } = useContext(UserContext);
 
   const [activeNav, setActiveNav] = useState('/');
@@ -230,7 +230,7 @@ function Navbar() {
       </header>
 
       {/* Phone navigation drop down */}
-      {toggleNavigation && (
+      {isNavbarMenuOpen && (
         <section className='z-30 mt-6 lg:hidden'>
           <nav className='bg-green-800 text-gray-100 grid outline outline-4 outline-main-colour'>
             <ul className='grid items-center py-4 text-xl'>

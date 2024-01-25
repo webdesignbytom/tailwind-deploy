@@ -4,32 +4,57 @@ import { useState } from 'react';
 export const ToggleContext = React.createContext();
 
 const ToggleContextProvider = ({ children }) => {
-  const [toggleNavigation, setToggleNavigation] = useState(false);
-  const [toggleLevelUpContainer, setToggleLevelUpContainer] = useState(false);
+  const [isNavbarMenuOpen, setIsNavbarMenuOpen] = useState(false);
+  const [isLevelUpContainerOpen, setIsLevelUpContainerOpen] = useState(false);
+  const [isXpGainedContainerOpen, setIsXpGainedContainerOpen] = useState(false);
+  const [isbadgesContainerOpen, setIsbadgesContainerOpen] = useState(true);
 
   // Popup menus
   // Level up menu
   const closeLevelUpMenu = () => {
-    setToggleLevelUpContainer(false);
+    setIsLevelUpContainerOpen(false);
   };
   const openLevelUpMenu = () => {
-    setToggleLevelUpContainer(true);
+    setIsLevelUpContainerOpen(true);
+  };
+  // Xp up display
+  const closeXpMenu = () => {
+    setIsXpGainedContainerOpen(false);
+  };
+  const openXpMenu = () => {
+    setIsXpGainedContainerOpen(true);
+  };
+  // Badges earned
+  const closeBadgeEarnedDisplay = () => {
+    setIsbadgesContainerOpen(false);
+  };
+  const openBadgeEarnedDisplay = () => {
+    setIsbadgesContainerOpen(true);
   };
 
   // Navbar
   const toggleNavbar = () => {
-    setToggleNavigation(!toggleNavigation);
+    setIsNavbarMenuOpen(!isNavbarMenuOpen);
   };
 
   return (
     <ToggleContext.Provider
       value={{
-        toggleNavigation,
+        isNavbarMenuOpen,
         toggleNavbar,
         // Level up menu
-        toggleLevelUpContainer,
+        isLevelUpContainerOpen,
         closeLevelUpMenu,
         openLevelUpMenu,
+        // xp
+        isXpGainedContainerOpen,
+        closeXpMenu,
+        openXpMenu,
+        // Badges
+        isbadgesContainerOpen,
+        setIsbadgesContainerOpen,
+        closeBadgeEarnedDisplay,
+        openBadgeEarnedDisplay,
       }}
     >
       {children}

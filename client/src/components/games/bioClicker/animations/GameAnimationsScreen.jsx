@@ -165,7 +165,7 @@ function GameAnimationsScreen() {
   };
 
   return (
-    <div id='game-container' className='grid absolute w-full h-full'>
+    <div id='game-container' className='grid absolute w-full h-full cursor-pointer'>
       {useScript()}
     </div>
   );

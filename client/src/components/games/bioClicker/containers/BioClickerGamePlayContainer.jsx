@@ -12,7 +12,7 @@ function BioClickerGamePlayContainer() {
 const { mainDisplayToggle } = useContext(BioClickerGameContext)
 
   return (
-    <section className='bg-white grid'>
+    <section className='bg-white grid border-l-4 border-r-4 border-solid border-black'>
       <div className='grid grid-rows-rev'>
 
         {/* Display settings */}
