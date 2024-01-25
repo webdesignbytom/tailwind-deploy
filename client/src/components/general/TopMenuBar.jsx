@@ -62,7 +62,7 @@ function TopMenuBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link to='/developer'>
+                    <Link to='/development'>
                       <div className='px-2 py-1'>
                         <span className='text-white text-xl font-semibold'>
                           <MdOutlineDeveloperMode size={35} />

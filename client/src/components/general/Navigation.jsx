@@ -48,7 +48,7 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link to='/services2'>
+            <Link to='/services'>
               <div className='text-center bg-main-colour border-solid border-black border-[1px] border-l-[2px] border-r-[2px] hover:bg-colour-dark link_shadow py-2'>
                 <span className='text-lg font-semibold text-white'>
                   Services
@@ -57,7 +57,7 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link to='/timeline2'>
+            <Link to='/timeline'>
               <div className='text-center bg-main-colour border-solid border-black border-[1px] border-l-[2px] border-r-[2px] hover:bg-colour-dark link_shadow py-2'>
                 <span className='text-lg font-semibold text-white'>
                   Timeline
@@ -66,7 +66,7 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link to='/contact2'>
+            <Link to='/contact-us'>
               <div className='text-center bg-main-colour border-solid border-black border-[1px] border-l-[2px] border-r-[2px] hover:bg-colour-dark link_shadow py-2'>
                 <span className='text-lg font-semibold text-white'>
                   Contact

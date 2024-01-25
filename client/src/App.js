@@ -41,6 +41,11 @@ import MyecohomeMainPage from './pages/myecohome/MyecohomeMainPage';
 import BioClickerMainGamePage from './pages/games/bioClicker/BioClickerMainGamePage';
 import EcoCityMainGamePage from './pages/games/ecoCity/EcoCityMainGamePage';
 import CustomMyecohomePage from './pages/myecohome/CustomMyecohomePage';
+import TimelinePage from './pages/timeline/TimelinePage';
+import ContactMyecoappPage from './pages/contact/ContactMyecoappPage';
+import EcoEventsMainPage from './pages/ecoEvents/EcoEventsMainPage';
+import DonationsPage from './pages/donations/DonationsPage';
+import ServicesPage from './pages/services/ServicesPage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -57,10 +62,13 @@ function App() {
         <Route path='/about-myecoapp' element={<AboutUsPage />} />
         <Route path='/our-goals' element={<GoalsPage />} />
         <Route path='/funding' element={<FundingPage />} />
-        <Route path='/funding' element={<FundingPage />} />
         <Route path='/funding2' element={<FundraisingPage />} />
-        <Route path='/contact-us' element={<ContactUsPage />} />
+        <Route path='/contact-us' element={<ContactMyecoappPage />} />
         <Route path='/media' element={<MediaMainPage />} />
+        <Route path='/timeline' element={<TimelinePage />} />
+        <Route path='/events' element={<EcoEventsMainPage />} />
+        <Route path='/donations' element={<DonationsPage />} />
+        <Route path='/services' element={<ServicesPage />} />
 
         {/* Games */}
         <Route path='/games-home' element={<GamesMainPage />} />
@@ -101,9 +109,9 @@ function App() {
         <Route
           path='/development'
           element={
-            <AuthenticateDeveloper>
+            // <AuthenticateDeveloper>
               <DeveloperPage />
-            </AuthenticateDeveloper>
+            // </AuthenticateDeveloper>
           }
         />
 
