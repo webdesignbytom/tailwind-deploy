@@ -61,9 +61,7 @@
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
-.text_stroke {
-  -webkit-text-stroke: 3px #080707;
-}
+
 
 /* Pet icon on nav */
 .pet_icon {

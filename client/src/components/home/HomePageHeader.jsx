@@ -2,36 +2,48 @@ import React from 'react';
 // Components
 import HeaderCTA from './HeaderCTA';
 import NewsletterCTA from '../newsletter/NewsletterCTA';
-// Icon
-import { MdGamepad } from 'react-icons/md';
-import { HiFilm, HiShoppingCart } from 'react-icons/hi';
-import { FaTools, FaServer } from 'react-icons/fa';
 import BannerAdvert from '../adverts/BannerAdvert';
+import FiveWayCta from './FiveWayCta';
 
 function HomePageHeader() {
   return (
     <header id='hero' className='grid p-4 w-full'>
       <div className='grid md:grid-cols-2x h-full'>
         {/* Text Section Left */}
-        <section className='grid h-full my-10'>
-          <div className='mt-2 md:mt-4 md:pl-20'>
-            <article className='h-fit px-2'>
-              <div className='text-lg'>
-                <h3 className='text-main-colour font-semibold'>Brand new web project</h3>
-                <h4>Proudly sponsored by Cat App </h4>
+        <section className='grid h-full'>
+          <section className=''>
+            <article className=''>
+              {/* Titles */}
+              <div className='grid text-lg pl-6 mt-4'>
+                <div>
+                  <h3 className='text-main-colour font-semibold'>
+                    <span>Brand new web project</span>
+                  </h3>
+                </div>
+                <div>
+                  <h4>
+                    <span>Proudly sponsored by Cat App</span>
+                  </h4>
+                </div>
               </div>
-              <h1 className='text-main-colour font-extrabold text-6xl lg:text-8xl 2xl:text-9xl pb-6 text-center md:text-left'>
-                myecoapp
-              </h1>
-              <h2 className='font-sans px-2 text-2xl 2xl:text-3xl font-bold tracking-tight text-gray-800 dark:text-slate-100 max-w-lg mb-4'>
-                Help The Planet <br className='hidden md:block' />
-                by existing,{' '}
-                <span className='inline-block text-deep-purple-accent-400'>
-                  visting and sharing!
-                </span>
-              </h2>
+              {/* Main title */}
+              <div>
+                <h1 className='text-main-colour font-extrabold text-6xl lg:text-8xl 2xl:text-9xl pb-6 text-center md:text-left'>
+                  <span>myecoapp</span>
+                </h1>
+              </div>
+              <div>
+                <h2 className='font-sans px-2 text-2xl 2xl:text-3xl font-bold tracking-tight text-gray-800 dark:text-slate-100 max-w-lg mb-4 leading-5 2xl:leading-6'>
+                  <span>Help The Planet</span>{' '}
+                  <br className='hidden md:block' />
+                  <span>by existing, </span>
+                  <span className='inline-block text-deep-purple-accent-400'>
+                    visting and sharing!
+                  </span>
+                </h2>
+              </div>
               <div className='md:max-w-[80%]'>
-                <p className='text-text-grey leading-5 dark:text-slate-100 text-base md:text-lg font-poppins'>
+                <p className='text-text-grey leading-5 2xl:leading-6 h-fit dark:text-slate-100 font-poppins'>
                   Help the environment from anywhere for free! At home or at any
                   event. Use our apps to help us earn while you relax. We have
                   done what we can to provide entertainment for you. Check out
@@ -39,70 +51,19 @@ function HomePageHeader() {
                 </p>
               </div>
             </article>
-            <section className='grid md:max-w-[80%] mb-6 md:mb-0 mt-6'>
+            <section className='grid px-8 mt-8'>
               <HeaderCTA />
             </section>
-          </div>
+          </section>
 
-          {/* icons */}
-          <section className='grid'>
-            <div className='grid grid-cols-5 mdpx-10 md:ml-10 md:mr-20 h-fit md:max-w-[80%] '>
-              <article className='grid items-center justify-center p-2'>
-                <div className='grid justify-center mb-4'>
-                  <MdGamepad className='text-main-colour ' size={90} />
-                </div>
-                <div>
-                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
-                    GAMES
-                  </h5>
-                </div>
-              </article>
-              <article className='grid items-center justify-center p-2'>
-                <div className='grid justify-center mb-4'>
-                  <HiFilm className='text-main-colour' size={90} />
-                </div>
-                <div>
-                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
-                    MEDIA
-                  </h5>
-                </div>
-              </article>
-              <article className='grid items-center justify-center p-2'>
-                <div className='grid justify-center mb-4'>
-                  <FaTools className='text-main-colour' size={90} />
-                </div>
-                <div>
-                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
-                    SERVICES
-                  </h5>
-                </div>
-              </article>
-              <article className='grid items-center justify-center p-2'>
-                <div className='grid justify-center mb-4'>
-                  <FaServer className='text-main-colour' size={90} />
-                </div>
-                <div>
-                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
-                    TECH
-                  </h5>
-                </div>
-              </article>
-              <article className='grid items-center justify-center p-2'>
-                <div className='grid justify-center mb-4'>
-                  <HiShoppingCart className='text-main-colour' size={90} />
-                </div>
-                <div>
-                  <h5 className='font-bold text-xs md:text-2xl text-center text-main-colour'>
-                    SHOPPING
-                  </h5>
-                </div>
-              </article>
-            </div>
+          {/* cta icons */}
+          <section className='grid justify-center mt-8'>
+            <FiveWayCta />
           </section>
         </section>
 
         {/* Phone images */}
-        <section className='grid mt-10 md:mt-0 md:mr-10 md:-ml-10 p-6'>
+        <section className='grid justify-start items-start p-6'>
           <div className='grid relative grid-flow-col'>
             <div className=' relative z-10 md:-ml-4 grid items-center'>
               <img
@@ -119,7 +80,7 @@ function HomePageHeader() {
               />
             </div>
           </div>
-          <section className='mt-8'>
+          <section className='xl:mt-2 2xl:mt-8'>
             <BannerAdvert />
           </section>
         </section>

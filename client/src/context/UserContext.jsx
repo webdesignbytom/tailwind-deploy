@@ -12,6 +12,9 @@ const UserContextProvider = ({ children }) => {
     email: '',
     username: '',
     isVerified: false,
+    profile: {
+      score: 10
+    }
   });
 
   const [token, setToken] = useState(

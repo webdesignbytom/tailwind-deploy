@@ -46,6 +46,8 @@ import ContactMyecoappPage from './pages/contact/ContactMyecoappPage';
 import EcoEventsMainPage from './pages/ecoEvents/EcoEventsMainPage';
 import DonationsPage from './pages/donations/DonationsPage';
 import ServicesPage from './pages/services/ServicesPage';
+import ProfileMainPage from './pages/account/profile/ProfileMainPage';
+import AppsMainPage from './pages/apps/AppsMainPage';
 
 function App() {
   ReactGA.initialize('G-5TSPX20DLD');
@@ -69,6 +71,7 @@ function App() {
         <Route path='/events' element={<EcoEventsMainPage />} />
         <Route path='/donations' element={<DonationsPage />} />
         <Route path='/services' element={<ServicesPage />} />
+        <Route path='/apps' element={<AppsMainPage />} />
 
         {/* Games */}
         <Route path='/games-home' element={<GamesMainPage />} />
@@ -92,6 +95,7 @@ function App() {
         <Route path='/lottery-home' element={<LotteryHomePage />} />
 
         {/* User routes */}
+        <Route path='/profile' element={<ProfileMainPage />} />
         <Route path='/newsletter-signup' element={<NewsletterSignup />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/sign-up' element={<RegisterPage />} />
