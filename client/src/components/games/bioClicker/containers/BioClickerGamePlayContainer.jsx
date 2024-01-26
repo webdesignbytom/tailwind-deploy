@@ -7,6 +7,7 @@ import BioClickerScrollingNewBar from '../animations/BioClickerScrollingNewBar';
 import BioClickerPointsDataContainer from './BioClickerPointsDataContainer';
 // Context
 import { BioClickerGameContext } from '../../../../context/BioClickerGameContext';
+import BioClickerLevelData from './BioClickerLevelData';
 
 function BioClickerGamePlayContainer() {
 const { mainDisplayToggle } = useContext(BioClickerGameContext)
@@ -26,6 +27,7 @@ const { mainDisplayToggle } = useContext(BioClickerGameContext)
           <section className='grid relative'>
             {/* Display clicker */}
             <BioClickerPointsDataContainer />
+            <BioClickerLevelData />
             <GameAnimationsScreen />
             <AlgaeClicker />
           </section>

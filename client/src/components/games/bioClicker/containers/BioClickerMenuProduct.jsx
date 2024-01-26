@@ -6,7 +6,7 @@ function BioClickerMenuProduct({ product, purchaseAmount }) {
   const { bioClickerBuySideMenuProduct } = useContext(BioClickerGameContext);
 
   return (
-    <li className='grid h-full max-w-[350px]'>
+    <li className='grid h-full max-w-[300px] 2xl:max-w-[350px]'>
       <div className='grid gap-1 overflow-hidden bg-gray-100 outline outline-1 outline-black shadow rounded p-1'>
         {/* Main section */}
         <section className='grid grid-cols-a1a rounded gap-1'>

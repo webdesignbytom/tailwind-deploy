@@ -47,6 +47,7 @@ const BioClickerGameContextProvider = ({ children }) => {
     setCurrentLevel(LevelsDB.content[levelIndex]);
   }, [bioClickerGamePlayer.currentLevel]);
 
+  
   const resetPlayerStats = () => {
     let newLevel = bioClickerGamePlayer.currentLevel + 1;
 
