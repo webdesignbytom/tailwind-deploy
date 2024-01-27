@@ -12,7 +12,7 @@ function GameArticleItem({ game }) {
   }
 
   return (
-    <article className='grid h-[250px]'>
+    <article className='grid min-h-[250px]'>
       <div className='grid outline outline-1 outline-black shadow-lg overflow-hidden bg-slate-200 rounded-xl'>
         <div className='grid grid-rows-reg px-2 pt-1'>
           <div className='grid border-b-[1px] border-black border-solid w-fit pr-4'>
@@ -37,8 +37,8 @@ function GameArticleItem({ game }) {
                   </div>
                 </div>
               </section>
-              <section className='grid p-1 max-w-[200px]'>
-                <div className='grid items-center'>
+              <section className='grid p-1 max-w-[150px] 2xl:max-w-[200px]'>
+                <div className='grid 2xl:items-center'>
                   <img src={gameData.gameImageUrl} alt='Game display' />
                 </div>
               </section>

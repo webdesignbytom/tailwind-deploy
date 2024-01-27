@@ -13,7 +13,8 @@ function GamesMainPageContent() {
   return (
     <main className='grid bg-gray-50'>
       <div className='grid grid-rows-reg'>
-        <section className='grid grid-cols-2 px-10'>
+        {/* Header */}
+        <header className='grid grid-cols-2 px-10'>
           <article className='container px-10 py-10 mx-auto'>
             <div className=''>
               <h1 className='text-2xl lg:text-3xl font-semibold text-gray-800  dark:text-white'>
@@ -41,7 +42,7 @@ function GamesMainPageContent() {
               </h2>
             </div>
           </article>
-        </section>
+        </header>
 
         {/* Dual columns */}
         <section className='grid w-full h-full'>
@@ -103,13 +104,13 @@ function GamesMainPageContent() {
             </section>
 
             {/* right */}
-            <section className='grid w-full max-w-[500px] h-full'>
+            <section className='hidden 2xl:grid w-full 2xl:max-w-[400px] h-full'>
               <div className='grid gap-y-4 mb-10 h-full'>
                 <div className='grid items-center mb-10 px-2 mt-10'>
-                  <img src={GamesMainImage} alt='Games main display' />
+                  <img src={GamesMainImage} alt='Games main display' className='' />
                 </div>
                 <div className='grid items-center px-2'>
-                  <img src={GameMakingStudioImage} alt='Games main display' />
+                  <img src={GameMakingStudioImage} alt='Games main display' className='' />
                 </div>
               </div>
             </section>
