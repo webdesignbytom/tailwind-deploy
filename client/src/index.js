@@ -11,6 +11,7 @@ import EcoCityGameContextProvider from './context/EcoCityGameContext';
 import './styles/index.css';
 import './styles/components.css';
 import './styles/text.css';
+import './styles/animations.css';
 import './styles/backgrounds.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

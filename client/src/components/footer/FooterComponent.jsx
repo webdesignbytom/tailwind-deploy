@@ -5,7 +5,7 @@ import MyeaLogo from '../../assets/images/logos/myea-logo.svg';
 
 function FooterComponent() {
   return (
-    <footer className='bg-main-colour text-center text-gray-800 dark:bg-colour-dark dark:text-gray-100 lg:text-left'>
+    <footer className='bg-main-colour text-center text-gray-800 dark:bg-colour-dark dark:text-gray-100 lg:text-left rounded-xl'>
       <div className='flex items-center justify-center border-b-2 border-colour-pale p-6 dark:border-neutral-500 lg:justify-between'>
         {/* <!-- Social network icons container --> */}
         <div className='flex justify-center'>
