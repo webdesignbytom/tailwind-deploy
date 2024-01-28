@@ -2,6 +2,7 @@ import React from 'react';
 import HomePageHeader from './HomePageHeader';
 import HomePageAboutSection from './HomePageAboutSection';
 import LargeBannerAdvert from '../adverts/LargeBannerAdvert';
+import UserInfoSection from './UserInfoSection';
 
 function HomePageMainContainer() {
   return (
@@ -10,13 +11,13 @@ function HomePageMainContainer() {
         <HomePageHeader />
       </section>
 
-      <section>
-        <HomePageAboutSection />
-      </section>
+      <HomePageAboutSection />
 
       <section className='grid w-2/3 mx-auto my-10'>
         <LargeBannerAdvert />
       </section>
+
+      <UserInfoSection />
     </section>
   );
 }
