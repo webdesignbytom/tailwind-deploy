@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// Components
+import SponsorNavbarAdvert from '../sponsor/SponsorNavbarAdvert'
 // Images
 import MyeaLogo from '../../assets/images/logos/myea-logo.svg';
 
@@ -186,6 +188,10 @@ function FooterComponent() {
               </svg>
               <a href="mailto:hello@myecoapp.org">hello@myecoapp.org</a>
             </p>
+
+            <div>
+              <SponsorNavbarAdvert />
+            </div>
           </div>
         </div>
       </div>
