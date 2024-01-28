@@ -3,6 +3,7 @@ import HomePageHeader from './HomePageHeader';
 import HomePageAboutSection from './HomePageAboutSection';
 import LargeBannerAdvert from '../adverts/LargeBannerAdvert';
 import UserInfoSection from './UserInfoSection';
+import ServicesBannerCta from '../services/ServicesBannerCta';
 
 function HomePageMainContainer() {
   return (
@@ -18,6 +19,8 @@ function HomePageMainContainer() {
       </section>
 
       <UserInfoSection />
+
+      <ServicesBannerCta />
     </section>
   );
 }

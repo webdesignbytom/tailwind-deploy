@@ -1,25 +1,34 @@
 import React from 'react';
 
 function TimelineCard({ isOdd, item }) {
-  return (
-    <article className={`card ${isOdd ? 'odd' : 'even'} `}>
-      <div className='info grid relative'>
-        <div className='title'>{item.title}</div>
-        <div className=''>{item.description}</div>
-        <div
-          className={`absolute z-10 ${
-            isOdd ? 'left-[98%] top-1' : 'right-[98%] top-1'
-          } `}
-        >
-          <div className='w-[100px] bg-red-500 h-[100px] outline outline-black outline-1 rounded-full grid'>
-            <div className='grid items-center justify-center '>
-              <span>{item.cost}</span>
+  if (isOdd) {
+    return (
+      <article className='grid w-full h-fit '>
+        <div className='grid w-1/2 px-2 py-2 mx-auto'>
+          <div className='outline outline-1 outline-black rounded-lg p-1 w-1/2'>
+            <div className='grid bg-yellow-200 w-full rounded-lg px-4 py-2 '>
+              <div className='font-semibold'>{item.title}</div>
+              <div className='leading-5'>{item.description}</div>
             </div>
           </div>
         </div>
-      </div>
-    </article>
-  );
+      </article>
+    );
+  }
+  if (!isOdd) {
+    return (
+      <article className='grid w-full h-fit '>
+        <div className='grid w-1/2 px-2 py-2 mx-auto justify-items-end'>
+          <div className='outline outline-1 outline-black rounded-lg p-1 w-1/2'>
+            <div className='grid bg-yellow-200 w-full rounded-lg px-4 py-2 '>
+              <div className='font-semibold'>{item.title}</div>
+              <div className='leading-5'>{item.description}</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    );
+  }
 }
 
 export default TimelineCard;
