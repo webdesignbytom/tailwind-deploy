@@ -43,7 +43,7 @@ function TimelinePageContent() {
 
         {/* Timeline display */}
         <section className='grid px-4 py-4 ml-2 mt-10'>
-          <div className='grid gap-y-1'>
+          <div className='grid gap-y-0'>
             {timelineDataArray.map((item, index) => {
               return (
                 <TimelineCard key={index} isOdd={index % 2 === 0} item={item} />
