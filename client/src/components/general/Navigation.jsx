@@ -35,9 +35,7 @@ function Navigation() {
           <li>
             <Link to='/apps'>
               <div className='text-center bg-main-colour border-solid border-black border-[1px] border-l-[2px] border-r-[2px] hover:bg-colour-dark link_shadow xl:py-1 2xl:py-2'>
-                <span className='text-lg font-semibold text-white'>
-                  Apps
-                </span>
+                <span className='text-lg font-semibold text-white'>Apps</span>
               </div>
             </Link>
           </li>
@@ -63,6 +61,13 @@ function Navigation() {
                 <span className='text-lg font-semibold text-white'>
                   Services
                 </span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link to='/media'>
+              <div className='text-center bg-main-colour border-solid border-black border-[1px] border-l-[2px] border-r-[2px] hover:bg-colour-dark link_shadow xl:py-1 2xl:py-2'>
+                <span className='text-lg font-semibold text-white'>Media</span>
               </div>
             </Link>
           </li>
@@ -104,7 +109,7 @@ function Navigation() {
       </nav>
 
       <section className='grid p-2'>
-       <SponsorNavbarAdvert />
+        <SponsorNavbarAdvert />
       </section>
     </div>
   );
