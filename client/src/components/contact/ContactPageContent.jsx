@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // Components
 import ContactFormComponent from '../forms/ContactFormComponent';
+import SocialMediaLinkBarLarge from '../social/SocialMediaLinkBarLarge';
 
 function ContactPageContent() {
   const [agreed, setAgreed] = useState(false);
@@ -36,15 +37,7 @@ function ContactPageContent() {
           <div
             className='absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]'
             aria-hidden='true'
-          >
-            <div
-              className='relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]'
-              style={{
-                clipPath:
-                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-              }}
-            />
-          </div>
+          ></div>
           <div className='mx-auto max-w-2xl text-center'>
             <h2 className='text-3xl font-bold tracking-tight sm:text-4xl lg:text-6xl text-main-colour'>
               Contact Our Team
@@ -72,17 +65,35 @@ function ContactPageContent() {
             />
           </section>
           {/* RIGHT */}
-          <section className='hidden lg:grid w-full p-10'>
-            <section className='mx-auto mt-16 max-w-xl sm:mt-12 bg-main-colour shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] grid w-full py-20 px-32'>
-              <article className='bg-gray-50 shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] text-center grid items-center'>
-                <h3>
+          <section className='hidden lg:grid w-full p-10 mt-20'>
+            <section className='mx-auto p-4 bg-main-colour shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] grid w-full '>
+              <article className='bg-gray-50 shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] h-full text-center grid items-center'>
+                <div>
                   <span>Email: </span>
                   <a href='mailto:hello@myecoapp.org'>
                     <span>hello@myecoapp.org</span>
                   </a>
-                </h3>
+                </div>
+                <div>
+                  <span>Email: </span>
+                  <a href='mailto:hello@myecoapp.org'>
+                    <span>info@myecoapp.org</span>
+                  </a>
+                </div>
               </article>
             </section>
+
+            {/* Social media cta */}
+            <div className='grid grid-rows-reg pt-10'>
+              <div className='grid  w-full justify-center py-4'>
+                <p>Contact or Follow us across all our social media</p>
+              </div>
+              <div className='grid justify-center h-full items-start'>
+                <div className='-mb-20'>
+                  <SocialMediaLinkBarLarge />
+                </div>
+              </div>
+            </div>
           </section>
         </section>
       </div>

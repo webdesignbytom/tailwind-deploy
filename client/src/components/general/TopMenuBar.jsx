@@ -10,6 +10,7 @@ import { MdOutlineDeveloperMode } from 'react-icons/md';
 import BadgesNavDisplay from '../badges/BadgesNavDisplay';
 import UserXpNavComponent from './UserXpNavComponent';
 import PetNavIcon from './PetNavIcon';
+import SocialMediaLinkBar from '../social/SocialMediaLinkBar';
 
 function TopMenuBar() {
   return (
@@ -40,7 +41,10 @@ function TopMenuBar() {
             </section>
 
             {/* User Navigation */}
-            <section className='grid'>
+            <section className='grid grid-flow-col '>
+              <section className='grid justify-items-end'>
+                <SocialMediaLinkBar />
+              </section>
               <nav className='grid justify-end h-full'>
                 <ul className='grid grid-flow-col gap-2 w-fit items-center pr-4'>
                   <li>

@@ -5,7 +5,7 @@ import MyeaLogo from '../../assets/images/logos/myea-logo.svg';
 // Context
 import { ToggleContext } from '../../context/ToggleContext';
 // Components
-import SocialBar from '../../components/social/SocialBar';
+import SocialMediaLinkBar from '../../components/social/SocialMediaLinkBar';
 import { UserContext } from '../../context/UserContext';
 
 function Navbar() {
@@ -225,7 +225,7 @@ function Navbar() {
         </section>
 
         <section className='hidden lg:grid grid-flow-col gap-4'>
-          <SocialBar />
+          <SocialMediaLinkBar />
         </section>
       </header>
 
