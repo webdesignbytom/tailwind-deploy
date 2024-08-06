@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'KGRedHands';
+  src: url('../assets/fonts/KGRedHands.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .text_stroke {
     -webkit-text-stroke: 3px #080707;
   }

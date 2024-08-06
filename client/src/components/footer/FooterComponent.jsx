@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // Components
 import SponsorNavbarAdvert from '../sponsor/SponsorNavbarAdvert'
 // Images
-import MyeaLogo from '../../assets/images/logos/myea-logo.svg';
+import MyeaLogo from '../../assets/images/logos/my_eco_app_main_logo.svg';
 
 function FooterComponent() {
   return (

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 // Images
-import MyeaLogo from '../../assets/images/logos/myea-logo.svg';
+import MyeaLogo from '../../assets/images/logos/my_eco_app_main_logo.svg';
 // Context
 import { ToggleContext } from '../../context/ToggleContext';
 // Components

@@ -11,7 +11,7 @@ function BannerAdvert() {
           <span>Jims big rock warehouse</span>
           <div className='pl-2'>
             <a href='/'>
-              <span className='text-hyperlink-blue'>Link</span>
+              <span className='text-hyperlink'>Link</span>
             </a>
           </div>
         </div>

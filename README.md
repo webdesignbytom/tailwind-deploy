@@ -1,39 +1,30 @@
-# myecoapp
+# Myecoapp
 
-A page be built for a group charity project to raise money for renewable energy using the internet as a platfrom.
-Including Games, Services, Mailing Newsletters, Adverts, and Dontations.
-Dislays a few issues and some short files.
-The idea is to create a site that has a large amount of followers to make the advertising worth more.
-The Frontend can be view at [myecoapp](https://dazzling-biscuit-b01617.netlify.app/)
+## About
 
-## Home Page
-
-<img src='./assets/images/myeaMd.png' alt='about' />
-<img src='./assets/images/myeaSm.jpg' alt='home' style='width: 150px; height: 300px; />
+A charity project aimed at raising funds for renewable energy initiatives by leveraging internet traffic. The platform includes various features like games, services, mailing newsletters, advertisements, and donation options. By attracting a large user base, the site aims to increase advertising revenue, which will be directed towards environmental causes.
 
 ## Table of contents
 
-- [myecoapp](#myecoapp)
-  - [Home Page](#home-page)
+- [Myecoapp](#myecoapp)
+  - [About](#about)
   - [Table of contents](#table-of-contents)
   - [General info](#general-info)
   - [Technologies](#technologies)
   - [Run this project locally](#run-this-project-locally)
-  - [Design Information](#design-information)
-  - [Current ERD](#current-erd)
-  - [Game Ideas](#game-ideas)
+
+<img src='./assets/images/myeaMd.png' alt='about' />
 
 ## General info
 
-Built using tailwing css styling.
-Has a sign up feature currently working that user and vistors use to register to the mailing list.
-Using a built in google search bar, users can make off site searches.
-A lottery is being developed to help raise funds of the cause.
+myecoapp is a platform designed to raise awareness and funds for renewable energy by leveraging internet traffic. The site offers a variety of features including:
 
-Paypal connection for donations - not launced yet still under dummy account.
-
-
-Server deployment with Vercel @ [https://myecoapp-deploy.vercel.app/](https://myecoapp-deploy.vercel.app/)
+Games: Interactive and educational games to engage users.
+Services: Various online services to attract and retain users.
+Mailing Newsletters: Regular updates and information sent to subscribers.
+Advertisements: Monetized ads to generate revenue.
+Donations: Easy-to-use donation options to support environmental causes.
+The platform also highlights important environmental issues and provides short informational content. The aim is to build a large user base to maximize advertising revenue, which will be directed towards renewable energy projects.
 
 ## Technologies
 
@@ -49,17 +40,3 @@ Backend: Express, Prisma, JavaScript, express-handlebars
 2. Navigate to client and server files and run
 3. `npm install`
 4. `npm start`
-
-## Design Information
-
-1. Link to ERD [ERD...](https://github.com/webdesignsbytom/webdesignsbytom-app/blob/main/assets/ERD-webdesignsbytom.png)
-2. Original Design sketches [Sketch](https://github.com/webdesignsbytom/webdesignsbytom-app/tree/main/assets/design-sketches)
-Phone version has tab options for each field
-<img src='./assets/images/about_page.png' alt='about' />
-## Current ERD
-<img src='./assets/images/ERD-myecoapp.png' alt='about' />
-
-
-## Game Ideas
-
-1. have 2 screens town and algea where you can build as well as tap
