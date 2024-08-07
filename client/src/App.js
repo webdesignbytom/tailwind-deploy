@@ -96,7 +96,7 @@ import {
 const AnalCode = process.env.REACT_APP_GOOGLE_ANALYTICS_ID;
 
 function App() {
-  const [siteDown] = useState(true); // Set to true to redirect all routes to the SiteDownPage
+  const [siteDown] = useState(false); // Set to true to redirect all routes to the SiteDownPage
 
   ReactGA.initialize(AnalCode);
   ReactGA.pageview(HOME_URL);
